@@ -1,0 +1,15 @@
+D:\code_\FShop\BackEnd\code\buoi1\VietLD3_NPLC_Assignment1\Net.M.A001.Exercise2\bin\Debug\net6.0\Net.M.A001.Exercise2.exe
+D:\code_\FShop\BackEnd\code\buoi1\VietLD3_NPLC_Assignment1\Net.M.A001.Exercise2\bin\Debug\net6.0\Net.M.A001.Exercise2.deps.json
+D:\code_\FShop\BackEnd\code\buoi1\VietLD3_NPLC_Assignment1\Net.M.A001.Exercise2\bin\Debug\net6.0\Net.M.A001.Exercise2.runtimeconfig.json
+D:\code_\FShop\BackEnd\code\buoi1\VietLD3_NPLC_Assignment1\Net.M.A001.Exercise2\bin\Debug\net6.0\Net.M.A001.Exercise2.dll
+D:\code_\FShop\BackEnd\code\buoi1\VietLD3_NPLC_Assignment1\Net.M.A001.Exercise2\bin\Debug\net6.0\Net.M.A001.Exercise2.pdb
+D:\code_\FShop\BackEnd\code\buoi1\VietLD3_NPLC_Assignment1\Net.M.A001.Exercise2\obj\Debug\net6.0\Net.M.A001.Exercise2.csproj.AssemblyReference.cache
+D:\code_\FShop\BackEnd\code\buoi1\VietLD3_NPLC_Assignment1\Net.M.A001.Exercise2\obj\Debug\net6.0\Net.M.A001.Exercise2.GeneratedMSBuildEditorConfig.editorconfig
+D:\code_\FShop\BackEnd\code\buoi1\VietLD3_NPLC_Assignment1\Net.M.A001.Exercise2\obj\Debug\net6.0\Net.M.A001.Exercise2.AssemblyInfoInputs.cache
+D:\code_\FShop\BackEnd\code\buoi1\VietLD3_NPLC_Assignment1\Net.M.A001.Exercise2\obj\Debug\net6.0\Net.M.A001.Exercise2.AssemblyInfo.cs
+D:\code_\FShop\BackEnd\code\buoi1\VietLD3_NPLC_Assignment1\Net.M.A001.Exercise2\obj\Debug\net6.0\Net.M.A001.Exercise2.csproj.CoreCompileInputs.cache
+D:\code_\FShop\BackEnd\code\buoi1\VietLD3_NPLC_Assignment1\Net.M.A001.Exercise2\obj\Debug\net6.0\Net.M.A001.Exercise2.dll
+D:\code_\FShop\BackEnd\code\buoi1\VietLD3_NPLC_Assignment1\Net.M.A001.Exercise2\obj\Debug\net6.0\refint\Net.M.A001.Exercise2.dll
+D:\code_\FShop\BackEnd\code\buoi1\VietLD3_NPLC_Assignment1\Net.M.A001.Exercise2\obj\Debug\net6.0\Net.M.A001.Exercise2.pdb
+D:\code_\FShop\BackEnd\code\buoi1\VietLD3_NPLC_Assignment1\Net.M.A001.Exercise2\obj\Debug\net6.0\Net.M.A001.Exercise2.genruntimeconfig.cache
+D:\code_\FShop\BackEnd\code\buoi1\VietLD3_NPLC_Assignment1\Net.M.A001.Exercise2\obj\Debug\net6.0\ref\Net.M.A001.Exercise2.dll

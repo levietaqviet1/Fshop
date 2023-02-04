@@ -1,0 +1,15 @@
+D:\code_\FShop\BackEnd\code\buoi3\Net.M.008\Net.M.008.Exercise1\bin\Debug\net6.0\Net.M.008.Exercise1.exe
+D:\code_\FShop\BackEnd\code\buoi3\Net.M.008\Net.M.008.Exercise1\bin\Debug\net6.0\Net.M.008.Exercise1.deps.json
+D:\code_\FShop\BackEnd\code\buoi3\Net.M.008\Net.M.008.Exercise1\bin\Debug\net6.0\Net.M.008.Exercise1.runtimeconfig.json
+D:\code_\FShop\BackEnd\code\buoi3\Net.M.008\Net.M.008.Exercise1\bin\Debug\net6.0\Net.M.008.Exercise1.dll
+D:\code_\FShop\BackEnd\code\buoi3\Net.M.008\Net.M.008.Exercise1\bin\Debug\net6.0\Net.M.008.Exercise1.pdb
+D:\code_\FShop\BackEnd\code\buoi3\Net.M.008\Net.M.008.Exercise1\obj\Debug\net6.0\Net.M.008.Exercise1.csproj.AssemblyReference.cache
+D:\code_\FShop\BackEnd\code\buoi3\Net.M.008\Net.M.008.Exercise1\obj\Debug\net6.0\Net.M.008.Exercise1.GeneratedMSBuildEditorConfig.editorconfig
+D:\code_\FShop\BackEnd\code\buoi3\Net.M.008\Net.M.008.Exercise1\obj\Debug\net6.0\Net.M.008.Exercise1.AssemblyInfoInputs.cache
+D:\code_\FShop\BackEnd\code\buoi3\Net.M.008\Net.M.008.Exercise1\obj\Debug\net6.0\Net.M.008.Exercise1.AssemblyInfo.cs
+D:\code_\FShop\BackEnd\code\buoi3\Net.M.008\Net.M.008.Exercise1\obj\Debug\net6.0\Net.M.008.Exercise1.csproj.CoreCompileInputs.cache
+D:\code_\FShop\BackEnd\code\buoi3\Net.M.008\Net.M.008.Exercise1\obj\Debug\net6.0\Net.M.008.Exercise1.dll
+D:\code_\FShop\BackEnd\code\buoi3\Net.M.008\Net.M.008.Exercise1\obj\Debug\net6.0\refint\Net.M.008.Exercise1.dll
+D:\code_\FShop\BackEnd\code\buoi3\Net.M.008\Net.M.008.Exercise1\obj\Debug\net6.0\Net.M.008.Exercise1.pdb
+D:\code_\FShop\BackEnd\code\buoi3\Net.M.008\Net.M.008.Exercise1\obj\Debug\net6.0\Net.M.008.Exercise1.genruntimeconfig.cache
+D:\code_\FShop\BackEnd\code\buoi3\Net.M.008\Net.M.008.Exercise1\obj\Debug\net6.0\ref\Net.M.008.Exercise1.dll
