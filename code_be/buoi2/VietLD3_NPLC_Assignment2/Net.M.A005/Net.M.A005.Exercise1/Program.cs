@@ -9,21 +9,41 @@
     {
         int decimalNumber = GetInt("Input decimalNumber: "); // nhập số
         string binary = Convert.ToString(decimalNumber, 2); //chuyển đổi số nguyên decimalNumber thành chuỗi nhị phân (binary).
-        Console.WriteLine("Binary representation of {0} is {1}", decimalNumber, binary);   
+        Console.WriteLine($"Binary representation of {decimalNumber} is {binary}");
     }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="mess"></param>
+    /// <returns></returns>
     public static int GetInt(string mess)
     {
-        int a = 0;
-        try
+        int a = -1;
+        do
         {
-            Console.Write(mess);
-            a = int.Parse(Console.ReadLine()); // dùng Console.ReadLine() để nhập chữ sau đó dùng int.Parse để ép kiểu sang int
-        }
-        catch (Exception)
-        {
+            try
+            {
+                Console.Write(mess);
+                a = int.Parse(Console.ReadLine()); // dùng Console.ReadLine() để nhập chữ sau đó dùng int.Parse để ép kiểu sang int
+                if (a >= 0)
+                {
+                    return a;
+                }
+                else
+                {
+                    a = -1;
+                }
+            }
+            catch (Exception)
+            {
+            }
 
-            return GetInt(mess); // dùng đệ quy
-        }
+        } while (a == -1);
+
         return a;
     }
+
+
+    //TODO: check
 }

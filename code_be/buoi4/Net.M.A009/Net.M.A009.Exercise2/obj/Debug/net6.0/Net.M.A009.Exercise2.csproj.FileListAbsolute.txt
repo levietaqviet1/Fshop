@@ -1,0 +1,15 @@
+D:\GIT\Fshop\code_be\buoi4\Net.M.A009\Net.M.A009.Exercise2\bin\Debug\net6.0\Net.M.A009.Exercise2.exe
+D:\GIT\Fshop\code_be\buoi4\Net.M.A009\Net.M.A009.Exercise2\bin\Debug\net6.0\Net.M.A009.Exercise2.deps.json
+D:\GIT\Fshop\code_be\buoi4\Net.M.A009\Net.M.A009.Exercise2\bin\Debug\net6.0\Net.M.A009.Exercise2.runtimeconfig.json
+D:\GIT\Fshop\code_be\buoi4\Net.M.A009\Net.M.A009.Exercise2\bin\Debug\net6.0\Net.M.A009.Exercise2.dll
+D:\GIT\Fshop\code_be\buoi4\Net.M.A009\Net.M.A009.Exercise2\bin\Debug\net6.0\Net.M.A009.Exercise2.pdb
+D:\GIT\Fshop\code_be\buoi4\Net.M.A009\Net.M.A009.Exercise2\obj\Debug\net6.0\Net.M.A009.Exercise2.csproj.AssemblyReference.cache
+D:\GIT\Fshop\code_be\buoi4\Net.M.A009\Net.M.A009.Exercise2\obj\Debug\net6.0\Net.M.A009.Exercise2.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\Fshop\code_be\buoi4\Net.M.A009\Net.M.A009.Exercise2\obj\Debug\net6.0\Net.M.A009.Exercise2.AssemblyInfoInputs.cache
+D:\GIT\Fshop\code_be\buoi4\Net.M.A009\Net.M.A009.Exercise2\obj\Debug\net6.0\Net.M.A009.Exercise2.AssemblyInfo.cs
+D:\GIT\Fshop\code_be\buoi4\Net.M.A009\Net.M.A009.Exercise2\obj\Debug\net6.0\Net.M.A009.Exercise2.csproj.CoreCompileInputs.cache
+D:\GIT\Fshop\code_be\buoi4\Net.M.A009\Net.M.A009.Exercise2\obj\Debug\net6.0\Net.M.A009.Exercise2.dll
+D:\GIT\Fshop\code_be\buoi4\Net.M.A009\Net.M.A009.Exercise2\obj\Debug\net6.0\refint\Net.M.A009.Exercise2.dll
+D:\GIT\Fshop\code_be\buoi4\Net.M.A009\Net.M.A009.Exercise2\obj\Debug\net6.0\Net.M.A009.Exercise2.pdb
+D:\GIT\Fshop\code_be\buoi4\Net.M.A009\Net.M.A009.Exercise2\obj\Debug\net6.0\Net.M.A009.Exercise2.genruntimeconfig.cache
+D:\GIT\Fshop\code_be\buoi4\Net.M.A009\Net.M.A009.Exercise2\obj\Debug\net6.0\ref\Net.M.A009.Exercise2.dll

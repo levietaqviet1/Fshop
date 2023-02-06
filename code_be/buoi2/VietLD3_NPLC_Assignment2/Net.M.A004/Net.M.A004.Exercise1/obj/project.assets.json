@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\code_\\FShop\\BackEnd\\code\\buoi2\\VietLD3_NPLC_Assignment2\\Net.M.A004\\Net.M.A004.Exercise1\\Net.M.A004.Exercise1.csproj",
+      "projectUniqueName": "D:\\GIT\\Fshop\\code_be\\buoi2\\VietLD3_NPLC_Assignment2\\Net.M.A004\\Net.M.A004.Exercise1\\Net.M.A004.Exercise1.csproj",
       "projectName": "Net.M.A004.Exercise1",
-      "projectPath": "D:\\code_\\FShop\\BackEnd\\code\\buoi2\\VietLD3_NPLC_Assignment2\\Net.M.A004\\Net.M.A004.Exercise1\\Net.M.A004.Exercise1.csproj",
+      "projectPath": "D:\\GIT\\Fshop\\code_be\\buoi2\\VietLD3_NPLC_Assignment2\\Net.M.A004\\Net.M.A004.Exercise1\\Net.M.A004.Exercise1.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "D:\\code_\\FShop\\BackEnd\\code\\buoi2\\VietLD3_NPLC_Assignment2\\Net.M.A004\\Net.M.A004.Exercise1\\obj\\",
+      "outputPath": "D:\\GIT\\Fshop\\code_be\\buoi2\\VietLD3_NPLC_Assignment2\\Net.M.A004\\Net.M.A004.Exercise1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
