@@ -26,7 +26,7 @@ namespace Net.M.A011.Exercise3
         /// Giá bằng RegularPrice - ManufacturerDiscount
         /// </summary>
         /// <returns></returns>
-        public double GetSalePrice()
+        public override double GetSalePrice()
         {
             return base.RegularPrice - this.ManufacturerDiscount;
         }

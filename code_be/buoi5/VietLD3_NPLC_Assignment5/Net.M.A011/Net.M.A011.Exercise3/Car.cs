@@ -26,7 +26,7 @@ namespace Net.M.A011.Exercise3
         /// Trả về giá trị
         /// </summary>
         /// <returns></returns>
-        public double GetSalePrice()
+        public virtual double GetSalePrice()
         {
             return RegularPrice;
         }

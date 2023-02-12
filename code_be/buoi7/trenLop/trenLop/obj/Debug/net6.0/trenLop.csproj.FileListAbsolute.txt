@@ -1,0 +1,15 @@
+D:\GIT\Fshop\code_be\buoi7\trenLop\trenLop\bin\Debug\net6.0\trenLop.exe
+D:\GIT\Fshop\code_be\buoi7\trenLop\trenLop\bin\Debug\net6.0\trenLop.deps.json
+D:\GIT\Fshop\code_be\buoi7\trenLop\trenLop\bin\Debug\net6.0\trenLop.runtimeconfig.json
+D:\GIT\Fshop\code_be\buoi7\trenLop\trenLop\bin\Debug\net6.0\trenLop.dll
+D:\GIT\Fshop\code_be\buoi7\trenLop\trenLop\bin\Debug\net6.0\trenLop.pdb
+D:\GIT\Fshop\code_be\buoi7\trenLop\trenLop\obj\Debug\net6.0\trenLop.csproj.AssemblyReference.cache
+D:\GIT\Fshop\code_be\buoi7\trenLop\trenLop\obj\Debug\net6.0\trenLop.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\Fshop\code_be\buoi7\trenLop\trenLop\obj\Debug\net6.0\trenLop.AssemblyInfoInputs.cache
+D:\GIT\Fshop\code_be\buoi7\trenLop\trenLop\obj\Debug\net6.0\trenLop.AssemblyInfo.cs
+D:\GIT\Fshop\code_be\buoi7\trenLop\trenLop\obj\Debug\net6.0\trenLop.csproj.CoreCompileInputs.cache
+D:\GIT\Fshop\code_be\buoi7\trenLop\trenLop\obj\Debug\net6.0\trenLop.dll
+D:\GIT\Fshop\code_be\buoi7\trenLop\trenLop\obj\Debug\net6.0\refint\trenLop.dll
+D:\GIT\Fshop\code_be\buoi7\trenLop\trenLop\obj\Debug\net6.0\trenLop.pdb
+D:\GIT\Fshop\code_be\buoi7\trenLop\trenLop\obj\Debug\net6.0\trenLop.genruntimeconfig.cache
+D:\GIT\Fshop\code_be\buoi7\trenLop\trenLop\obj\Debug\net6.0\ref\trenLop.dll

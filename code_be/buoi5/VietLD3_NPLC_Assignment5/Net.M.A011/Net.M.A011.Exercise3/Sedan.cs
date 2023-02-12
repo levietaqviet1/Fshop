@@ -23,7 +23,7 @@ namespace Net.M.A011.Exercise3
         /// nếu độ dài dưới 20 thì giảm 5% còn không thì giảm 10%
         /// </summary>
         /// <returns></returns>
-        public double GetSalePrice()
+        public override double GetSalePrice()
         {
             if (this.Length > 20)
             {

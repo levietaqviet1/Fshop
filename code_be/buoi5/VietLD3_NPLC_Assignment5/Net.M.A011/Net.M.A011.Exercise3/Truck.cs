@@ -23,7 +23,7 @@ namespace Net.M.A011.Exercise3
         /// nếu Weight trên 200 thì giảm 10% còn ko thì giảm 20%
         /// </summary>
         /// <returns></returns>
-        public double GetSalePrice()
+        public override double GetSalePrice()
         {
             if (this.Weight > 2000)
             {
