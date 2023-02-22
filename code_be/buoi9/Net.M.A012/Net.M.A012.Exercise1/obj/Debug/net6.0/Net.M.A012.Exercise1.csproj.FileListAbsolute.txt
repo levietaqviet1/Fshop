@@ -1,0 +1,15 @@
+D:\GIT\Fshop\code_be\buoi9\Net.M.A012\Net.M.A012.Exercise1\obj\Debug\net6.0\Net.M.A012.Exercise1.csproj.AssemblyReference.cache
+D:\GIT\Fshop\code_be\buoi9\Net.M.A012\Net.M.A012.Exercise1\obj\Debug\net6.0\Net.M.A012.Exercise1.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\Fshop\code_be\buoi9\Net.M.A012\Net.M.A012.Exercise1\obj\Debug\net6.0\Net.M.A012.Exercise1.AssemblyInfoInputs.cache
+D:\GIT\Fshop\code_be\buoi9\Net.M.A012\Net.M.A012.Exercise1\obj\Debug\net6.0\Net.M.A012.Exercise1.AssemblyInfo.cs
+D:\GIT\Fshop\code_be\buoi9\Net.M.A012\Net.M.A012.Exercise1\obj\Debug\net6.0\Net.M.A012.Exercise1.csproj.CoreCompileInputs.cache
+D:\GIT\Fshop\code_be\buoi9\Net.M.A012\Net.M.A012.Exercise1\bin\Debug\net6.0\Net.M.A012.Exercise1.exe
+D:\GIT\Fshop\code_be\buoi9\Net.M.A012\Net.M.A012.Exercise1\bin\Debug\net6.0\Net.M.A012.Exercise1.deps.json
+D:\GIT\Fshop\code_be\buoi9\Net.M.A012\Net.M.A012.Exercise1\bin\Debug\net6.0\Net.M.A012.Exercise1.runtimeconfig.json
+D:\GIT\Fshop\code_be\buoi9\Net.M.A012\Net.M.A012.Exercise1\bin\Debug\net6.0\Net.M.A012.Exercise1.dll
+D:\GIT\Fshop\code_be\buoi9\Net.M.A012\Net.M.A012.Exercise1\bin\Debug\net6.0\Net.M.A012.Exercise1.pdb
+D:\GIT\Fshop\code_be\buoi9\Net.M.A012\Net.M.A012.Exercise1\obj\Debug\net6.0\Net.M.A012.Exercise1.dll
+D:\GIT\Fshop\code_be\buoi9\Net.M.A012\Net.M.A012.Exercise1\obj\Debug\net6.0\refint\Net.M.A012.Exercise1.dll
+D:\GIT\Fshop\code_be\buoi9\Net.M.A012\Net.M.A012.Exercise1\obj\Debug\net6.0\Net.M.A012.Exercise1.pdb
+D:\GIT\Fshop\code_be\buoi9\Net.M.A012\Net.M.A012.Exercise1\obj\Debug\net6.0\Net.M.A012.Exercise1.genruntimeconfig.cache
+D:\GIT\Fshop\code_be\buoi9\Net.M.A012\Net.M.A012.Exercise1\obj\Debug\net6.0\ref\Net.M.A012.Exercise1.dll
