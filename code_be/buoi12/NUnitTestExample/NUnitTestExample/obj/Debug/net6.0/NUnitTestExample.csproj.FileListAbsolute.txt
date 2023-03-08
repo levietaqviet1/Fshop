@@ -1,0 +1,15 @@
+D:\GIT\Fshop\code_be\buoi12\NUnitTestExample\NUnitTestExample\bin\Debug\net6.0\NUnitTestExample.exe
+D:\GIT\Fshop\code_be\buoi12\NUnitTestExample\NUnitTestExample\bin\Debug\net6.0\NUnitTestExample.deps.json
+D:\GIT\Fshop\code_be\buoi12\NUnitTestExample\NUnitTestExample\bin\Debug\net6.0\NUnitTestExample.runtimeconfig.json
+D:\GIT\Fshop\code_be\buoi12\NUnitTestExample\NUnitTestExample\bin\Debug\net6.0\NUnitTestExample.dll
+D:\GIT\Fshop\code_be\buoi12\NUnitTestExample\NUnitTestExample\bin\Debug\net6.0\NUnitTestExample.pdb
+D:\GIT\Fshop\code_be\buoi12\NUnitTestExample\NUnitTestExample\obj\Debug\net6.0\NUnitTestExample.csproj.AssemblyReference.cache
+D:\GIT\Fshop\code_be\buoi12\NUnitTestExample\NUnitTestExample\obj\Debug\net6.0\NUnitTestExample.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\Fshop\code_be\buoi12\NUnitTestExample\NUnitTestExample\obj\Debug\net6.0\NUnitTestExample.AssemblyInfoInputs.cache
+D:\GIT\Fshop\code_be\buoi12\NUnitTestExample\NUnitTestExample\obj\Debug\net6.0\NUnitTestExample.AssemblyInfo.cs
+D:\GIT\Fshop\code_be\buoi12\NUnitTestExample\NUnitTestExample\obj\Debug\net6.0\NUnitTestExample.csproj.CoreCompileInputs.cache
+D:\GIT\Fshop\code_be\buoi12\NUnitTestExample\NUnitTestExample\obj\Debug\net6.0\NUnitTestExample.dll
+D:\GIT\Fshop\code_be\buoi12\NUnitTestExample\NUnitTestExample\obj\Debug\net6.0\refint\NUnitTestExample.dll
+D:\GIT\Fshop\code_be\buoi12\NUnitTestExample\NUnitTestExample\obj\Debug\net6.0\NUnitTestExample.pdb
+D:\GIT\Fshop\code_be\buoi12\NUnitTestExample\NUnitTestExample\obj\Debug\net6.0\NUnitTestExample.genruntimeconfig.cache
+D:\GIT\Fshop\code_be\buoi12\NUnitTestExample\NUnitTestExample\obj\Debug\net6.0\ref\NUnitTestExample.dll

@@ -1,0 +1,15 @@
+D:\GIT\Fshop\code_be\fe\NPL_FinalTest_VietLD3\NPL.Practice.T101\NPL.Practice.T101.Problem03\bin\Debug\net6.0\NPL.Practice.T101.Problem03.exe
+D:\GIT\Fshop\code_be\fe\NPL_FinalTest_VietLD3\NPL.Practice.T101\NPL.Practice.T101.Problem03\bin\Debug\net6.0\NPL.Practice.T101.Problem03.deps.json
+D:\GIT\Fshop\code_be\fe\NPL_FinalTest_VietLD3\NPL.Practice.T101\NPL.Practice.T101.Problem03\bin\Debug\net6.0\NPL.Practice.T101.Problem03.runtimeconfig.json
+D:\GIT\Fshop\code_be\fe\NPL_FinalTest_VietLD3\NPL.Practice.T101\NPL.Practice.T101.Problem03\bin\Debug\net6.0\NPL.Practice.T101.Problem03.dll
+D:\GIT\Fshop\code_be\fe\NPL_FinalTest_VietLD3\NPL.Practice.T101\NPL.Practice.T101.Problem03\bin\Debug\net6.0\NPL.Practice.T101.Problem03.pdb
+D:\GIT\Fshop\code_be\fe\NPL_FinalTest_VietLD3\NPL.Practice.T101\NPL.Practice.T101.Problem03\obj\Debug\net6.0\NPL.Practice.T101.Problem03.csproj.AssemblyReference.cache
+D:\GIT\Fshop\code_be\fe\NPL_FinalTest_VietLD3\NPL.Practice.T101\NPL.Practice.T101.Problem03\obj\Debug\net6.0\NPL.Practice.T101.Problem03.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\Fshop\code_be\fe\NPL_FinalTest_VietLD3\NPL.Practice.T101\NPL.Practice.T101.Problem03\obj\Debug\net6.0\NPL.Practice.T101.Problem03.AssemblyInfoInputs.cache
+D:\GIT\Fshop\code_be\fe\NPL_FinalTest_VietLD3\NPL.Practice.T101\NPL.Practice.T101.Problem03\obj\Debug\net6.0\NPL.Practice.T101.Problem03.AssemblyInfo.cs
+D:\GIT\Fshop\code_be\fe\NPL_FinalTest_VietLD3\NPL.Practice.T101\NPL.Practice.T101.Problem03\obj\Debug\net6.0\NPL.Practice.T101.Problem03.csproj.CoreCompileInputs.cache
+D:\GIT\Fshop\code_be\fe\NPL_FinalTest_VietLD3\NPL.Practice.T101\NPL.Practice.T101.Problem03\obj\Debug\net6.0\NPL.Practice.T101.Problem03.dll
+D:\GIT\Fshop\code_be\fe\NPL_FinalTest_VietLD3\NPL.Practice.T101\NPL.Practice.T101.Problem03\obj\Debug\net6.0\refint\NPL.Practice.T101.Problem03.dll
+D:\GIT\Fshop\code_be\fe\NPL_FinalTest_VietLD3\NPL.Practice.T101\NPL.Practice.T101.Problem03\obj\Debug\net6.0\NPL.Practice.T101.Problem03.pdb
+D:\GIT\Fshop\code_be\fe\NPL_FinalTest_VietLD3\NPL.Practice.T101\NPL.Practice.T101.Problem03\obj\Debug\net6.0\NPL.Practice.T101.Problem03.genruntimeconfig.cache
+D:\GIT\Fshop\code_be\fe\NPL_FinalTest_VietLD3\NPL.Practice.T101\NPL.Practice.T101.Problem03\obj\Debug\net6.0\ref\NPL.Practice.T101.Problem03.dll

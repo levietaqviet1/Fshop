@@ -1,0 +1,9 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(154, 65, 236, 0.158); 
+} 
+.bg-while{
+    background-color: white
+}

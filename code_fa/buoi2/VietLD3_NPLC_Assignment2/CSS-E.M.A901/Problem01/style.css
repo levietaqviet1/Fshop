@@ -1,0 +1,13 @@
+.container{
+    background-image: url(balloons.jpg);
+     
+    border: 5px solid black;
+    border-radius: 10px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.container h2{
+    color: white;
+}
+ 
