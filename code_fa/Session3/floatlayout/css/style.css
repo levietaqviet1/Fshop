@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+header {
+  height: 200px;
+  background-color: blue;
+}
+footer {
+  height: 120px;
+  background-color: blueviolet;
+  color: white;
+}
+nav {
+  height: 40px;
+  background-color: aqua;
+  padding: 0px;
+}
+nav ul {
+  margin: 0;
+}
+nav ul li {
+  display: inline-block;
+  padding: 7px 10px;
+}
+nav ul li a {
+  text-decoration: none;
+}
+
+.col {
+  float: left;
+  border: 1px solid red;
+}
+
+.col-1{
+    width: 20%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-2 {
+  width: 50%;
+}
+.row::after{
+    clear: both;
+    content: '';
+    display: table;
+}

@@ -1,0 +1,15 @@
+D:\GIT\Fshop\code_be\fe\ConsoleApp1\ConsoleApp2\bin\Debug\net6.0\ConsoleApp2.exe
+D:\GIT\Fshop\code_be\fe\ConsoleApp1\ConsoleApp2\bin\Debug\net6.0\ConsoleApp2.deps.json
+D:\GIT\Fshop\code_be\fe\ConsoleApp1\ConsoleApp2\bin\Debug\net6.0\ConsoleApp2.runtimeconfig.json
+D:\GIT\Fshop\code_be\fe\ConsoleApp1\ConsoleApp2\bin\Debug\net6.0\ConsoleApp2.dll
+D:\GIT\Fshop\code_be\fe\ConsoleApp1\ConsoleApp2\bin\Debug\net6.0\ConsoleApp2.pdb
+D:\GIT\Fshop\code_be\fe\ConsoleApp1\ConsoleApp2\obj\Debug\net6.0\ConsoleApp2.csproj.AssemblyReference.cache
+D:\GIT\Fshop\code_be\fe\ConsoleApp1\ConsoleApp2\obj\Debug\net6.0\ConsoleApp2.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\Fshop\code_be\fe\ConsoleApp1\ConsoleApp2\obj\Debug\net6.0\ConsoleApp2.AssemblyInfoInputs.cache
+D:\GIT\Fshop\code_be\fe\ConsoleApp1\ConsoleApp2\obj\Debug\net6.0\ConsoleApp2.AssemblyInfo.cs
+D:\GIT\Fshop\code_be\fe\ConsoleApp1\ConsoleApp2\obj\Debug\net6.0\ConsoleApp2.csproj.CoreCompileInputs.cache
+D:\GIT\Fshop\code_be\fe\ConsoleApp1\ConsoleApp2\obj\Debug\net6.0\ConsoleApp2.dll
+D:\GIT\Fshop\code_be\fe\ConsoleApp1\ConsoleApp2\obj\Debug\net6.0\refint\ConsoleApp2.dll
+D:\GIT\Fshop\code_be\fe\ConsoleApp1\ConsoleApp2\obj\Debug\net6.0\ConsoleApp2.pdb
+D:\GIT\Fshop\code_be\fe\ConsoleApp1\ConsoleApp2\obj\Debug\net6.0\ConsoleApp2.genruntimeconfig.cache
+D:\GIT\Fshop\code_be\fe\ConsoleApp1\ConsoleApp2\obj\Debug\net6.0\ref\ConsoleApp2.dll

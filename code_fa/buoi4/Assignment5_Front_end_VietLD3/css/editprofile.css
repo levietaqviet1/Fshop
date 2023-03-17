@@ -1,0 +1,118 @@
+* { 
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background-color: #f0f0f0;
+    z-index: 1;
+}
+
+header .header-cms {
+    float: left;
+    line-height: 46px;
+    padding: 0 24px;
+    font-size: large;
+}
+
+.header-text {
+    text-decoration: none;
+    color: #333;
+}
+
+header .userprofile {
+    float: right;
+    line-height: 46px;
+    padding: 0 24px;
+}
+
+.btn-dowm {
+    border: none !important;
+}
+
+.btn-dowm:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+  
+.dropdown ul li:first-child {
+    border-bottom: 1px solid #ccc;
+}
+
+.dropdown-menu {
+    box-shadow: #f0f0f0 !important;
+}
+
+.btn-search:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.item-list {
+    background-color: #f0f0f0;
+}
+
+main {
+    height: 700px;
+}
+
+.views-content {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.forms-content {
+    border-bottom: 1px solid #ccc;
+}
+
+.view ,
+.form
+{
+    text-decoration: none;
+}
+
+.views-content:hover ,
+.forms-content:hover {
+    background-color: #ccc;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+.container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.header-form {
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+}
+
+.content {
+    width: 75%;
+}
+
+.sub-btn {
+    background-color: #fff;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.sub-btn:hover {
+    background-color: #ccc;
+}
+
+span {
+    color: red;
+}

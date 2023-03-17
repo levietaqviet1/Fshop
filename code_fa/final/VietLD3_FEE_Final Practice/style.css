@@ -1,0 +1,288 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.btn-blue {
+    background-color: blue;
+}
+
+.btn-c-white {
+    color: white;
+}
+
+header {
+    display: block;
+    border-bottom: 1px white;
+    text-align: center;
+}
+
+header .hea {
+    display: block;
+    line-height: 50px
+}
+
+header .hea .hea1 {
+    display: inline-block;
+    width: 60%;
+    float: left;
+    font-weight: bold;
+}
+
+.clear {
+    clear: both;
+}
+
+header .hea .hea2 {
+    width: 40%;
+    float: right;
+    color: aliceblue;
+}
+
+header .hea .hea2 button {
+    background-color: rgb(72, 72, 255);
+    color: aliceblue;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.img {
+    position: relative;
+}
+
+.img img {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.img .title {
+    position: absolute;
+    top: 20%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    color: #fff;
+}
+
+.title p {
+    margin-bottom: 20px;
+}
+
+.button-Input {
+    display: block;
+}
+
+.button-signUp {
+    display: block;
+}
+
+footer {
+    display: block;
+}
+
+@media(max-width: 767px) {
+    .img img {
+        height: 400px;
+    }
+
+    .img .title h2 {
+        margin-bottom: 15px;
+    }
+
+    .button-Input {
+        padding-left: 5px;
+        padding-right: 150px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: 0;
+        border-radius: 5px;
+        font-size: large;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+    }
+
+    .button-signUp {
+        text-align: center;
+        padding-left: 150px;
+        padding-right: 150px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: 0;
+        border-radius: 5px;
+        font-size: large;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+    }
+
+    .col3 {
+        display: block;
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 60px;
+
+    }
+
+    .col3 p {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .cos3 {
+        display: block;
+
+    }
+
+    .cos3 img {
+        width: 100%;
+    }
+
+    .cos3 .title {
+        letter-spacing: 2px;
+        margin: 10%;
+    }
+
+    .rows {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        text-align: center;
+        background-color: rgb(233, 226, 226);
+    }
+
+    .row-profile {
+        display: block;
+        padding: 40px;
+    }
+
+    .row-profile img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    footer {
+        padding: 25px 0px;
+        text-align: center;
+    }
+
+    footer ul li {
+        display: inline-block;
+
+        padding: 0 5px;
+        color: rgba(22, 22, 235, 0.821);
+        font-size: large;
+    }
+}
+
+@media(min-width: 767px) {
+    .img img {
+        height: 400px;
+    }
+
+    .img .title h2 {
+        margin-bottom: 15px;
+        font-size: xx-large;
+    }
+
+    .button-Input {
+        display: inline-block;
+        padding-left: 15px;
+        padding-right: 400px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: 0;
+        border-radius: 5px;
+        font-size: large;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+    }
+
+    .button-signUp {
+        display: inline-block;
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: 0;
+        border-radius: 5px;
+        font-size: large;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+    }
+
+    .row {
+        display: flex;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .col3 {
+        width: 33%;
+        text-align: center;
+    }
+
+    .row-fill {
+        display: block;
+        max-height: 200px;
+    }
+
+    main .title {
+        text-align: center; 
+        padding: 100px;
+    }
+ 
+    .left {
+        float: left;
+        width: 50%;
+        height: 300px;
+    }
+
+    .right {
+        float: right;
+        width: 50%;
+        height: 300px;
+    }
+
+
+    .rows {
+        display: block;
+        text-align: center; 
+        padding-top: 70px;
+    }
+
+    .rows h2 {}
+
+    .row-profile {
+       width: 33%;
+    }
+
+    .row-profile img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    footer {
+        padding: 25px 0px;
+        text-align: center;
+    }
+
+    footer ul li {
+        display: inline-block;
+
+        padding: 0 5px;
+        color: rgba(22, 22, 235, 0.821);
+        font-size: large;
+    }
+}
