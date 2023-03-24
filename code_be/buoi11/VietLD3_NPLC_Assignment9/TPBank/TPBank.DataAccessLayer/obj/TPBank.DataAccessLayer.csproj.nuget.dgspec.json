@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GIT\\Fshop\\code_be\\buoi11\\TPBank\\TPBank.DataAccessLayer\\TPBank.DataAccessLayer.csproj": {}
+    "D:\\GIT\\Fshop\\code_be\\buoi11\\VietLD3_NPLC_Assignment9\\TPBank\\TPBank.DataAccessLayer\\TPBank.DataAccessLayer.csproj": {}
   },
   "projects": {
-    "D:\\GIT\\Fshop\\code_be\\buoi11\\TPBank\\TPBank.DataAccessLayer\\TPBank.DataAccessLayer.csproj": {
+    "D:\\GIT\\Fshop\\code_be\\buoi11\\VietLD3_NPLC_Assignment9\\TPBank\\TPBank.DataAccessLayer\\TPBank.DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GIT\\Fshop\\code_be\\buoi11\\TPBank\\TPBank.DataAccessLayer\\TPBank.DataAccessLayer.csproj",
+        "projectUniqueName": "D:\\GIT\\Fshop\\code_be\\buoi11\\VietLD3_NPLC_Assignment9\\TPBank\\TPBank.DataAccessLayer\\TPBank.DataAccessLayer.csproj",
         "projectName": "TPBank.DataAccessLayer",
-        "projectPath": "D:\\GIT\\Fshop\\code_be\\buoi11\\TPBank\\TPBank.DataAccessLayer\\TPBank.DataAccessLayer.csproj",
-        "packagesPath": "C:\\Users\\NCC\\.nuget\\packages\\",
-        "outputPath": "D:\\GIT\\Fshop\\code_be\\buoi11\\TPBank\\TPBank.DataAccessLayer\\obj\\",
+        "projectPath": "D:\\GIT\\Fshop\\code_be\\buoi11\\VietLD3_NPLC_Assignment9\\TPBank\\TPBank.DataAccessLayer\\TPBank.DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "D:\\GIT\\Fshop\\code_be\\buoi11\\VietLD3_NPLC_Assignment9\\TPBank\\TPBank.DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\NCC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\GIT\\Fshop\\code_be\\buoi11\\TPBank\\TPbank.Entities\\TPbank.Entities.csproj": {
-                "projectPath": "D:\\GIT\\Fshop\\code_be\\buoi11\\TPBank\\TPbank.Entities\\TPbank.Entities.csproj"
+              "D:\\GIT\\Fshop\\code_be\\buoi11\\VietLD3_NPLC_Assignment9\\TPBank\\TPbank.Entities\\TPbank.Entities.csproj": {
+                "projectPath": "D:\\GIT\\Fshop\\code_be\\buoi11\\VietLD3_NPLC_Assignment9\\TPBank\\TPbank.Entities\\TPbank.Entities.csproj"
               },
-              "D:\\GIT\\Fshop\\code_be\\buoi11\\TPBank\\TPBank.Exceptions\\TPBank.Exceptions.csproj": {
-                "projectPath": "D:\\GIT\\Fshop\\code_be\\buoi11\\TPBank\\TPBank.Exceptions\\TPBank.Exceptions.csproj"
+              "D:\\GIT\\Fshop\\code_be\\buoi11\\VietLD3_NPLC_Assignment9\\TPBank\\TPBank.Exceptions\\TPBank.Exceptions.csproj": {
+                "projectPath": "D:\\GIT\\Fshop\\code_be\\buoi11\\VietLD3_NPLC_Assignment9\\TPBank\\TPBank.Exceptions\\TPBank.Exceptions.csproj"
               }
             }
           }
@@ -62,21 +62,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\GIT\\Fshop\\code_be\\buoi11\\TPBank\\TPbank.Entities\\TPbank.Entities.csproj": {
+    "D:\\GIT\\Fshop\\code_be\\buoi11\\VietLD3_NPLC_Assignment9\\TPBank\\TPbank.Entities\\TPbank.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GIT\\Fshop\\code_be\\buoi11\\TPBank\\TPbank.Entities\\TPbank.Entities.csproj",
+        "projectUniqueName": "D:\\GIT\\Fshop\\code_be\\buoi11\\VietLD3_NPLC_Assignment9\\TPBank\\TPbank.Entities\\TPbank.Entities.csproj",
         "projectName": "TPbank.Entities",
-        "projectPath": "D:\\GIT\\Fshop\\code_be\\buoi11\\TPBank\\TPbank.Entities\\TPbank.Entities.csproj",
-        "packagesPath": "C:\\Users\\NCC\\.nuget\\packages\\",
-        "outputPath": "D:\\GIT\\Fshop\\code_be\\buoi11\\TPBank\\TPbank.Entities\\obj\\",
+        "projectPath": "D:\\GIT\\Fshop\\code_be\\buoi11\\VietLD3_NPLC_Assignment9\\TPBank\\TPbank.Entities\\TPbank.Entities.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "D:\\GIT\\Fshop\\code_be\\buoi11\\VietLD3_NPLC_Assignment9\\TPBank\\TPbank.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\NCC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -90,8 +90,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\GIT\\Fshop\\code_be\\buoi11\\TPBank\\TPBank.Exceptions\\TPBank.Exceptions.csproj": {
-                "projectPath": "D:\\GIT\\Fshop\\code_be\\buoi11\\TPBank\\TPBank.Exceptions\\TPBank.Exceptions.csproj"
+              "D:\\GIT\\Fshop\\code_be\\buoi11\\VietLD3_NPLC_Assignment9\\TPBank\\TPBank.Exceptions\\TPBank.Exceptions.csproj": {
+                "projectPath": "D:\\GIT\\Fshop\\code_be\\buoi11\\VietLD3_NPLC_Assignment9\\TPBank\\TPBank.Exceptions\\TPBank.Exceptions.csproj"
               }
             }
           }
@@ -121,21 +121,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\GIT\\Fshop\\code_be\\buoi11\\TPBank\\TPBank.Exceptions\\TPBank.Exceptions.csproj": {
+    "D:\\GIT\\Fshop\\code_be\\buoi11\\VietLD3_NPLC_Assignment9\\TPBank\\TPBank.Exceptions\\TPBank.Exceptions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GIT\\Fshop\\code_be\\buoi11\\TPBank\\TPBank.Exceptions\\TPBank.Exceptions.csproj",
+        "projectUniqueName": "D:\\GIT\\Fshop\\code_be\\buoi11\\VietLD3_NPLC_Assignment9\\TPBank\\TPBank.Exceptions\\TPBank.Exceptions.csproj",
         "projectName": "TPBank.Exceptions",
-        "projectPath": "D:\\GIT\\Fshop\\code_be\\buoi11\\TPBank\\TPBank.Exceptions\\TPBank.Exceptions.csproj",
-        "packagesPath": "C:\\Users\\NCC\\.nuget\\packages\\",
-        "outputPath": "D:\\GIT\\Fshop\\code_be\\buoi11\\TPBank\\TPBank.Exceptions\\obj\\",
+        "projectPath": "D:\\GIT\\Fshop\\code_be\\buoi11\\VietLD3_NPLC_Assignment9\\TPBank\\TPBank.Exceptions\\TPBank.Exceptions.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "D:\\GIT\\Fshop\\code_be\\buoi11\\VietLD3_NPLC_Assignment9\\TPBank\\TPBank.Exceptions\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\NCC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -176,7 +176,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,0 +1,42 @@
+F:\Workspace\C-Sharp\FA.BookStore\FA.BookStore.Core\obj\Debug\net6.0\FA.BookStore.Core.csproj.AssemblyReference.cache
+F:\Workspace\C-Sharp\FA.BookStore\FA.BookStore.Core\obj\Debug\net6.0\FA.BookStore.Core.GeneratedMSBuildEditorConfig.editorconfig
+F:\Workspace\C-Sharp\FA.BookStore\FA.BookStore.Core\obj\Debug\net6.0\FA.BookStore.Core.AssemblyInfoInputs.cache
+F:\Workspace\C-Sharp\FA.BookStore\FA.BookStore.Core\obj\Debug\net6.0\FA.BookStore.Core.AssemblyInfo.cs
+F:\Workspace\C-Sharp\FA.BookStore\FA.BookStore.Core\obj\Debug\net6.0\FA.BookStore.Core.csproj.CoreCompileInputs.cache
+F:\Workspace\C-Sharp\FA.BookStore\FA.BookStore.Core\bin\Debug\net6.0\FA.BookStore.Core.deps.json
+F:\Workspace\C-Sharp\FA.BookStore\FA.BookStore.Core\bin\Debug\net6.0\FA.BookStore.Core.runtimeconfig.json
+F:\Workspace\C-Sharp\FA.BookStore\FA.BookStore.Core\bin\Debug\net6.0\FA.BookStore.Core.dll
+F:\Workspace\C-Sharp\FA.BookStore\FA.BookStore.Core\bin\Debug\net6.0\FA.BookStore.Core.pdb
+F:\Workspace\C-Sharp\FA.BookStore\FA.BookStore.Core\obj\Debug\net6.0\FA.BookStore.Core.dll
+F:\Workspace\C-Sharp\FA.BookStore\FA.BookStore.Core\obj\Debug\net6.0\refint\FA.BookStore.Core.dll
+F:\Workspace\C-Sharp\FA.BookStore\FA.BookStore.Core\obj\Debug\net6.0\FA.BookStore.Core.pdb
+F:\Workspace\C-Sharp\FA.BookStore\FA.BookStore.Core\obj\Debug\net6.0\FA.BookStore.Core.genruntimeconfig.cache
+F:\Workspace\C-Sharp\FA.BookStore\FA.BookStore.Core\obj\Debug\net6.0\ref\FA.BookStore.Core.dll
+C:\Users\ADMIN\Desktop\FS\Entity Framework\EF\FA.BookStore\FA.BookStore.Core\bin\Debug\net6.0\FA.BookStore.Core.deps.json
+C:\Users\ADMIN\Desktop\FS\Entity Framework\EF\FA.BookStore\FA.BookStore.Core\bin\Debug\net6.0\FA.BookStore.Core.runtimeconfig.json
+C:\Users\ADMIN\Desktop\FS\Entity Framework\EF\FA.BookStore\FA.BookStore.Core\bin\Debug\net6.0\FA.BookStore.Core.dll
+C:\Users\ADMIN\Desktop\FS\Entity Framework\EF\FA.BookStore\FA.BookStore.Core\bin\Debug\net6.0\FA.BookStore.Core.pdb
+C:\Users\ADMIN\Desktop\FS\Entity Framework\EF\FA.BookStore\FA.BookStore.Core\obj\Debug\net6.0\FA.BookStore.Core.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Desktop\FS\Entity Framework\EF\FA.BookStore\FA.BookStore.Core\obj\Debug\net6.0\FA.BookStore.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\Desktop\FS\Entity Framework\EF\FA.BookStore\FA.BookStore.Core\obj\Debug\net6.0\FA.BookStore.Core.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Desktop\FS\Entity Framework\EF\FA.BookStore\FA.BookStore.Core\obj\Debug\net6.0\FA.BookStore.Core.AssemblyInfo.cs
+C:\Users\ADMIN\Desktop\FS\Entity Framework\EF\FA.BookStore\FA.BookStore.Core\obj\Debug\net6.0\FA.BookStore.Core.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\FS\Entity Framework\EF\FA.BookStore\FA.BookStore.Core\obj\Debug\net6.0\FA.BookStore.Core.dll
+C:\Users\ADMIN\Desktop\FS\Entity Framework\EF\FA.BookStore\FA.BookStore.Core\obj\Debug\net6.0\refint\FA.BookStore.Core.dll
+C:\Users\ADMIN\Desktop\FS\Entity Framework\EF\FA.BookStore\FA.BookStore.Core\obj\Debug\net6.0\FA.BookStore.Core.pdb
+C:\Users\ADMIN\Desktop\FS\Entity Framework\EF\FA.BookStore\FA.BookStore.Core\obj\Debug\net6.0\FA.BookStore.Core.genruntimeconfig.cache
+C:\Users\ADMIN\Desktop\FS\Entity Framework\EF\FA.BookStore\FA.BookStore.Core\obj\Debug\net6.0\ref\FA.BookStore.Core.dll
+D:\GIT\Fshop\code_m4\VietLD3_Assignment1\FA.BookStore\FA.BookStore.Core\bin\Debug\net6.0\FA.BookStore.Core.deps.json
+D:\GIT\Fshop\code_m4\VietLD3_Assignment1\FA.BookStore\FA.BookStore.Core\bin\Debug\net6.0\FA.BookStore.Core.runtimeconfig.json
+D:\GIT\Fshop\code_m4\VietLD3_Assignment1\FA.BookStore\FA.BookStore.Core\bin\Debug\net6.0\FA.BookStore.Core.dll
+D:\GIT\Fshop\code_m4\VietLD3_Assignment1\FA.BookStore\FA.BookStore.Core\bin\Debug\net6.0\FA.BookStore.Core.pdb
+D:\GIT\Fshop\code_m4\VietLD3_Assignment1\FA.BookStore\FA.BookStore.Core\obj\Debug\net6.0\FA.BookStore.Core.csproj.AssemblyReference.cache
+D:\GIT\Fshop\code_m4\VietLD3_Assignment1\FA.BookStore\FA.BookStore.Core\obj\Debug\net6.0\FA.BookStore.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\Fshop\code_m4\VietLD3_Assignment1\FA.BookStore\FA.BookStore.Core\obj\Debug\net6.0\FA.BookStore.Core.AssemblyInfoInputs.cache
+D:\GIT\Fshop\code_m4\VietLD3_Assignment1\FA.BookStore\FA.BookStore.Core\obj\Debug\net6.0\FA.BookStore.Core.AssemblyInfo.cs
+D:\GIT\Fshop\code_m4\VietLD3_Assignment1\FA.BookStore\FA.BookStore.Core\obj\Debug\net6.0\FA.BookStore.Core.csproj.CoreCompileInputs.cache
+D:\GIT\Fshop\code_m4\VietLD3_Assignment1\FA.BookStore\FA.BookStore.Core\obj\Debug\net6.0\FA.BookStore.Core.dll
+D:\GIT\Fshop\code_m4\VietLD3_Assignment1\FA.BookStore\FA.BookStore.Core\obj\Debug\net6.0\refint\FA.BookStore.Core.dll
+D:\GIT\Fshop\code_m4\VietLD3_Assignment1\FA.BookStore\FA.BookStore.Core\obj\Debug\net6.0\FA.BookStore.Core.pdb
+D:\GIT\Fshop\code_m4\VietLD3_Assignment1\FA.BookStore\FA.BookStore.Core\obj\Debug\net6.0\FA.BookStore.Core.genruntimeconfig.cache
+D:\GIT\Fshop\code_m4\VietLD3_Assignment1\FA.BookStore\FA.BookStore.Core\obj\Debug\net6.0\ref\FA.BookStore.Core.dll
