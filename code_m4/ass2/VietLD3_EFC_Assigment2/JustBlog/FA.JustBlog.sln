@@ -5,7 +5,9 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FA.JustBlog.Core", "FA.JustBlog.Core\FA.JustBlog.Core.csproj", "{7AE1EF2D-7403-45F9-BB10-82C8AB002F38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FA.JustBlog.UnitTest", "FA.JustBlog.UnitTest\FA.JustBlog.UnitTest.csproj", "{EE1562D5-30C1-4BB3-98C0-48FB2A4DB4DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FA.JustBlog.UnitTest", "FA.JustBlog.UnitTest\FA.JustBlog.UnitTest.csproj", "{EE1562D5-30C1-4BB3-98C0-48FB2A4DB4DF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FA.JustBlog", "FA.JustBlog\FA.JustBlog.csproj", "{1FC91B31-E497-4B42-BE5E-86FAEB0171AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{EE1562D5-30C1-4BB3-98C0-48FB2A4DB4DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE1562D5-30C1-4BB3-98C0-48FB2A4DB4DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE1562D5-30C1-4BB3-98C0-48FB2A4DB4DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FC91B31-E497-4B42-BE5E-86FAEB0171AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FC91B31-E497-4B42-BE5E-86FAEB0171AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FC91B31-E497-4B42-BE5E-86FAEB0171AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FC91B31-E497-4B42-BE5E-86FAEB0171AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

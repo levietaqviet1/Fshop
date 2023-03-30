@@ -13,6 +13,9 @@ namespace FA.JustBlog.Core.Utill
         {
             if (string.IsNullOrEmpty(urlSlug)) return "";
 
+            // chuyển đổi thành chữ viết thường và loại bỏ khoảng trắng đầu và cuối
+            urlSlug = urlSlug.ToLower().Trim();
+
             // Chuyển đổi khoảng trắng thành dấu gạch ngang
             urlSlug = Regex.Replace(urlSlug.Trim(), @"\s+", "-");
 
@@ -22,13 +25,13 @@ namespace FA.JustBlog.Core.Utill
                 return m.Value == "." ? "dot" : "sharp";
             });
 
+            // Chuẩn hóa chuỗi tiếng Việt
+            urlSlug = RemoveVietnameseSigns(urlSlug);
+
             // Loại bỏ các ký tự không mong muốn
             urlSlug = Regex.Replace(urlSlug, @"[^a-z0-9\s-]", "");
 
-            // Chuẩn hóa chuỗi tiếng Việt
-            var normalizedUrlSlug = RemoveVietnameseSigns(urlSlug).ToLower();
-
-            return normalizedUrlSlug;
+            return urlSlug;
         }
 
         /// <summary>

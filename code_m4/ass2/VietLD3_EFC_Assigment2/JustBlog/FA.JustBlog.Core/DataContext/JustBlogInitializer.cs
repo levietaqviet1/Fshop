@@ -43,7 +43,7 @@ namespace FA.JustBlog.Core.DataContext
                         UrlSlug = "one-to-many-conventions-entity-framework-core",
                         Published = true,
                         PostedOn = DateTime.Parse("2023-02-15"),
-                        Modified = DateTime.Now,
+                        Modified = DateTime.Parse("2023-03-15"),
                         CategoryId = 1
                     },
                     new Post
@@ -54,8 +54,8 @@ namespace FA.JustBlog.Core.DataContext
                         PostContent = "PostContent2",
                         UrlSlug = "table-dataannotations-attribute-in-code-first",
                         Published = true,
-                        PostedOn = DateTime.Now,
-                        Modified = DateTime.Now,
+                        PostedOn = DateTime.Parse("2023-03-15"),
+                        Modified = DateTime.Parse("2023-03-15"),
                         CategoryId = 2
                     },
                     new Post
@@ -66,8 +66,8 @@ namespace FA.JustBlog.Core.DataContext
                         PostContent = "PostContent3",
                         UrlSlug = "demoo-abc",
                         Published = false,
-                        PostedOn = DateTime.Now,
-                        Modified = DateTime.Now,
+                        PostedOn = DateTime.Parse("2023-03-15"),
+                        Modified = DateTime.Parse("2023-03-15"),
                         CategoryId = 3
                     }
             );
