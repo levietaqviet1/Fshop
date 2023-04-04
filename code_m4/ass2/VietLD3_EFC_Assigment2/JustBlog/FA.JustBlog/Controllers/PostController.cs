@@ -1,4 +1,5 @@
 ﻿using FA.JustBlog.Core.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FA.JustBlog.Controllers
@@ -13,6 +14,7 @@ namespace FA.JustBlog.Controllers
             _postRepository = postRepository;
         }
 
+        [Authorize]
         // GET: PostController
         public ActionResult Index()
         {

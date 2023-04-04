@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head> 
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
@@ -30,6 +30,15 @@
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" asp-action="Index" asp-controller="Post">About</a></li>
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">Sample Post</a></li>
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Contact</a></li>
+                    @if (User.Identity?.IsAuthenticated ?? false)
+                    {
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/Identity/Account/Logout">Log Out</a></li>
+                    }
+                    else
+                    {
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/Identity/Account/Login">Login</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/Identity/Account/Register">Sign Up</a></li>
+                    }
                 </ul>
             </div>
         </div>
@@ -48,7 +57,7 @@
         </div>
     </header>
     <!-- Main Content-->
-  @RenderBody() 
+    @RenderBody()
     <!-- Footer-->
     <footer class="border-top">
         <div class="container px-4 px-lg-5">

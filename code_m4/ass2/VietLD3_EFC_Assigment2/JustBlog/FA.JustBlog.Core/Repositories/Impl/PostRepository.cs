@@ -10,6 +10,7 @@ namespace FA.JustBlog.Core.Repositories.Impl
     {
         public PostRepository(JustBlogContext justBlogContext = null) : base(justBlogContext)
         {
+
         }
 
         /// <summary>
