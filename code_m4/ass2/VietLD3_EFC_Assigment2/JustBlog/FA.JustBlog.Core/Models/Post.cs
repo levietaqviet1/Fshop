@@ -36,5 +36,9 @@
         public virtual IList<PostTagMap> PostTagMaps { get; set; }
         public virtual IList<Comment> Comments { get; set; }
 
+        public int UsingIdentityUserId { get; set; }
+        public UsingIdentityUser UsingIdentityUser;
+
+
     }
 }

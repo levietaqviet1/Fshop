@@ -1,23 +1,40 @@
-using FA.JustBlog.Areas.Identity.Data;
+using FA.JustBlog.Core.DataContext;
+using FA.JustBlog.Core.Models;
 using FA.JustBlog.Core.Repositories;
 using FA.JustBlog.Core.Repositories.Impl;
-using FA.JustBlog.Data;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+/* nhap
+// Add services to the container.
+// Load configuration from appsettings.json of Object B
+var configBuilder = new ConfigurationBuilder()
+    .SetBasePath(builder.Environment.ContentRootPath)
+    .AddJsonFile("..\\FA.JustBlog.Core\\appsettings.json", optional: true, reloadOnChange: true);
+var configuration = configBuilder.Build();
+
+builder.Services.AddDbContext<JustBlogContext>(options =>
+{
+    // Use the "MyCnn" connection string from Object B's appsettings.json
+    var connectionString = configuration.GetConnectionString("MyCnn");
+    options.UseSqlServer(connectionString);
+});
+
+*/
+
+
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("MyCnn");
-builder.Services.AddDbContext<FAJustBlogContext>(options =>
+builder.Services.AddDbContext<JustBlogContext>(options =>
     options.UseSqlServer(connectionString));
+
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 // RequireConfirmedAccount ko can Confirmed
 builder.Services.AddDefaultIdentity<UsingIdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
-    .AddEntityFrameworkStores<FAJustBlogContext>();
-
-
+    .AddRoles<IdentityRole>().AddEntityFrameworkStores<JustBlogContext>();
 
 builder.Services.AddControllersWithViews();
 // cau hinh identity

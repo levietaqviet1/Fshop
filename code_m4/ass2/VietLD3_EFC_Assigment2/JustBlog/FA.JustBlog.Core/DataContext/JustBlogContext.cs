@@ -1,10 +1,11 @@
 ﻿using FA.JustBlog.Core.Configs;
 using FA.JustBlog.Core.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace FA.JustBlog.Core.DataContext
 {
-    public class JustBlogContext : DbContext
+    public class JustBlogContext : IdentityDbContext<UsingIdentityUser>
     {
         /// <summary>
         /// constructor ko tham số
@@ -19,6 +20,7 @@ namespace FA.JustBlog.Core.DataContext
         /// <param name="options"></param>
         public JustBlogContext(DbContextOptions options) : base(options)
         {
+
         }
 
         /// <summary>
@@ -42,15 +44,15 @@ namespace FA.JustBlog.Core.DataContext
         /// </summary>
         public DbSet<Comment> Comments { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            base.OnConfiguring(optionsBuilder);
-            if (!optionsBuilder.IsConfigured)
-            {
-                optionsBuilder.UseSqlServer("server=.;database=DBJustBlog;Trusted_Connection=True;TrustServerCertificate=True");
-            }
-
-        }
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    base.OnConfiguring(optionsBuilder);
+        //    if (!optionsBuilder.IsConfigured)
+        //    {
+        //        var config = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
+        //        optionsBuilder.UseSqlServer(config.GetConnectionString("MyCnn"));
+        //    }
+        //}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

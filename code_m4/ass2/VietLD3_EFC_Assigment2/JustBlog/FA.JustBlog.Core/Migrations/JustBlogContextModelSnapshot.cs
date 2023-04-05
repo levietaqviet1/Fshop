@@ -94,7 +94,7 @@ namespace FA.JustBlog.Core.Migrations
                     b.Property<DateTime>("CommentTime")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
-                        .HasDefaultValue(new DateTime(2023, 3, 29, 10, 17, 47, 938, DateTimeKind.Local).AddTicks(1014));
+                        .HasDefaultValue(new DateTime(2023, 4, 5, 14, 12, 35, 91, DateTimeKind.Local).AddTicks(5338));
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -109,9 +109,17 @@ namespace FA.JustBlog.Core.Migrations
                     b.Property<int>("PostId")
                         .HasColumnType("int");
 
+                    b.Property<int>("UsingIdentityUserId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UsingIdentityUserId1")
+                        .HasColumnType("nvarchar(450)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("PostId");
+
+                    b.HasIndex("UsingIdentityUserId1");
 
                     b.ToTable("Comments", (string)null);
                 });
@@ -172,6 +180,12 @@ namespace FA.JustBlog.Core.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
+                    b.Property<int>("UsingIdentityUserId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UsingIdentityUserId1")
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<int>("ViewCount")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
@@ -181,6 +195,8 @@ namespace FA.JustBlog.Core.Migrations
 
                     b.HasIndex("CategoryId");
 
+                    b.HasIndex("UsingIdentityUserId1");
+
                     b.ToTable("Posts", (string)null);
 
                     b.HasData(
@@ -188,7 +204,7 @@ namespace FA.JustBlog.Core.Migrations
                         {
                             Id = 1,
                             CategoryId = 1,
-                            Modified = new DateTime(2023, 3, 29, 10, 17, 47, 938, DateTimeKind.Local).AddTicks(2170),
+                            Modified = new DateTime(2023, 3, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             PostContent = "PostContent1",
                             PostedOn = new DateTime(2023, 2, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Published = true,
@@ -198,15 +214,16 @@ namespace FA.JustBlog.Core.Migrations
                             Title = "Title1",
                             TotalRate = 0m,
                             UrlSlug = "one-to-many-conventions-entity-framework-core",
+                            UsingIdentityUserId = 0,
                             ViewCount = 0
                         },
                         new
                         {
                             Id = 2,
                             CategoryId = 2,
-                            Modified = new DateTime(2023, 3, 29, 10, 17, 47, 938, DateTimeKind.Local).AddTicks(2176),
+                            Modified = new DateTime(2023, 3, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             PostContent = "PostContent2",
-                            PostedOn = new DateTime(2023, 3, 29, 10, 17, 47, 938, DateTimeKind.Local).AddTicks(2175),
+                            PostedOn = new DateTime(2023, 3, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Published = true,
                             Rate = 0m,
                             RateCount = 0m,
@@ -214,15 +231,16 @@ namespace FA.JustBlog.Core.Migrations
                             Title = "Title2",
                             TotalRate = 0m,
                             UrlSlug = "table-dataannotations-attribute-in-code-first",
+                            UsingIdentityUserId = 0,
                             ViewCount = 0
                         },
                         new
                         {
                             Id = 3,
                             CategoryId = 3,
-                            Modified = new DateTime(2023, 3, 29, 10, 17, 47, 938, DateTimeKind.Local).AddTicks(2178),
+                            Modified = new DateTime(2023, 3, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             PostContent = "PostContent3",
-                            PostedOn = new DateTime(2023, 3, 29, 10, 17, 47, 938, DateTimeKind.Local).AddTicks(2177),
+                            PostedOn = new DateTime(2023, 3, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Published = false,
                             Rate = 0m,
                             RateCount = 0m,
@@ -230,6 +248,7 @@ namespace FA.JustBlog.Core.Migrations
                             Title = "Title3",
                             TotalRate = 0m,
                             UrlSlug = "demoo-abc",
+                            UsingIdentityUserId = 0,
                             ViewCount = 0
                         });
                 });
@@ -325,6 +344,212 @@ namespace FA.JustBlog.Core.Migrations
                         });
                 });
 
+            modelBuilder.Entity("FA.JustBlog.Core.Models.UsingIdentityUser", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("AccessFailedCount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<bool>("EmailConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Firstname")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<bool>("LockoutEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTimeOffset?>("LockoutEnd")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<string>("NormalizedEmail")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("NormalizedUserName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("PasswordHash")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("PhoneNumberConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("SecurityStamp")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("TwoFactorEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("UserName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedEmail")
+                        .HasDatabaseName("EmailIndex");
+
+                    b.HasIndex("NormalizedUserName")
+                        .IsUnique()
+                        .HasDatabaseName("UserNameIndex")
+                        .HasFilter("[NormalizedUserName] IS NOT NULL");
+
+                    b.ToTable("AspNetUsers", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("NormalizedName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedName")
+                        .IsUnique()
+                        .HasDatabaseName("RoleNameIndex")
+                        .HasFilter("[NormalizedName] IS NOT NULL");
+
+                    b.ToTable("AspNetRoles", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("ClaimType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RoleId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetRoleClaims", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("ClaimType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserClaims", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
+                {
+                    b.Property<string>("LoginProvider")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ProviderKey")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ProviderDisplayName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("LoginProvider", "ProviderKey");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserLogins", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("RoleId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("UserId", "RoleId");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetUserRoles", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("LoginProvider")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Value")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("UserId", "LoginProvider", "Name");
+
+                    b.ToTable("AspNetUserTokens", (string)null);
+                });
+
             modelBuilder.Entity("FA.JustBlog.Core.Models.Comment", b =>
                 {
                     b.HasOne("FA.JustBlog.Core.Models.Post", "Post")
@@ -332,6 +557,10 @@ namespace FA.JustBlog.Core.Migrations
                         .HasForeignKey("PostId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.HasOne("FA.JustBlog.Core.Models.UsingIdentityUser", null)
+                        .WithMany("Comments")
+                        .HasForeignKey("UsingIdentityUserId1");
 
                     b.Navigation("Post");
                 });
@@ -343,6 +572,10 @@ namespace FA.JustBlog.Core.Migrations
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.HasOne("FA.JustBlog.Core.Models.UsingIdentityUser", null)
+                        .WithMany("Posts")
+                        .HasForeignKey("UsingIdentityUserId1");
 
                     b.Navigation("Category");
                 });
@@ -366,6 +599,57 @@ namespace FA.JustBlog.Core.Migrations
                     b.Navigation("Tag");
                 });
 
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
+                {
+                    b.HasOne("FA.JustBlog.Core.Models.UsingIdentityUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
+                {
+                    b.HasOne("FA.JustBlog.Core.Models.UsingIdentityUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("FA.JustBlog.Core.Models.UsingIdentityUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
+                {
+                    b.HasOne("FA.JustBlog.Core.Models.UsingIdentityUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("FA.JustBlog.Core.Models.Category", b =>
                 {
                     b.Navigation("Posts");
@@ -381,6 +665,13 @@ namespace FA.JustBlog.Core.Migrations
             modelBuilder.Entity("FA.JustBlog.Core.Models.Tag", b =>
                 {
                     b.Navigation("PostTagMaps");
+                });
+
+            modelBuilder.Entity("FA.JustBlog.Core.Models.UsingIdentityUser", b =>
+                {
+                    b.Navigation("Comments");
+
+                    b.Navigation("Posts");
                 });
 #pragma warning restore 612, 618
         }
