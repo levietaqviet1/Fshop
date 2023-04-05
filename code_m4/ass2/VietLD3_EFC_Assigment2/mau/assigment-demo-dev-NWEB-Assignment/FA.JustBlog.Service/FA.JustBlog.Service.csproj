@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FA.JustBlog.Common\FA.JustBlog.Common.csproj" />
+    <ProjectReference Include="..\FA.JustBlog.Core\FA.JustBlog.Core.csproj" />
+    <ProjectReference Include="..\FA.JustBlog.Repository\FA.JustBlog.Repository.csproj" />
+    <ProjectReference Include="..\FA.JustBlog.ViewModel\FA.JustBlog.ViewModel.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="comment\" />
+    <Folder Include="post-tag-map\" />
+    <Folder Include="tag\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+  </ItemGroup>
+
+</Project>

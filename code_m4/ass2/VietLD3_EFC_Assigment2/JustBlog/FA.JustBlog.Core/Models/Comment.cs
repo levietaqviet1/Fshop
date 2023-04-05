@@ -6,18 +6,15 @@
         {
         }
 
-        public Comment(string name, string email, string commentHeader, string commentText, int postId)
+        public Comment(string commentHeader, string commentText, int postId, int usingIdentityUserId)
         {
-            Name = name;
-            Email = email;
             CommentHeader = commentHeader;
             CommentText = commentText;
-            CommentTime = DateTime.Now;
             PostId = postId;
+            UsingIdentityUserId = usingIdentityUserId;
         }
+
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string Email { get; set; }
         public string CommentHeader { get; set; }
         public string CommentText { get; set; }
         public DateTime CommentTime { get; set; }

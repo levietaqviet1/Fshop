@@ -11,9 +11,6 @@ namespace FA.JustBlog.Core.Configs
             builder.ToTable("Comments");
             builder.HasKey(x => x.Id);
             builder.Property(x => x.CommentTime).HasDefaultValue(DateTime.Now);
-            builder.Property(x => x.Name).IsRequired().HasMaxLength(255);
-            builder.Property(x => x.Email).IsRequired().HasMaxLength(255);
-            builder.Property(x => x.Name).IsRequired().HasMaxLength(255);
             builder.Property(x => x.CommentHeader).IsRequired().HasMaxLength(500);
             builder.Property(x => x.CommentText).IsRequired().HasMaxLength(500);
         }
