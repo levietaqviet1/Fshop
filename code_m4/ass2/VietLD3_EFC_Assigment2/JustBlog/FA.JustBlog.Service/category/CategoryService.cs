@@ -37,7 +37,7 @@ namespace FA.JustBlog.Service.category
             }
             catch (Exception ex)
             {
-                response.Message = "Loi 500 Server";
+                response.Message = "Loi 500 Server: " + ex.Message;
                 response.StatusCode = 500;
             }
             return response;
