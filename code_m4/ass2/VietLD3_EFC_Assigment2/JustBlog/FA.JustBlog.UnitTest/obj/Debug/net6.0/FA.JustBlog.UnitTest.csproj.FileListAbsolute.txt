@@ -1,4 +1,9 @@
 D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog.UnitTest\bin\Debug\net6.0\CoverletSourceRootsMapping
+D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog.UnitTest\obj\Debug\net6.0\FA.JustBlog.UnitTest.csproj.AssemblyReference.cache
+D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog.UnitTest\obj\Debug\net6.0\FA.JustBlog.UnitTest.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog.UnitTest\obj\Debug\net6.0\FA.JustBlog.UnitTest.AssemblyInfoInputs.cache
+D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog.UnitTest\obj\Debug\net6.0\FA.JustBlog.UnitTest.AssemblyInfo.cs
+D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog.UnitTest\obj\Debug\net6.0\FA.JustBlog.UnitTest.csproj.CoreCompileInputs.cache
 D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog.UnitTest\bin\Debug\net6.0\testhost.dll
 D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog.UnitTest\bin\Debug\net6.0\testhost.exe
 D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog.UnitTest\bin\Debug\net6.0\NUnit3.TestAdapter.dll
@@ -148,11 +153,6 @@ D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog.UnitTest\b
 D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog.UnitTest\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog.UnitTest\bin\Debug\net6.0\FA.JustBlog.Core.dll
 D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog.UnitTest\bin\Debug\net6.0\FA.JustBlog.Core.pdb
-D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog.UnitTest\obj\Debug\net6.0\FA.JustBlog.UnitTest.csproj.AssemblyReference.cache
-D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog.UnitTest\obj\Debug\net6.0\FA.JustBlog.UnitTest.GeneratedMSBuildEditorConfig.editorconfig
-D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog.UnitTest\obj\Debug\net6.0\FA.JustBlog.UnitTest.AssemblyInfoInputs.cache
-D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog.UnitTest\obj\Debug\net6.0\FA.JustBlog.UnitTest.AssemblyInfo.cs
-D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog.UnitTest\obj\Debug\net6.0\FA.JustBlog.UnitTest.csproj.CoreCompileInputs.cache
 D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog.UnitTest\obj\Debug\net6.0\FA.JustBlog.UnitTest.csproj.CopyComplete
 D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog.UnitTest\obj\Debug\net6.0\FA.JustBlog.UnitTest.dll
 D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog.UnitTest\obj\Debug\net6.0\refint\FA.JustBlog.UnitTest.dll

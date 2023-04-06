@@ -1,3 +1,11 @@
+D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog\obj\Debug\net6.0\FA.JustBlog.csproj.AssemblyReference.cache
+D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog\obj\Debug\net6.0\FA.JustBlog.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog\obj\Debug\net6.0\FA.JustBlog.AssemblyInfoInputs.cache
+D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog\obj\Debug\net6.0\FA.JustBlog.AssemblyInfo.cs
+D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog\obj\Debug\net6.0\FA.JustBlog.csproj.CoreCompileInputs.cache
+D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog\obj\Debug\net6.0\FA.JustBlog.MvcApplicationPartsAssemblyInfo.cache
+D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog\obj\Debug\net6.0\FA.JustBlog.RazorAssemblyInfo.cache
+D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog\obj\Debug\net6.0\FA.JustBlog.RazorAssemblyInfo.cs
 D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog\bin\Debug\net6.0\FA.JustBlog.staticwebassets.runtime.json
 D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog\bin\Debug\net6.0\FA.JustBlog.exe
 D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog\bin\Debug\net6.0\appsettings.json
@@ -254,15 +262,6 @@ D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog\bin\Debug\
 D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog\bin\Debug\net6.0\FA.JustBlog.Core.dll
 D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog\bin\Debug\net6.0\FA.JustBlog.Core.pdb
-D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog\obj\Debug\net6.0\FA.JustBlog.csproj.AssemblyReference.cache
-D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog\obj\Debug\net6.0\FA.JustBlog.GeneratedMSBuildEditorConfig.editorconfig
-D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog\obj\Debug\net6.0\FA.JustBlog.AssemblyInfoInputs.cache
-D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog\obj\Debug\net6.0\FA.JustBlog.AssemblyInfo.cs
-D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog\obj\Debug\net6.0\FA.JustBlog.csproj.CoreCompileInputs.cache
-D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog\obj\Debug\net6.0\FA.JustBlog.MvcApplicationPartsAssemblyInfo.cs
-D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog\obj\Debug\net6.0\FA.JustBlog.MvcApplicationPartsAssemblyInfo.cache
-D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog\obj\Debug\net6.0\FA.JustBlog.RazorAssemblyInfo.cache
-D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog\obj\Debug\net6.0\FA.JustBlog.RazorAssemblyInfo.cs
 D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog\obj\Debug\net6.0\staticwebassets\msbuild.FA.JustBlog.Microsoft.AspNetCore.StaticWebAssets.props
 D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog\obj\Debug\net6.0\staticwebassets\msbuild.build.FA.JustBlog.props
 D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.FA.JustBlog.props

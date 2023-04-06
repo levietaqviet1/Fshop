@@ -38,6 +38,7 @@ namespace FA.JustBlog.Areas.Identity.Pages.Role
             StatusMessage = "Hãy nhập thông tin để tạo role mới";
             IsUpdate = false;
             ModelState.Clear();
+            Input.ID = "1";
             return Page();
         }
         // Truy vấn lấy thông tin Role cần cập nhật
@@ -77,62 +78,73 @@ namespace FA.JustBlog.Areas.Identity.Pages.Role
 
             if (IsUpdate)
             {
-                // CẬP NHẬT
-                if (Input.ID == null)
-                {
-                    ModelState.Clear();
-                    StatusMessage = "Error: Không có thông tin về role";
-                    return Page();
-                }
-                var result = await _roleManager.FindByIdAsync(Input.ID);
-                if (result != null)
-                {
-                    result.Name = Input.Name;
-                    // Cập nhật tên Role
-                    var roleUpdateRs = await _roleManager.UpdateAsync(result);
-                    if (roleUpdateRs.Succeeded)
-                    {
-                        StatusMessage = "Đã cập nhật role thành công";
-                    }
-                    else
-                    {
-                        StatusMessage = "Error: ";
-                        foreach (var er in roleUpdateRs.Errors)
-                        {
-                            StatusMessage += er.Description;
-                        }
-                    }
-                }
-                else
-                {
-                    StatusMessage = "Error: Không tìm thấy Role cập nhật";
-                }
-
+                return await UpdateRole();
             }
             else
             {
-                // TẠO MỚI
-                var newRole = new IdentityRole(Input.Name);
-                newRole.Id = Input.ID;
-                // Thực hiện tạo Role mới
-                var rsNewRole = await _roleManager.CreateAsync(newRole);
-                if (rsNewRole.Succeeded)
+                return await AddRole();
+            }
+
+        }
+
+        private async Task<IActionResult> UpdateRole()
+        {
+            if (Input.ID == null)
+            {
+                StatusMessage = "Error: not found roleId";
+                return Page();
+            }
+
+            var result = await _roleManager.FindByIdAsync(Input.ID);
+
+            if (result != null)
+            {
+                result.Name = Input.Name;
+
+                var roleUpdateRs = await _roleManager.UpdateAsync(result);
+
+                if (roleUpdateRs.Succeeded)
                 {
-                    StatusMessage = $"Đã tạo role mới thành công: {newRole.Name}";
+                    StatusMessage = "Update Role Success!";
                     return RedirectToPage("./Index");
                 }
                 else
                 {
                     StatusMessage = "Error: ";
-                    foreach (var er in rsNewRole.Errors)
+                    foreach (var er in roleUpdateRs.Errors)
                     {
                         StatusMessage += er.Description;
                     }
                 }
             }
+            else
+            {
+                StatusMessage = "Error: Not found role";
+            }
 
             return Page();
+        }
+        private async Task<IActionResult> AddRole()
+        {
+            var newRole = new IdentityRole() { Name = Input.Name };
 
+            var rsNewRole = await _roleManager.CreateAsync(newRole);
+
+            if (rsNewRole.Succeeded)
+            {
+                StatusMessage = "Add role success!";
+                return RedirectToPage("./Index");
+            }
+            else
+            {
+                StatusMessage = "Error: ";
+                foreach (var er in rsNewRole.Errors)
+                {
+                    StatusMessage += er.Description;
+                }
+            }
+
+            return Page();
         }
     }
 }

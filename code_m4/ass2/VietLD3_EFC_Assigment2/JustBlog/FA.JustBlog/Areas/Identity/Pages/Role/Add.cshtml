@@ -2,7 +2,7 @@
 @model FA.JustBlog.Areas.Identity.Pages.Role.AddModel
 @{
     ViewData["Title"] = "Log in";
-    Layout = "~/Areas/Identity/Pages/_IdentityLayout.cshtml";
+    Layout = "~/Views/Shared/_Layout.cshtml";
     var btnText = Model.IsUpdate ? "Cập nhật" : "Tạo mới";
     var hidden = Model.IsUpdate ? "hidden" : "";
 }
@@ -14,7 +14,7 @@
             <input type="hidden" asp-for="IsUpdate">
             <div hidden class="form-group">
                 <label asp-for="Input.ID"></label>
-                <input  asp-for="Input.ID" value="1" class="form-control">
+                <input  asp-for="Input.ID" class="form-control">
                 <span asp-validation-for="Input.ID" class="text-danger"></span>
             </div>
             <div class="form-group">

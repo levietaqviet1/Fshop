@@ -45,7 +45,7 @@ namespace FA.JustBlog.Areas.Identity.Pages.Role
             var user = await _userManager.FindByIdAsync(Input.ID);
             if (user == null)
             {
-                return NotFound("Không thấy role cần xóa");
+                return NotFound("Không thấy role");
             }
 
             var roles = await _userManager.GetRolesAsync(user);

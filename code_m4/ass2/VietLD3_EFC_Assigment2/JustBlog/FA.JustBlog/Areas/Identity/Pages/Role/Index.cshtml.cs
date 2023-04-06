@@ -20,6 +20,7 @@ namespace FA.JustBlog.Areas.Identity.Pages.Role
         public async Task<IActionResult> OnGet()
         {
             roles = await _roleManager.Roles.ToListAsync();
+
             return Page();
         }
 

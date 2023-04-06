@@ -1,12 +1,105 @@
 ﻿using FA.JustBlog.Core.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace FA.JustBlog.Core.DataContext
 {
     public static class JustBlogInitializer
     {
+
+        private static string Uppercase(string name) { return name.ToUpper(); }
         public static void SeedData(this Microsoft.EntityFrameworkCore.ModelBuilder builder)
         {
             // thêm dữ liệu
+            builder.Entity<IdentityRole>().HasData
+                (
+                    new IdentityRole
+                    {
+                        Id = "db5782c7-bf14-41f7-bc1f-950128ecb3bb",
+                        Name = "Blog Owner",
+                        NormalizedName = Uppercase("Blog Owner"),
+                        ConcurrencyStamp = "b31bbed6-4919-4f52-a4b1-c45091a8fbf0"
+                    },
+                     new IdentityRole
+                     {
+                         Id = "e94a9bca-5a7a-4806-b8cd-97e9075ff13a",
+                         Name = "Contributor",
+                         NormalizedName = Uppercase("Contributor"),
+                         ConcurrencyStamp = "e22ebaa4-db51-4cb3-8f37-ad4ba73b0e1e"
+                     }
+                );
+
+            builder.Entity<UsingIdentityUser>().HasData
+                (
+                    // toàn bộ mật khẩu Abc@123
+
+                    new UsingIdentityUser
+                    {
+                        Id = "97571dcc-079e-4c3a-ba9b-bbde3d03a03d",
+                        Firstname = "Viet",
+                        LastName = "Le",
+                        UserName = "vietContributor@gmail.com",
+                        NormalizedUserName = Uppercase("vietContributor@gmail.com"),
+                        Email = "vietContributor@gmail.com",
+                        NormalizedEmail = Uppercase("vietContributor@gmail.com"),
+                        EmailConfirmed = true,
+                        PasswordHash = "AQAAAAEAACcQAAAAEJ51SmQrANatorjKkODvG7wRz8i73uIAUIHAmXRldg8ikayfZiaDQvbSOuY+XFPiJQ==",
+                        PhoneNumberConfirmed = true,
+                        TwoFactorEnabled = false,
+                        LockoutEnabled = false,
+                        AccessFailedCount = 0,
+                        PhoneNumber = "0985695635",
+
+                    },
+                     new UsingIdentityUser
+                     {
+                         Id = "21842bcb-fae8-4c00-9c33-de997d4e8103",
+                         Firstname = "Viet1",
+                         LastName = "Le",
+                         UserName = "vietBlogOwner@gmail.com",
+                         NormalizedUserName = Uppercase("vietBlogOwner@gmail.com"),
+                         Email = "vietBlogOwner@gmail.com",
+                         NormalizedEmail = Uppercase("vietBlogOwner@gmail.com"),
+                         EmailConfirmed = true,
+                         PasswordHash = "AQAAAAEAACcQAAAAEGf8AICmlUDtMuw9p1TPGYB0/OH8X60Ud06sUakpWa+Tpu2IJAZvF6Ht7DxsYeWEjA==",
+                         PhoneNumberConfirmed = true,
+                         TwoFactorEnabled = false,
+                         LockoutEnabled = false,
+                         AccessFailedCount = 0,
+                         PhoneNumber = "045896589",
+                     },
+                      new UsingIdentityUser
+                      {
+                          Id = "b0446349-235d-4b0f-a8e9-87382a82923f",
+                          Firstname = "Toan",
+                          LastName = "Nguyen",
+                          UserName = "user@gmail.com",
+                          NormalizedUserName = Uppercase("user@gmail.com"),
+                          Email = "user@gmail.com",
+                          NormalizedEmail = Uppercase("user@gmail.com"),
+                          EmailConfirmed = true,
+                          PasswordHash = "AQAAAAEAACcQAAAAED7S01cmZYmeJEKd7/wVP+HGOCSHbR/Xl2NRWyWTXB6JbwfXREcO2D908cRKtFG2Ag==",
+                          PhoneNumberConfirmed = true,
+                          TwoFactorEnabled = false,
+                          LockoutEnabled = false,
+                          AccessFailedCount = 0,
+                          PhoneNumber = "0458796598",
+                      }
+                );
+
+            builder.Entity<IdentityUserRole<string>>().HasData
+                (
+                    new IdentityUserRole<string>
+                    {
+                        RoleId = "db5782c7-bf14-41f7-bc1f-950128ecb3bb",
+                        UserId = "97571dcc-079e-4c3a-ba9b-bbde3d03a03d"
+                    },
+                    new IdentityUserRole<string>
+                    {
+                        RoleId = "e94a9bca-5a7a-4806-b8cd-97e9075ff13a",
+                        UserId = "21842bcb-fae8-4c00-9c33-de997d4e8103"
+                    }
+                );
+
 
             builder.Entity<Category>().HasData
                 (
@@ -44,7 +137,8 @@ namespace FA.JustBlog.Core.DataContext
                         Published = true,
                         PostedOn = DateTime.Parse("2023-02-15"),
                         Modified = DateTime.Parse("2023-03-15"),
-                        CategoryId = 1
+                        CategoryId = 1,
+                        UsingIdentityUserId = "97571dcc-079e-4c3a-ba9b-bbde3d03a03d"
                     },
                     new Post
                     {
@@ -56,7 +150,8 @@ namespace FA.JustBlog.Core.DataContext
                         Published = true,
                         PostedOn = DateTime.Parse("2023-03-15"),
                         Modified = DateTime.Parse("2023-03-15"),
-                        CategoryId = 2
+                        CategoryId = 2,
+                        UsingIdentityUserId = "97571dcc-079e-4c3a-ba9b-bbde3d03a03d"
                     },
                     new Post
                     {
@@ -68,7 +163,8 @@ namespace FA.JustBlog.Core.DataContext
                         Published = false,
                         PostedOn = DateTime.Parse("2023-03-15"),
                         Modified = DateTime.Parse("2023-03-15"),
-                        CategoryId = 3
+                        CategoryId = 3,
+                        UsingIdentityUserId = "21842bcb-fae8-4c00-9c33-de997d4e8103"
                     }
             );
             builder.Entity<Tag>().HasData
@@ -114,6 +210,74 @@ namespace FA.JustBlog.Core.DataContext
                     {
                         PostId = 1,
                         TagId = 3,
+                    }
+            );
+
+            builder.Entity<Comment>().HasData
+                (
+                    new Comment
+                    {
+                        Id = 1,
+                        CommentHeader = "tai sao",
+                        CommentText = "Sao bạn lại đăng thế",
+                        PostId = 1,
+                        UsingIdentityUserId = "97571dcc-079e-4c3a-ba9b-bbde3d03a03d"
+                    },
+                    new Comment
+                    {
+                        Id = 2,
+                        CommentHeader = "tai sao m vô lý thế",
+                        CommentText = "Sao bạn lại đăng thế thế",
+                        PostId = 1,
+                        UsingIdentityUserId = "97571dcc-079e-4c3a-ba9b-bbde3d03a03d"
+                    },
+                     new Comment
+                     {
+                         Id = 3,
+                         CommentHeader = "tai sao cho điểm thấp",
+                         CommentText = "Sao bạn lại đăng thế kém z",
+                         PostId = 2,
+                         UsingIdentityUserId = "97571dcc-079e-4c3a-ba9b-bbde3d03a03d"
+                     },
+                    new Comment
+                    {
+                        Id = 4,
+                        CommentHeader = "tai sao hả",
+                        CommentText = "Sao bạn lại đăng thế hả",
+                        PostId = 3,
+                        UsingIdentityUserId = "97571dcc-079e-4c3a-ba9b-bbde3d03a03d"
+                    },
+                    new Comment
+                    {
+                        Id = 5,
+                        CommentHeader = "tai sao ??????",
+                        CommentText = "Sao bạn lại đăng thế chứ",
+                        PostId = 3,
+                        UsingIdentityUserId = "97571dcc-079e-4c3a-ba9b-bbde3d03a03d"
+                    },
+                    new Comment
+                    {
+                        Id = 6,
+                        CommentHeader = "why",
+                        CommentText = "Fuck",
+                        PostId = 3,
+                        UsingIdentityUserId = "97571dcc-079e-4c3a-ba9b-bbde3d03a03d"
+                    },
+                     new Comment
+                     {
+                         Id = 7,
+                         CommentHeader = "Woww",
+                         CommentText = "Xinj quas",
+                         PostId = 3,
+                         UsingIdentityUserId = "21842bcb-fae8-4c00-9c33-de997d4e8103"
+                     },
+                    new Comment
+                    {
+                        Id = 8,
+                        CommentHeader = "!0 diem",
+                        CommentText = "te qua",
+                        PostId = 3,
+                        UsingIdentityUserId = "21842bcb-fae8-4c00-9c33-de997d4e8103"
                     }
                 );
         }

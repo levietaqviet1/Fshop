@@ -18,6 +18,7 @@ namespace FA.JustBlog.Core.Configs
             builder.Property(x => x.RateCount).HasDefaultValue(0);
             builder.Property(x => x.TotalRate).HasDefaultValue(0);
             builder.Property(x => x.Rate).HasDefaultValue(0);
+
         }
     }
 }

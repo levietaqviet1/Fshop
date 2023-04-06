@@ -38,10 +38,7 @@ namespace FA.JustBlog.Areas.Identity.Pages.Role
 
             //var cuser = await _userManager.GetUserAsync(User);
             //await _userManager.AddToRolesAsync(cuser, new string[] { "Editor" });
-            for (int i = 0; i < 100; i++)
-            {
-                await _userManager.CreateAsync(new UsingIdentityUser { Firstname = "ffewfedvev" + i, LastName = "lfefefefef" + i, UserName = "useras" + i, Email = "userafefe" + i + "@gmail.com" }, "1addcA2345678954851");
-            }
+
             if (pageNumber == 0)
                 pageNumber = 1;
 

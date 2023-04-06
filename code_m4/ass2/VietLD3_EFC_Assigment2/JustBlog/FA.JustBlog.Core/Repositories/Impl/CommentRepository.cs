@@ -18,7 +18,7 @@ namespace FA.JustBlog.Core.Repositories.Impl
         /// <param name="commentEmail"></param>
         /// <param name="commentTitle"></param>
         /// <param name="commentBody"></param>
-        public void AddComment(int postId, string commentTitle, string commentBody, int userId)
+        public void AddComment(int postId, string commentTitle, string commentBody, string userId)
         {
             Add(new Comment(commentTitle, commentBody, postId, userId));
         }

@@ -13,6 +13,7 @@ namespace FA.JustBlog.Core.Configs
             builder.Property(x => x.CommentTime).HasDefaultValue(DateTime.Now);
             builder.Property(x => x.CommentHeader).IsRequired().HasMaxLength(500);
             builder.Property(x => x.CommentText).IsRequired().HasMaxLength(500);
+
         }
     }
 }

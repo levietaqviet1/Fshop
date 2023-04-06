@@ -6,12 +6,12 @@
         {
         }
 
-        public Comment(string commentHeader, string commentText, int postId, int usingIdentityUserId)
+        public Comment(string commentHeader, string commentText, int postId, string usingIdentityUserId)
         {
             CommentHeader = commentHeader;
             CommentText = commentText;
             PostId = postId;
-            UsingIdentityUserId = usingIdentityUserId;
+            this.UsingIdentityUserId = usingIdentityUserId;
         }
 
         public int Id { get; set; }
@@ -19,10 +19,13 @@
         public string CommentText { get; set; }
         public DateTime CommentTime { get; set; }
 
+
         public int PostId { get; set; }
         public Post Post { get; set; }
-        public int UsingIdentityUserId { get; set; }
-        public UsingIdentityUser UsingIdentityUser;
+
+        public string? UsingIdentityUserId { get; set; }
+
+        public UsingIdentityUser? UsingIdentityUser;
 
     }
 }

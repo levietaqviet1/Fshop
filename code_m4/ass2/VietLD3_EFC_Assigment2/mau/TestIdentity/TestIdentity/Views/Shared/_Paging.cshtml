@@ -1,0 +1,119 @@
+﻿@model dynamic
+
+@{
+    int currentPage = Model.currentPage;
+    int countPages = Model.countPages;
+    var generateUrl = Model.generateUrl;
+
+    if (currentPage > countPages)
+    {
+        currentPage = countPages;
+    }
+    if (currentPage < 1) currentPage = 1;
+
+    int? previous = null;
+    int? next = null;
+
+    if (currentPage > 1)
+    {
+        previous = currentPage - 1;
+    }
+
+    if (currentPage < countPages)
+    {
+        next = currentPage + 1;
+    }
+
+    List<int> pagesRanges = new List<int>();
+
+    int delta = 5;
+    int remain = delta * 2;
+
+    pagesRanges.Add(currentPage);
+
+    for (int i = 1; i <= delta; i++)
+    {
+        if (currentPage + i <= countPages)
+        {
+            pagesRanges.Add(currentPage + i);
+            remain--;
+        }
+
+        if (currentPage - i >= 1)
+        {
+            pagesRanges.Insert(0, currentPage - i);
+            remain--;
+        }
+    }
+
+    if (remain > 0)
+    {
+        if (pagesRanges[0] == 1)
+        {
+            for (int i = 1; i <= remain; i++)
+            {
+                if (pagesRanges.Last() + 1 <= countPages)
+                {
+                    pagesRanges.Add(pagesRanges.Last() + 1);
+                }
+            }
+        }
+        else
+        {
+            for (int i = 1; i <= remain; i++)
+            {
+                if (pagesRanges.First() - 1 > 1)
+                {
+                    pagesRanges.Insert(0, pagesRanges.First() - 1);
+                }
+            }
+        }
+    }
+
+
+}
+
+<ul class="pagination">
+    @if (previous != null)
+    {
+        <li class="page-item">
+            <a class="page-link" href="@generateUrl(previous)">Previous</a>
+        </li>
+    }
+    else
+    {
+        <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+        </li>
+    }
+
+    @foreach (var pageItem in pagesRanges)
+    {
+        if (pageItem != currentPage)
+        {
+            <li class="page-item">
+                <a href="@generateUrl(pageItem)" class="page-link">@pageItem</a>
+            </li>
+        }
+        else
+        {
+             <li class="page-item active" aria-current="page">
+                <a href="#" class="page-link">@pageItem</a>
+            </li>
+        }
+    }
+
+    @if (next != null)
+    {
+        <li class="page-item">
+            <a class="page-link" href="@generateUrl(next)">Next</a>
+        </li>
+    }
+    else
+    {
+        <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Next</a>
+        </li>
+    }
+
+</ul>
