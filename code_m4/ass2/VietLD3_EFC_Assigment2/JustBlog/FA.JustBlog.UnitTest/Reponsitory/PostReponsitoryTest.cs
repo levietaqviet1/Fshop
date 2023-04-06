@@ -82,7 +82,7 @@ namespace FA.JustBlog.Test.Reponsitory
             // Arrange
 
             // Act
-            var result = postRepository.Find(2);
+            var result = postRepository.Find(1);
             // Assert         
             postRepository.Delete(result);
             result = postRepository.Find(2);

@@ -1,4 +1,6 @@
-﻿namespace FA.JustBlog.ViewModel.ViewModel
+﻿using FA.JustBlog.Core.Models;
+
+namespace FA.JustBlog.ViewModel.ViewModel
 {
     public class CommentViewModel
     {
@@ -24,8 +26,8 @@
 
         public int PostViewModelId { get; set; }
         public PostViewModel PostViewModel { get; set; }
-        //public int UsingIdentityUserId { get; set; }
-        //public UsingIdentityUser UsingIdentityUser;
+        public string UsingIdentityUserId { get; set; }
+        public UsingIdentityUser UsingIdentityUser;
 
     }
 }

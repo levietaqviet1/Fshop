@@ -1,4 +1,4 @@
-﻿using FA.JustBlog.Core.Repositories;
+﻿using FA.JustBlog.Service.post;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,18 +7,19 @@ namespace FA.JustBlog.Controllers
 
     public class PostController : Controller
     {
-        private readonly IPostRepository _postRepository;
+        private readonly IPostService _postService;
 
-        public PostController(IPostRepository postRepository)
+        public PostController(IPostService postService)
         {
-            _postRepository = postRepository;
+            _postService = postService;
         }
 
         [Authorize]
         // GET: PostController
         public ActionResult Index()
         {
-            return View(_postRepository.GetAll());
+
+            return View(_postService.GetAll().DataList);
         }
 
         // GET: PostController/Details/5

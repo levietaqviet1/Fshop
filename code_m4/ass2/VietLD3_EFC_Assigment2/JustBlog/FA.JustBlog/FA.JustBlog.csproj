@@ -28,11 +28,14 @@
     <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Areas\Admin\Views\" />
+    <Folder Include="Areas\Identity\Data\" />
     <Folder Include="ViewModel\" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\FA.JustBlog.Core\FA.JustBlog.Core.csproj" />
+    <ProjectReference Include="..\FA.JustBlog.Service\FA.JustBlog.Service.csproj" />
+    <ProjectReference Include="..\FA.JustBlog.ViewModel\FA.JustBlog.ViewModel.csproj" />
   </ItemGroup>
 
   <ItemGroup>

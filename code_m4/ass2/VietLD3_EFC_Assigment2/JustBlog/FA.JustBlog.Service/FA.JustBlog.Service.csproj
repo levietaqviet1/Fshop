@@ -16,8 +16,4 @@
     <ProjectReference Include="..\FA.JustBlog.ViewModel\FA.JustBlog.ViewModel.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="post\" />
-  </ItemGroup>
-
 </Project>

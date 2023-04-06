@@ -1,5 +1,6 @@
 ﻿using FA.JustBlog.Core.Configs;
 using FA.JustBlog.Core.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -43,6 +44,12 @@ namespace FA.JustBlog.Core.DataContext
         /// định nghĩa Comment trong cơ sở dữ liệu.
         /// </summary>
         public DbSet<Comment> Comments { get; set; }
+
+        public DbSet<IdentityRole> IdentityRole { get; set; }
+
+        public DbSet<UsingIdentityUser> UsingIdentityUser { get; set; }
+
+        public DbSet<IdentityUserRole<string>> IdentityUserRole { get; set; }
 
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         //{

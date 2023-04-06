@@ -1,4 +1,6 @@
-﻿namespace FA.JustBlog.ViewModel.ViewModel
+﻿using FA.JustBlog.Core.Models;
+
+namespace FA.JustBlog.ViewModel.ViewModel
 {
     public class PostViewModel
     {
@@ -36,8 +38,8 @@
         public virtual IList<PostTagMapViewModel> PostTagMapsViewModel { get; set; }
         public virtual IList<CommentViewModel> CommentViewModels { get; set; }
 
-        //public int UsingIdentityUserId { get; set; }
-        //public UsingIdentityUser UsingIdentityUser;
+        public string UsingIdentityUserId { get; set; }
+        public UsingIdentityUser UsingIdentityUser;
 
 
     }

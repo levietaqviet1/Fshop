@@ -9,7 +9,7 @@ namespace FA.JustBlog.Service.map
         public MapperConfig()
         {
             CreateMap<Category, CategoryViewModel>().ReverseMap();
-
+            CreateMap<Post, PostViewModel>().ReverseMap();
         }
     }
 }

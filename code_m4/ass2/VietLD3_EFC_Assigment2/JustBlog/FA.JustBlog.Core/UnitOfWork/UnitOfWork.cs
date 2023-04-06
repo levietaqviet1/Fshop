@@ -10,6 +10,7 @@ namespace FA.JustBlog.Core.Repositories.UnitOfWork
         private ICategoryRepository _categoryRepository;
         private ITagRepository _tagRepository;
         private ICommentRepository _commentRepository;
+        private IPostTagMapRepository _postTagMapRepository;
 
         public UnitOfWork(JustBlogContext context = null)
         {
@@ -22,6 +23,8 @@ namespace FA.JustBlog.Core.Repositories.UnitOfWork
         public ICategoryRepository CategoryRepository => _categoryRepository ?? new CategoryRepository(_context);
 
         public ICommentRepository CommentRepository => _commentRepository ?? new CommentRepository(_context);
+
+        public IPostTagMapRepository PostTagMapRepository => _postTagMapRepository ?? new PostTagMapRepository(_context);
 
         private bool disposed = false;
         protected virtual void Dispose(bool disposing)

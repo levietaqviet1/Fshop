@@ -7,9 +7,6 @@ namespace FA.JustBlog.Core.Repositories.Generic
     {
         protected readonly JustBlogContext _context;
         protected DbSet<T> dbSet;
-
-
-
         public GenericRepository(JustBlogContext justBlogContext = null)
         {
             this._context = justBlogContext ?? new JustBlogContext();
