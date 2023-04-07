@@ -10,9 +10,10 @@ namespace FA.JustBlog.Service.category
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper mapper;
-        public CategoryService(IUnitOfWork unitOfWork = null)
+        public CategoryService(IUnitOfWork unitOfWork = null, IMapper mapper = null)
         {
             _unitOfWork = unitOfWork ?? new UnitOfWork();
+            this.mapper = mapper;
         }
 
         public ResponseResult<CategoryViewModel> Add(CategoryViewModel categoryViewModel)

@@ -51,15 +51,21 @@ namespace FA.JustBlog.Core.DataContext
 
         public DbSet<IdentityUserRole<string>> IdentityUserRole { get; set; }
 
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    base.OnConfiguring(optionsBuilder);
-        //    if (!optionsBuilder.IsConfigured)
-        //    {
-        //        var config = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
-        //        optionsBuilder.UseSqlServer(config.GetConnectionString("MyCnn"));
-        //    }
-        //}
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            base.OnConfiguring(optionsBuilder);
+
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer("server=.;database=DBJustBlog;Trusted_Connection=True;TrustServerCertificate=True");
+            }
+
+            //if (!optionsBuilder.IsConfigured)
+            //{
+            //    var config = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
+            //    optionsBuilder.UseSqlServer(config.GetConnectionString("MyCnn"));
+            //}
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

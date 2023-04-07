@@ -9,16 +9,17 @@ namespace FA.JustBlog.Service.post
     public class PostService : IPostService
     {
         private readonly IUnitOfWork _unitOfWork;
-        private readonly IMapper mapper;
-        public PostService(IUnitOfWork unitOfWork = null)
+        private readonly IMapper _mapper;
+        public PostService(IUnitOfWork unitOfWork = null, IMapper mapper = null)
         {
             _unitOfWork = unitOfWork ?? new UnitOfWork();
+            _mapper = mapper;
         }
         public ResponseResult<PostViewModel> Add(PostViewModel postViewModel)
         {
             try
             {
-                var post = mapper.Map<Post>(postViewModel);
+                var post = _mapper.Map<Post>(postViewModel);
                 _unitOfWork.PostRepository.Add(post);
                 return new ResponseResult<PostViewModel>
                 {
@@ -70,7 +71,7 @@ namespace FA.JustBlog.Service.post
                         post.PostTagMaps = _unitOfWork.PostTagMapRepository.GetByPost(post.Id);
                         post.Comments = _unitOfWork.CommentRepository.GetAll().Where(x => x.PostId == post.Id).ToList();
                     }
-                    var postViewModel = mapper.Map<List<PostViewModel>>(listPost);
+                    var postViewModel = _mapper.Map<List<PostViewModel>>(listPost);
                     response.DataList = postViewModel;
                     response.IsSuccessed = true;
                     response.StatusCode = 200;
@@ -102,7 +103,7 @@ namespace FA.JustBlog.Service.post
                     post1.PostTagMaps = _unitOfWork.PostTagMapRepository.GetByPost(post1.Id);
                     post1.Comments = _unitOfWork.CommentRepository.GetAll().Where(x => x.PostId == post1.Id).ToList();
 
-                    var postViewModel = mapper.Map<PostViewModel>(post1);
+                    var postViewModel = _mapper.Map<PostViewModel>(post1);
                     response.Data = postViewModel;
                     response.IsSuccessed = true;
                     response.StatusCode = 200;

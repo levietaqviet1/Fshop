@@ -1,4 +1,5 @@
 ﻿using FA.JustBlog.Service.post;
+using FA.JustBlog.ViewModel.ViewModel;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,8 +19,8 @@ namespace FA.JustBlog.Controllers
         // GET: PostController
         public ActionResult Index()
         {
-
-            return View(_postService.GetAll().DataList);
+            IList<PostViewModel> listPost = _postService.GetAll().DataList;
+            return View(listPost);
         }
 
         // GET: PostController/Details/5

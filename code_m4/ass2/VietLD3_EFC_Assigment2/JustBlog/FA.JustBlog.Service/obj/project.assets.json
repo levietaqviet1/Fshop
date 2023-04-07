@@ -2551,7 +2551,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\NCC\\.nuget\\packages\\": {}
+    "C:\\Users\\DELL\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -2559,11 +2559,11 @@
       "projectUniqueName": "D:\\GIT\\Fshop\\code_m4\\ass2\\VietLD3_EFC_Assigment2\\JustBlog\\FA.JustBlog.Service\\FA.JustBlog.Service.csproj",
       "projectName": "FA.JustBlog.Service",
       "projectPath": "D:\\GIT\\Fshop\\code_m4\\ass2\\VietLD3_EFC_Assigment2\\JustBlog\\FA.JustBlog.Service\\FA.JustBlog.Service.csproj",
-      "packagesPath": "C:\\Users\\NCC\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
       "outputPath": "D:\\GIT\\Fshop\\code_m4\\ass2\\VietLD3_EFC_Assigment2\\JustBlog\\FA.JustBlog.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\NCC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
