@@ -127,5 +127,16 @@ namespace FA.JustBlog.Core.Repositories.Impl
         {
             return _context.Posts.Where(x => !x.Published).ToList();
         }
+
+        /// <summary>
+        /// lấy danh sách post theo url
+        /// </summary>
+        /// <param name="urlSlug"></param>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public Post GetPostsByUrlSlug(string urlSlug)
+        {
+            return _context.Posts.FirstOrDefault(x => x.UrlSlug.Equals(urlSlug));
+        }
     }
 }

@@ -1,0 +1,15 @@
+D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog.ViewModel\bin\Debug\net6.0\FA.JustBlog.ViewModel.deps.json
+D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog.ViewModel\bin\Debug\net6.0\FA.JustBlog.ViewModel.dll
+D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog.ViewModel\bin\Debug\net6.0\FA.JustBlog.ViewModel.pdb
+D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog.ViewModel\bin\Debug\net6.0\FA.JustBlog.Core.dll
+D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog.ViewModel\bin\Debug\net6.0\FA.JustBlog.Core.pdb
+D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog.ViewModel\obj\Debug\net6.0\FA.JustBlog.ViewModel.csproj.AssemblyReference.cache
+D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog.ViewModel\obj\Debug\net6.0\FA.JustBlog.ViewModel.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog.ViewModel\obj\Debug\net6.0\FA.JustBlog.ViewModel.AssemblyInfoInputs.cache
+D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog.ViewModel\obj\Debug\net6.0\FA.JustBlog.ViewModel.AssemblyInfo.cs
+D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog.ViewModel\obj\Debug\net6.0\FA.JustBlog.ViewModel.csproj.CoreCompileInputs.cache
+D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog.ViewModel\obj\Debug\net6.0\FA.JustBlog.ViewModel.csproj.CopyComplete
+D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog.ViewModel\obj\Debug\net6.0\FA.JustBlog.ViewModel.dll
+D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog.ViewModel\obj\Debug\net6.0\refint\FA.JustBlog.ViewModel.dll
+D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog.ViewModel\obj\Debug\net6.0\FA.JustBlog.ViewModel.pdb
+D:\GIT\Fshop\code_m4\ass2\VietLD3_EFC_Assigment2\JustBlog\FA.JustBlog.ViewModel\obj\Debug\net6.0\ref\FA.JustBlog.ViewModel.dll

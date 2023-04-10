@@ -10,9 +10,9 @@ namespace FA.JustBlog.Core.Configs
         {
             builder.ToTable("Posts");
             builder.HasKey(x => x.Id);
-            builder.Property(x => x.ShortDescription).IsRequired().HasMaxLength(255);
-            builder.Property(x => x.PostContent).IsRequired().HasMaxLength(500);
-            builder.Property(x => x.UrlSlug).IsRequired().HasMaxLength(255);
+            builder.Property(x => x.ShortDescription).IsRequired().HasMaxLength(5000);
+            builder.Property(x => x.PostContent).IsRequired().HasMaxLength(500000000);
+            builder.Property(x => x.UrlSlug).IsRequired().HasMaxLength(5000);
             builder.Property(x => x.Published).HasDefaultValue(false);
             builder.Property(x => x.ViewCount).HasDefaultValue(0);
             builder.Property(x => x.RateCount).HasDefaultValue(0);

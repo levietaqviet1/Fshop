@@ -24,8 +24,9 @@ namespace FA.JustBlog.Controllers
         }
 
         // GET: PostController/Details/5
-        public ActionResult Details(int id)
+        public ActionResult Details(string urlSlug)
         {
+
             return View();
         }
 

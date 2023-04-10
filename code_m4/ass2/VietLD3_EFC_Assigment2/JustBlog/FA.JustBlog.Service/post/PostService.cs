@@ -3,6 +3,7 @@ using FA.JustBlog.Core.Models;
 using FA.JustBlog.Core.Repositories.UnitOfWork;
 using FA.JustBlog.ViewModel;
 using FA.JustBlog.ViewModel.ViewModel;
+using Microsoft.AspNetCore.Identity;
 
 namespace FA.JustBlog.Service.post
 {
@@ -10,10 +11,13 @@ namespace FA.JustBlog.Service.post
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
-        public PostService(IUnitOfWork unitOfWork = null, IMapper mapper = null)
+        private readonly UserManager<UsingIdentityUser> _userManager;
+
+        public PostService(IUnitOfWork unitOfWork = null, IMapper mapper = null, UserManager<UsingIdentityUser> userManager = null)
         {
             _unitOfWork = unitOfWork ?? new UnitOfWork();
             _mapper = mapper;
+            _userManager = userManager;
         }
         public ResponseResult<PostViewModel> Add(PostViewModel postViewModel)
         {
@@ -70,6 +74,7 @@ namespace FA.JustBlog.Service.post
                     {
                         post.PostTagMaps = _unitOfWork.PostTagMapRepository.GetByPost(post.Id);
                         post.Comments = _unitOfWork.CommentRepository.GetAll().Where(x => x.PostId == post.Id).ToList();
+                        post.UsingIdentityUser = _userManager.FindByIdAsync(post.UsingIdentityUserId).Result;
                     }
                     var postViewModel = _mapper.Map<List<PostViewModel>>(listPost);
                     response.DataList = postViewModel;
@@ -102,7 +107,39 @@ namespace FA.JustBlog.Service.post
                 {
                     post1.PostTagMaps = _unitOfWork.PostTagMapRepository.GetByPost(post1.Id);
                     post1.Comments = _unitOfWork.CommentRepository.GetAll().Where(x => x.PostId == post1.Id).ToList();
+                    post1.UsingIdentityUser = _userManager.FindByIdAsync(post1.UsingIdentityUserId).Result;
+                    var postViewModel = _mapper.Map<PostViewModel>(post1);
+                    response.Data = postViewModel;
+                    response.IsSuccessed = true;
+                    response.StatusCode = 200;
+                }
+                else
+                {
+                    response.IsSuccessed = false;
+                    response.Message = "No Data";
+                    response.StatusCode = 404;
+                }
 
+            }
+            catch (Exception ex)
+            {
+                response.Message = "Loi 500 Server: " + ex.Message;
+                response.StatusCode = 500;
+            }
+            return response;
+        }
+
+        public ResponseResult<PostViewModel> GetByUrl(string urlSlug)
+        {
+            ResponseResult<PostViewModel> response = new ResponseResult<PostViewModel>();
+            try
+            {
+                Post post1 = _unitOfWork.PostRepository.GetPostsByUrlSlug(urlSlug);
+                if (post1 != null)
+                {
+                    post1.PostTagMaps = _unitOfWork.PostTagMapRepository.GetByPost(post1.Id);
+                    post1.Comments = _unitOfWork.CommentRepository.GetAll().Where(x => x.PostId == post1.Id).ToList();
+                    post1.UsingIdentityUser = _userManager.FindByIdAsync(post1.UsingIdentityUserId).Result;
                     var postViewModel = _mapper.Map<PostViewModel>(post1);
                     response.Data = postViewModel;
                     response.IsSuccessed = true;
