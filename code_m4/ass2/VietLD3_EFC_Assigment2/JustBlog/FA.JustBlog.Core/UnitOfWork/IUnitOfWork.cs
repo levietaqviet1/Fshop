@@ -1,6 +1,4 @@
-﻿using FA.JustBlog.Core.Repositories.Impl;
-
-namespace FA.JustBlog.Core.Repositories.UnitOfWork
+﻿namespace FA.JustBlog.Core.Repositories.UnitOfWork
 {
     public interface IUnitOfWork : IDisposable
     {

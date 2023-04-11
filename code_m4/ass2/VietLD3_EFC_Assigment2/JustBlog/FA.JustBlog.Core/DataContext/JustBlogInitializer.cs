@@ -139,7 +139,12 @@ namespace FA.JustBlog.Core.DataContext
                         PostedOn = DateTime.Parse("2023-02-15"),
                         Modified = DateTime.Parse("2023-03-15"),
                         CategoryId = 1,
-                        UsingIdentityUserId = "97571dcc-079e-4c3a-ba9b-bbde3d03a03d"
+                        UsingIdentityUserId = "97571dcc-079e-4c3a-ba9b-bbde3d03a03d",
+                        ViewCount = 5,
+                        RateCount = 10,
+                        TotalRate = 25,
+                        Rate = 0
+
                     },
                     new Post
                     {
@@ -152,7 +157,11 @@ namespace FA.JustBlog.Core.DataContext
                         PostedOn = DateTime.Parse("2023-02-14"),
                         Modified = DateTime.Parse("2023-03-15"),
                         CategoryId = 1,
-                        UsingIdentityUserId = "97571dcc-079e-4c3a-ba9b-bbde3d03a03d"
+                        UsingIdentityUserId = "97571dcc-079e-4c3a-ba9b-bbde3d03a03d",
+                        ViewCount = 50,
+                        RateCount = 200,
+                        TotalRate = 250,
+                        Rate = 0
                     },
                     new Post
                     {
@@ -165,7 +174,11 @@ namespace FA.JustBlog.Core.DataContext
                         PostedOn = DateTime.Parse("2023-03-15"),
                         Modified = DateTime.Parse("2023-03-15"),
                         CategoryId = 2,
-                        UsingIdentityUserId = "97571dcc-079e-4c3a-ba9b-bbde3d03a03d"
+                        UsingIdentityUserId = "97571dcc-079e-4c3a-ba9b-bbde3d03a03d",
+                        ViewCount = 60,
+                        RateCount = 200,
+                        TotalRate = 300,
+                        Rate = 0
                     },
                     new Post
                     {
@@ -178,7 +191,11 @@ namespace FA.JustBlog.Core.DataContext
                         PostedOn = DateTime.Parse("2023-03-15"),
                         Modified = DateTime.Parse("2023-03-15"),
                         CategoryId = 2,
-                        UsingIdentityUserId = "21842bcb-fae8-4c00-9c33-de997d4e8103"
+                        UsingIdentityUserId = "21842bcb-fae8-4c00-9c33-de997d4e8103",
+                        ViewCount = 90,
+                        RateCount = 300,
+                        TotalRate = 450,
+                        Rate = 0
                     }
             );
             builder.Entity<Tag>().HasData

@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FA.JustBlog.Controllers
 {
-
+    [Authorize]
     public class PostController : Controller
     {
         private readonly IPostService _postService;
@@ -15,19 +15,21 @@ namespace FA.JustBlog.Controllers
             _postService = postService;
         }
 
-        [Authorize]
+
         // GET: PostController
         public ActionResult Index()
         {
             IList<PostViewModel> listPost = _postService.GetAll().DataList;
+            ViewBag.MostViews = _postService.GetMostView().DataList;
+            ViewBag.LastPosts = _postService.GetAll().DataList.Take(5).ToList();
             return View(listPost);
         }
 
         // GET: PostController/Details/5
         public ActionResult Details(string urlSlug)
         {
-
-            return View();
+            PostViewModel postViewModel = _postService.GetByUrl(urlSlug).Data;
+            return View(postViewModel);
         }
 
         // GET: PostController/Create

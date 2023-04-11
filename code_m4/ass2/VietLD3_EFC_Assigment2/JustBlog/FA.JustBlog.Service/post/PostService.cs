@@ -67,7 +67,7 @@ namespace FA.JustBlog.Service.post
             ResponseResult<PostViewModel> response = new ResponseResult<PostViewModel>();
             try
             {
-                IList<Post> listPost = _unitOfWork.PostRepository.GetAll();
+                IList<Post> listPost = _unitOfWork.PostRepository.GetAll().OrderBy(x => x.PostedOn).ToArray();
                 if (listPost != null)
                 {
                     foreach (Post post in listPost)
@@ -142,6 +142,41 @@ namespace FA.JustBlog.Service.post
                     post1.UsingIdentityUser = _userManager.FindByIdAsync(post1.UsingIdentityUserId).Result;
                     var postViewModel = _mapper.Map<PostViewModel>(post1);
                     response.Data = postViewModel;
+                    response.IsSuccessed = true;
+                    response.StatusCode = 200;
+                }
+                else
+                {
+                    response.IsSuccessed = false;
+                    response.Message = "No Data";
+                    response.StatusCode = 404;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                response.Message = "Loi 500 Server: " + ex.Message;
+                response.StatusCode = 500;
+            }
+            return response;
+        }
+
+        public ResponseResult<PostViewModel> GetMostView()
+        {
+            ResponseResult<PostViewModel> response = new ResponseResult<PostViewModel>();
+            try
+            {
+                IList<Post> listPost = _unitOfWork.PostRepository.GetAll().OrderBy(x => x.ViewCount).Take(5).OrderBy(x => x.PostedOn).ToArray();
+                if (listPost != null)
+                {
+                    foreach (Post post in listPost)
+                    {
+                        post.PostTagMaps = _unitOfWork.PostTagMapRepository.GetByPost(post.Id);
+                        post.Comments = _unitOfWork.CommentRepository.GetAll().Where(x => x.PostId == post.Id).ToList();
+                        post.UsingIdentityUser = _userManager.FindByIdAsync(post.UsingIdentityUserId).Result;
+                    }
+                    var postViewModel = _mapper.Map<List<PostViewModel>>(listPost);
+                    response.DataList = postViewModel;
                     response.IsSuccessed = true;
                     response.StatusCode = 200;
                 }
