@@ -29,7 +29,7 @@ namespace FA.JustBlog.Areas.Admin.Controllers
             if (pageNumber == 0)
                 pageNumber = 1;
 
-            var listPosts = _postService.GetAll().DataList;
+            var listPosts = _postService.GetAll("", "").DataList;
             _logger.LogInformation(pageNumber.ToString());
 
             // Lấy tổng số dòng dữ liệu

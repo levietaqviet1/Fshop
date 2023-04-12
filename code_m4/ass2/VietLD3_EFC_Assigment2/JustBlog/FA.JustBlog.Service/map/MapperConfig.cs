@@ -10,6 +10,13 @@ namespace FA.JustBlog.Service.map
         {
             CreateMap<Category, CategoryViewModel>().ReverseMap();
             CreateMap<Post, PostViewModel>().ReverseMap();
+            CreateMap<PostTagMap, PostTagMapViewModel>().ReverseMap();
+            CreateMap<Comment, CommentViewModel>().ReverseMap();
+
+            CreateMap<CategoryViewModel, Category>().ReverseMap();
+            CreateMap<PostViewModel, Post>().ReverseMap();
+            CreateMap<PostTagMapViewModel, PostTagMap>().ReverseMap();
+            CreateMap<CommentViewModel, Comment>().ReverseMap();
         }
     }
 }

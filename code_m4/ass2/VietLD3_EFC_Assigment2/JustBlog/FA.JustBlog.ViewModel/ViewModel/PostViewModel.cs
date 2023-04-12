@@ -8,8 +8,6 @@ namespace FA.JustBlog.ViewModel.ViewModel
         {
             PostTagMapsViewModel = new List<PostTagMapViewModel>();
         }
-
-
         public int Id { get; set; }
 
         public string Title { get; set; }
@@ -40,7 +38,5 @@ namespace FA.JustBlog.ViewModel.ViewModel
 
         public string UsingIdentityUserId { get; set; }
         public UsingIdentityUser UsingIdentityUser;
-
-
     }
 }

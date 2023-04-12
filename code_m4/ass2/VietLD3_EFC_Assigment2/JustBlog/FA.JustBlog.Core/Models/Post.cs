@@ -28,7 +28,7 @@
         public decimal Rate
         {
             get { return rate; }
-            set { rate = value == 0 ? (TotalRate == null ? 0 : TotalRate / RateCount == null ? 0 : RateCount) : value; }
+            set { rate = value == 0 ? (RateCount / TotalRate) : value; }
         }
 
         public int CategoryId { get; set; }

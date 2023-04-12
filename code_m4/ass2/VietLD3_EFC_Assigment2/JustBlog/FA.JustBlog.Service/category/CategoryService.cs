@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿
+using AutoMapper;
 using FA.JustBlog.Core.Models;
 using FA.JustBlog.Core.Repositories.UnitOfWork;
 using FA.JustBlog.ViewModel;
@@ -9,18 +10,25 @@ namespace FA.JustBlog.Service.category
     public class CategoryService : ICategoryService
     {
         private readonly IUnitOfWork _unitOfWork;
-        private readonly IMapper mapper;
+        private readonly IMapper _mapper;
         public CategoryService(IUnitOfWork unitOfWork = null, IMapper mapper = null)
         {
             _unitOfWork = unitOfWork ?? new UnitOfWork();
-            this.mapper = mapper;
+
+            var config = new MapperConfiguration(x =>
+            {
+                x.CreateMap<Category, CategoryViewModel>().ReverseMap();
+            });
+
+            this._mapper = mapper ?? config.CreateMapper();
+
         }
 
         public ResponseResult<CategoryViewModel> Add(CategoryViewModel categoryViewModel)
         {
             try
             {
-                var categoryModels = mapper.Map<Category>(categoryViewModel);
+                var categoryModels = _mapper.Map<Category>(categoryViewModel);
                 _unitOfWork.CategoryRepository.Add(categoryModels);
                 return new ResponseResult<CategoryViewModel>
                 {
@@ -76,7 +84,7 @@ namespace FA.JustBlog.Service.category
                     };
                 }
 
-                var categoryModels = mapper.Map<List<CategoryViewModel>>(categorys);
+                var categoryModels = _mapper.Map<List<CategoryViewModel>>(categorys);
                 return new ResponseResult<CategoryViewModel>()
                 {
                     StatusCode = 200,
@@ -98,7 +106,7 @@ namespace FA.JustBlog.Service.category
             try
             {
                 var category = _unitOfWork.CategoryRepository.Find(id);
-                var categoryModel = mapper.Map<CategoryViewModel>(category);
+                var categoryModel = _mapper.Map<CategoryViewModel>(category);
                 return new ResponseResult<CategoryViewModel>()
                 {
                     StatusCode = 200,

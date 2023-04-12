@@ -16,14 +16,19 @@
             {
                 <!-- Post preview-->
                 <div class="post-preview">
-                    <a href="/post/Details?urlSlug=@item.UrlSlug">
+                    <a href="/post/Details?post=@item.UrlSlug">
                         <h3 class="post-title">@item.Title</h3>
                     </a>
                     <p class="post-meta">
-                        <span style="opacity: 0.5;">Post by @item.UsingIdentityUser.Firstname Posted @item.PostedOn.ToString("dd/MM/yyyy hh:mm tt") with rate @item.Rate by @item.ViewCount view(s)</span>
+                        <span style="opacity: 0.5;">Post by @item.UsingIdentityUser.Firstname Posted @item.PostedOn.ToString("dd/MM/yyyy hh:mm tt") with rate @item.Rate/1 by @item.ViewCount view(s)</span>
                     </p>
                     <h4 class="post-subtitle">@item.ShortDescription</h4>
                 </div>
+                @foreach (PostTagMapViewModel itemSub in item.PostTagMapsViewModel)
+                {
+
+                    <a class="border mt-1" href="@Url.Action("Index","Post", new { tag = itemSub.Tag.UrlSlug })" , style="background-color: #333; color: #fff">@itemSub.Tag.Name</a>
+                }
                 <!-- Divider-->
                 <hr class="my-4" />
             }
@@ -34,7 +39,7 @@
 
         <div class="col-md-2 col-lg-3 col-xl-5">
             <div style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
-                <header class="masthead" style="background-image: url('../../img/about-bg.jpg')">
+                <header class="masthead" style="background-image: url('../../image/leftPostIndex.jpg')">
                 </header>
                 <div class="ps-4 pb-2">
                     <h1>About Me!</h1>
@@ -48,11 +53,11 @@
                 {
                     <!-- Post preview-->
                     <div class="post-preview">
-                        <a href="/post/Details?urlSlug=@item.UrlSlug">
-                            <h3 class="post-title">@item.Title</h3>
+                        <a href="/post/Details?post=@item.UrlSlug">
+                            <h4 class="">@item.Title</h4>
                         </a>
                         <p class="post-meta">
-                            <span style="opacity: 0.5;">Post by @item.UsingIdentityUser.Firstname Posted @item.PostedOn.ToString("dd/MM/yyyy hh:mm tt") with rate @item.Rate by @item.ViewCount view(s)</span>
+                            <span style="opacity: 0.5;">Post by @item.UsingIdentityUser.Firstname Posted @item.PostedOn.ToString("dd/MM/yyyy hh:mm tt") with rate @item.Rate/1 by @item.ViewCount view(s)</span>
                         </p>
                         
                     </div>
@@ -67,11 +72,11 @@
                 {
                     <!-- Post preview-->
                     <div class="post-preview">
-                        <a href="/post/Details?urlSlug=@item.UrlSlug">
-                            <h3 class="post-title">@item.Title</h3>
+                        <a href="/post/Details?post=@item.UrlSlug">
+                            <h4 class="">@item.Title</h4>
                         </a>
                         <p class="post-meta">
-                            <span style="opacity: 0.5;">Post by @item.UsingIdentityUser.Firstname Posted @item.PostedOn.ToString("dd/MM/yyyy hh:mm tt") with rate @item.Rate by @item.ViewCount view(s)</span>
+                            <span style="opacity: 0.5;">Post by @item.UsingIdentityUser.Firstname Posted @item.PostedOn.ToString("dd/MM/yyyy hh:mm tt") with rate @item.Rate/1  by @item.ViewCount view(s)</span>
                         </p>
                          
                     </div> 
@@ -80,10 +85,11 @@
             <div class="mt-5">
                 <h1>Popular Tag</h1>
                 <hr class="my-4" />
-                @*@foreach (Tag item in @ViewBag.GetTags)
+                @foreach (TagViewModel item in @ViewBag.Tags)
                 {
-                    <a class="border mt-1" href="@Url.Action("GetPostByTag","Post", new { tag=item.Name })" , style="background-color: #333; color: #fff">@item.Name</a>
-                }*@
+                    <br/>
+                    <a class="border mt-1" href="@Url.Action("Index","Post", new { tag = item.UrlSlug })" , style="background-color: #333; color: #fff">@item.Name</a>
+                }
             </div>
         </div>
     </div>

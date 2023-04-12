@@ -196,6 +196,108 @@ namespace FA.JustBlog.Core.DataContext
                         RateCount = 300,
                         TotalRate = 450,
                         Rate = 0
+                    },
+                    new Post
+                    {
+                        Id = 5,
+                        Title = "DbSet in Entity Framework 6",
+                        ShortDescription = "The DbSet class represents an entity set that can be used for create, read, update, and delete operations.\r\n\r\nThe context class (derived from DbContext) must include the DbSet type properties for the entities which map to database tables and views.",
+                        PostContent = "Add\tAdded entity type\tAdds the given entity to the context with the Added state. When the changes are saved, the entities in the Added states are inserted into the database. After the changes are saved, the object state changes to Unchanged.\r\n\r\nExample:\r\ndbcontext.Students.Add(studentEntity)",
+                        UrlSlug = Utils.ConFigUrlSlug("DbSet in Entity Framework 6"),
+                        Published = false,
+                        PostedOn = DateTime.Parse("2023-03-11"),
+                        Modified = DateTime.Parse("2023-03-15"),
+                        CategoryId = 2,
+                        UsingIdentityUserId = "21842bcb-fae8-4c00-9c33-de997d4e8103",
+                        ViewCount = 90,
+                        RateCount = 250,
+                        TotalRate = 450,
+                        Rate = 0
+                    },
+                    new Post
+                    {
+                        Id = 6,
+                        Title = "Saving Data in the Connected Scenario",
+                        ShortDescription = "Saving entity data in the connected scenario is a fairly easy task because the context automatically tracks the changes that happened on the entity during its lifetime.\r\n\r\nHere, we will use the same EDM for CRUD operations which we created in the Create Entity Data Model chapter. An entity which contains data in its scalar property will be either inserted, updated or deleted, based on its EntityState.",
+                        PostContent = "In the Entity Framework, there are two persistence scenarios to save an entity data: connected and disconnected. In the connected scenario, the same instance of DbContext is used in retrieving and saving entities, whereas this is different in the disconnected scenario. In this chapter, you will learn about saving data in the connected scenario.",
+                        UrlSlug = Utils.ConFigUrlSlug("Saving Data in the Connected Scenario"),
+                        Published = false,
+                        PostedOn = DateTime.Parse("2023-03-10"),
+                        Modified = DateTime.Parse("2023-03-10"),
+                        CategoryId = 2,
+                        UsingIdentityUserId = "21842bcb-fae8-4c00-9c33-de997d4e8103",
+                        ViewCount = 90,
+                        RateCount = 360,
+                        TotalRate = 450,
+                        Rate = 0
+                    },
+                    new Post
+                    {
+                        Id = 7,
+                        Title = "Querying in Entity Framework",
+                        ShortDescription = "You can build and execute queries using Entity Framework to fetch the data from the underlying database. EF 6 supports different types of queries which in turn convert into SQL queries for the underlying database.",
+                        PostContent = "Language-Integrated Query (LINQ) is a powerful query language introduced in Visual Studio 2008. As the name suggests, LINQ-to-Entities queries operate on the entity set (DbSet type properties) to access the data from the underlying database. You can use the LINQ method syntax or query syntax when querying with EDM. Visit LINQ Tutorials to learn LINQ step-by-step.",
+                        UrlSlug = Utils.ConFigUrlSlug("Querying in Entity Framework"),
+                        Published = false,
+                        PostedOn = DateTime.Parse("2023-02-15"),
+                        Modified = DateTime.Parse("2023-02-15"),
+                        CategoryId = 2,
+                        UsingIdentityUserId = "21842bcb-fae8-4c00-9c33-de997d4e8103",
+                        ViewCount = 100,
+                        RateCount = 300,
+                        TotalRate = 500,
+                        Rate = 0
+                    },
+                    new Post
+                    {
+                        Id = 8,
+                        Title = "Eager Loading in Entity Framework",
+                        ShortDescription = "Eager loading is the process whereby a query for one type of entity also loads related entities as part of the query, so that we don't need to execute a separate query for related entities. Eager loading is achieved using the Include() method.",
+                        PostContent = "SELECT TOP (1) \r\n[Extent1].[StudentID] AS [StudentID], \r\n[Extent1].[StudentName] AS [StudentName], \r\n[Extent2].[StandardId] AS [StandardId], \r\n[Extent2].[StandardName] AS [StandardName], \r\n[Extent2].[Description] AS [Description]\r\nFROM  [dbo].[Student] AS [Extent1]\r\nLEFT OUTER JOIN [dbo].[Standard] AS [Extent2] ON [Extent1].[StandardId] = [Extent2].[StandardId]\r\nWHERE 'Bill' = [Extent1].[StudentName]",
+                        UrlSlug = Utils.ConFigUrlSlug("Eager Loading in Entity Framework"),
+                        Published = false,
+                        PostedOn = DateTime.Parse("2022-03-15"),
+                        Modified = DateTime.Parse("2022-03-15"),
+                        CategoryId = 2,
+                        UsingIdentityUserId = "21842bcb-fae8-4c00-9c33-de997d4e8103",
+                        ViewCount = 900,
+                        RateCount = 3000,
+                        TotalRate = 4500,
+                        Rate = 0
+                    },
+                    new Post
+                    {
+                        Id = 9,
+                        Title = "Lazy Loading in Entity Framework",
+                        ShortDescription = "Lazy loading is delaying the loading of related data, until you specifically request for it. It is the opposite of eager loading. For example, the Student entity contains the StudentAddress entity. In the lazy loading, the context first loads the Student entity data from the database, then it will load the StudentAddress entity when we access the StudentAddress property as shown below.",
+                        PostContent = "We can disable lazy loading for a particular entity or a context. To turn off lazy loading for a particular property, do not make it virtual. To turn off lazy loading for all entities in the context, set its configuration property to false.",
+                        UrlSlug = Utils.ConFigUrlSlug("Lazy Loading in Entity Framework"),
+                        Published = false,
+                        PostedOn = DateTime.Parse("2023-03-17"),
+                        Modified = DateTime.Parse("2023-03-17"),
+                        CategoryId = 2,
+                        UsingIdentityUserId = "21842bcb-fae8-4c00-9c33-de997d4e8103",
+                        ViewCount = 90,
+                        RateCount = 300,
+                        TotalRate = 450,
+                        Rate = 0
+                    },
+                    new Post
+                    {
+                        Id = 10,
+                        Title = "Explicit Loading in Entity Framework",
+                        ShortDescription = "Here, we are going to create an Entity Data Model (EDM) for an existing database in database-first approach and understand the basic building blocks.    Entity Framework uses EDM for all the database-related operations. Entity Data Model is a model that describes entities and the relationships between them. Let's create a simple EDM for the School database using Visual Studio (2012\\2015\\2017) and Entity Framework 6.",
+                        PostContent = "Here, we are going to create an Entity Data Model (EDM) for an existing database in database-first approach and understand the basic building blocks.    Entity Framework uses EDM for all the database-related operations. Entity Data Model is a model that describes entities and the relationships between them. Let's create a simple EDM for the School database using Visual Studio (2012\\2015\\2017) and Entity Framework 6.",
+                        UrlSlug = Utils.ConFigUrlSlug("Explicit Loading in Entity Framework"),
+                        Published = false,
+                        PostedOn = DateTime.Parse("2023-03-10"),
+                        Modified = DateTime.Parse("2023-03-10"),
+                        CategoryId = 2,
+                        UsingIdentityUserId = "21842bcb-fae8-4c00-9c33-de997d4e8103",
+                        ViewCount = 90,
+                        RateCount = 300,
+                        TotalRate = 450,
+                        Rate = 0
                     }
             );
             builder.Entity<Tag>().HasData
@@ -241,6 +343,51 @@ namespace FA.JustBlog.Core.DataContext
                     {
                         PostId = 1,
                         TagId = 3,
+                    },
+                    new PostTagMap
+                    {
+                        PostId = 2,
+                        TagId = 3,
+                    },
+                    new PostTagMap
+                    {
+                        PostId = 3,
+                        TagId = 3,
+                    },
+                    new PostTagMap
+                    {
+                        PostId = 4,
+                        TagId = 3,
+                    },
+                    new PostTagMap
+                    {
+                        PostId = 5,
+                        TagId = 1,
+                    },
+                    new PostTagMap
+                    {
+                        PostId = 6,
+                        TagId = 1,
+                    },
+                    new PostTagMap
+                    {
+                        PostId = 7,
+                        TagId = 1,
+                    },
+                    new PostTagMap
+                    {
+                        PostId = 8,
+                        TagId = 1,
+                    },
+                    new PostTagMap
+                    {
+                        PostId = 9,
+                        TagId = 1,
+                    },
+                    new PostTagMap
+                    {
+                        PostId = 10,
+                        TagId = 1,
                     }
             );
 

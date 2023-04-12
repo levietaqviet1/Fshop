@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿
+@using FA.JustBlog.ViewModel.ViewModel
+@using FA.JustBlog.Service.category
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -28,11 +31,24 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto py-4 py-lg-0">
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="@Url.Action("index","Home")">Home</a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" asp-action="Index" asp-controller="Post">Posts</a></li>
-                   @* <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">Sample Post</a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Contact</a></li>*@
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" asp-action="Index" asp-controller="Post">Posts</a></li> 
                     @if (User.Identity?.IsAuthenticated ?? false)
                     {
+                        <li class="nav-item dropdown">
+                            <a class="nav-link px-lg-3 py-3 py-lg-4 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Categories
+                            </a>
+                            @{
+                                ICategoryService categoryService = new CategoryService();
+                                var listC = categoryService.GetAll().DataList;
+                            }
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                @foreach (CategoryViewModel item in listC)
+                                {
+                                    <li><a class="dropdown-item" href="@Url.Action("Index","Post", new { category=item.UrlSlug })">@item.Name</a></li>
+                                }
+                            </ul>
+                        </li>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/Identity/Account/Logout">Log Out</a></li>
                     }
                     else
@@ -40,7 +56,7 @@
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/Identity/Account/Login">Login</a></li>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/Identity/Account/Register">Sign Up</a></li>
                     }
-
+                     
                 </ul>
             </div>
         </div>

@@ -2,10 +2,10 @@
 {
     public class PostTagMapViewModel
     {
-        public int PostViewModelId { get; set; }
-        public PostViewModel PostViewModel { get; set; }
-        public int TagViewModelId { get; set; }
-        public TagViewModel TagViewModel { get; set; }
+        public int PostId { get; set; }
+        public PostViewModel Post { get; set; }
+        public int TagId { get; set; }
+        public TagViewModel Tag { get; set; }
 
     }
 }

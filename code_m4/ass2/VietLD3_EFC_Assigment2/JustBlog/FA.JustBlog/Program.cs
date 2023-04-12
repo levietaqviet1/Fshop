@@ -1,7 +1,9 @@
 using FA.JustBlog.Core.DataContext;
 using FA.JustBlog.Core.Models;
+using FA.JustBlog.Service.category;
 using FA.JustBlog.Service.map;
 using FA.JustBlog.Service.post;
+using FA.JustBlog.Service.tag;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -24,8 +26,8 @@ builder.Services.AddRazorPages();
 builder.Services.AddAutoMapper(typeof(MapperConfig));
 
 builder.Services.AddScoped<IPostService, PostService>();
-builder.Services.AddScoped<IPostService, PostService>();
-
+builder.Services.AddScoped<ITagService, TagService>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
 
 var app = builder.Build();
 

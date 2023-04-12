@@ -18,6 +18,7 @@ namespace FA.JustBlog.Service.post
             _unitOfWork = unitOfWork ?? new UnitOfWork();
             _mapper = mapper;
             _userManager = userManager;
+
         }
         public ResponseResult<PostViewModel> Add(PostViewModel postViewModel)
         {
@@ -62,12 +63,13 @@ namespace FA.JustBlog.Service.post
             }
         }
 
-        public ResponseResult<PostViewModel> GetAll()
+        public ResponseResult<PostViewModel> GetAll(string? tagUrlSlug, string? cateUrlSlug)
         {
             ResponseResult<PostViewModel> response = new ResponseResult<PostViewModel>();
             try
             {
-                IList<Post> listPost = _unitOfWork.PostRepository.GetAll().OrderBy(x => x.PostedOn).ToArray();
+                IList<Post> listPost = _unitOfWork.PostRepository.GetAll().OrderByDescending(x => x.PostedOn).ToArray();
+
                 if (listPost != null)
                 {
                     foreach (Post post in listPost)
@@ -75,6 +77,16 @@ namespace FA.JustBlog.Service.post
                         post.PostTagMaps = _unitOfWork.PostTagMapRepository.GetByPost(post.Id);
                         post.Comments = _unitOfWork.CommentRepository.GetAll().Where(x => x.PostId == post.Id).ToList();
                         post.UsingIdentityUser = _userManager.FindByIdAsync(post.UsingIdentityUserId).Result;
+                        post.Category = _unitOfWork.CategoryRepository.Find(post.CategoryId);
+                    }
+
+                    if (tagUrlSlug != null)
+                    {
+                        listPost = listPost.Where(x => x.PostTagMaps.Any(z => z.Tag.UrlSlug == tagUrlSlug)).ToArray();
+                    }
+                    if (cateUrlSlug != null)
+                    {
+                        listPost = listPost.Where(x => x.Category.UrlSlug == cateUrlSlug).ToArray();
                     }
                     var postViewModel = _mapper.Map<List<PostViewModel>>(listPost);
                     response.DataList = postViewModel;
@@ -161,12 +173,13 @@ namespace FA.JustBlog.Service.post
             return response;
         }
 
-        public ResponseResult<PostViewModel> GetMostView()
+        public ResponseResult<PostViewModel> GetMostView(string? tagUrlSlug, string? cateUrlSlug)
         {
             ResponseResult<PostViewModel> response = new ResponseResult<PostViewModel>();
             try
             {
-                IList<Post> listPost = _unitOfWork.PostRepository.GetAll().OrderBy(x => x.ViewCount).Take(5).OrderBy(x => x.PostedOn).ToArray();
+                IList<Post> listPost = _unitOfWork.PostRepository.GetAll().OrderByDescending(x => x.ViewCount).ToArray();
+
                 if (listPost != null)
                 {
                     foreach (Post post in listPost)
@@ -174,8 +187,18 @@ namespace FA.JustBlog.Service.post
                         post.PostTagMaps = _unitOfWork.PostTagMapRepository.GetByPost(post.Id);
                         post.Comments = _unitOfWork.CommentRepository.GetAll().Where(x => x.PostId == post.Id).ToList();
                         post.UsingIdentityUser = _userManager.FindByIdAsync(post.UsingIdentityUserId).Result;
+                        post.Category = _unitOfWork.CategoryRepository.Find(post.CategoryId);
                     }
-                    var postViewModel = _mapper.Map<List<PostViewModel>>(listPost);
+                    if (tagUrlSlug != null)
+                    {
+                        listPost = listPost.Where(x => x.PostTagMaps.Any(z => z.Tag.UrlSlug == tagUrlSlug)).ToArray();
+                    }
+                    if (cateUrlSlug != null)
+                    {
+                        listPost = listPost.Where(x => x.Category.UrlSlug == cateUrlSlug).ToArray();
+                    }
+                    List<PostViewModel> postViewModel = _mapper.Map<List<PostViewModel>>(listPost.Take(5));
+
                     response.DataList = postViewModel;
                     response.IsSuccessed = true;
                     response.StatusCode = 200;

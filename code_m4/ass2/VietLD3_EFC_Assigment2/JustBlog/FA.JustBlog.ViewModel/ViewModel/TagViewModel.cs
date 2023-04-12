@@ -4,7 +4,7 @@
     {
         public TagViewModel()
         {
-            PostTagMapViewModels = new List<PostTagMapViewModel>();
+            PostTagMaps = new List<PostTagMapViewModel>();
         }
 
         public int Id { get; set; }
@@ -13,7 +13,7 @@
         public string Description { get; set; }
         public int Count { get; set; }
 
-        public virtual IList<PostTagMapViewModel> PostTagMapViewModels { get; set; }
+        public virtual IList<PostTagMapViewModel> PostTagMaps { get; set; }
 
 
     }
