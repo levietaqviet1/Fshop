@@ -2,12 +2,13 @@
 
 namespace FA.JustBlog.ViewModel.ViewModel
 {
+
     public class PostViewModel
     {
-        public PostViewModel()
-        {
-            PostTagMapsViewModel = new List<PostTagMapViewModel>();
-        }
+        //public PostViewModel()
+        //{
+        //    PostTagMaps = new List<PostTagMapViewModel>();
+        //}
         public int Id { get; set; }
 
         public string Title { get; set; }
@@ -33,8 +34,8 @@ namespace FA.JustBlog.ViewModel.ViewModel
 
         public int CategoryId { get; set; }
         public CategoryViewModel CategoryViewModel { get; set; }
-        public virtual IList<PostTagMapViewModel> PostTagMapsViewModel { get; set; }
-        public virtual IList<CommentViewModel> CommentViewModels { get; set; }
+        public virtual IList<PostTagMap> PostTagMaps { get; set; }
+        // public virtual IList<CommentViewModel> CommentViewModels { get; set; }
 
         public string UsingIdentityUserId { get; set; }
         public UsingIdentityUser UsingIdentityUser;

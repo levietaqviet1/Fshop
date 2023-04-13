@@ -24,11 +24,11 @@
                     </p>
                     <h4 class="post-subtitle">@item.ShortDescription</h4>
                 </div>
-                @foreach (PostTagMapViewModel itemSub in item.PostTagMapsViewModel)
+               @* @foreach (PostTagMapViewModel itemSub in item.)
                 {
 
                     <a class="border mt-1" href="@Url.Action("Index","Post", new { tag = itemSub.Tag.UrlSlug })" , style="background-color: #333; color: #fff">@itemSub.Tag.Name</a>
-                }
+                }*@
                 <!-- Divider-->
                 <hr class="my-4" />
             }

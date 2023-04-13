@@ -8,15 +8,21 @@ namespace FA.JustBlog.Service.map
     {
         public MapperConfig()
         {
-            CreateMap<Category, CategoryViewModel>().ReverseMap();
-            CreateMap<Post, PostViewModel>().ReverseMap();
-            CreateMap<PostTagMap, PostTagMapViewModel>().ReverseMap();
-            CreateMap<Comment, CommentViewModel>().ReverseMap();
+            CreateMap<Category, CategoryViewModel>();
 
-            CreateMap<CategoryViewModel, Category>().ReverseMap();
-            CreateMap<PostViewModel, Post>().ReverseMap();
-            CreateMap<PostTagMapViewModel, PostTagMap>().ReverseMap();
-            CreateMap<CommentViewModel, Comment>().ReverseMap();
+            CreateMap<Comment, CommentViewModel>();
+            CreateMap<Post, PostViewModel>()
+
+                .ForMember(dest => dest.CategoryViewModel, act => act.MapFrom(src => src.Category))
+                .ForMember(dest => dest.PostTagMapsViewModel, act => act.MapFrom(src => src.PostTagMaps))
+               // .IncludeMembers(x=> x.PostTagMaps, z=> z.);
+
+            CreateMap<PostTagMap, PostTagMapViewModel>();
+
+            //CreateMap<CategoryViewModel, Category>().ReverseMap();
+            //CreateMap<PostViewModel, Post>().ReverseMap();
+            //CreateMap<PostTagMapViewModel, PostTagMap>().ReverseMap();
+            //CreateMap<CommentViewModel, Comment>().ReverseMap();
         }
     }
 }
