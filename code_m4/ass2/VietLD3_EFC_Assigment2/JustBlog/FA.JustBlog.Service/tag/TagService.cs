@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using FA.JustBlog.Core.Models;
 using FA.JustBlog.Core.Repositories.UnitOfWork;
+using FA.JustBlog.Core.Utill;
 using FA.JustBlog.ViewModel;
 using FA.JustBlog.ViewModel.ViewModel;
 using Microsoft.AspNetCore.Identity;
@@ -24,6 +25,7 @@ namespace FA.JustBlog.Service.tag
             try
             {
                 var tag = _mapper.Map<Tag>(tagViewModel);
+                tag.UrlSlug = Utils.ConFigUrlSlug(tag.Name);
                 _unitOfWork.TagRepository.Add(tag);
                 return new ResponseResult<TagViewModel>
                 {
@@ -157,6 +159,7 @@ namespace FA.JustBlog.Service.tag
             try
             {
                 var tag = _mapper.Map<Tag>(tagViewModel);
+                tag.UrlSlug = Utils.ConFigUrlSlug(tag.Name);
                 _unitOfWork.TagRepository.Update(tag);
                 return new ResponseResult<TagViewModel>()
                 {

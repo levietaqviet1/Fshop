@@ -2,6 +2,7 @@
 using AutoMapper;
 using FA.JustBlog.Core.Models;
 using FA.JustBlog.Core.Repositories.UnitOfWork;
+using FA.JustBlog.Core.Utill;
 using FA.JustBlog.ViewModel;
 using FA.JustBlog.ViewModel.ViewModel;
 
@@ -29,6 +30,7 @@ namespace FA.JustBlog.Service.category
             try
             {
                 var categoryModels = _mapper.Map<Category>(categoryViewModel);
+                categoryModels.UrlSlug = Utils.ConFigUrlSlug(categoryViewModel.Name);
                 _unitOfWork.CategoryRepository.Add(categoryModels);
                 return new ResponseResult<CategoryViewModel>
                 {
@@ -141,7 +143,7 @@ namespace FA.JustBlog.Service.category
 
                 category.Name = categoryViewModel.Name;
                 category.Description = categoryViewModel.Description;
-                category.UrlSlug = categoryViewModel.UrlSlug;
+                category.UrlSlug = Utils.ConFigUrlSlug(category.Name);
                 _unitOfWork.CategoryRepository.Update(category);
                 return new ResponseResult<CategoryViewModel>()
                 {

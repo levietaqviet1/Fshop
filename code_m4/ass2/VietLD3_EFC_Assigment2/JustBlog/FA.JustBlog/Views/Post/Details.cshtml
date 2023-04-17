@@ -29,20 +29,8 @@
 
                         <!-- Comments section -->
                         <hr />
-                        <h3 class="mb-3">Comments</h3>
-
-                        @foreach (Comment item in Model.Comments)
-                        {
-                            <div class="card mb-3">
-                                <div class="card-header">
-                                    Commented by @item.UsingIdentityUser.Firstname @item.UsingIdentityUser.LastName on @item.CommentTime
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">@item.CommentHeader</h5>
-                                    <p class="card-text">@item.CommentText</p>
-                                </div>
-                            </div>
-                        }
+                        @Html.Partial("_Comment")
+                       
                     </div>
                 </div>
             </div>
@@ -50,4 +38,3 @@
 
     </div>
 </div>
-@Html.Partial("_Comment")

@@ -1,5 +1,6 @@
-﻿@model FA.JustBlog.Core.Models.Post
-
+﻿@using FA.JustBlog.ViewModel.ViewModel
+@model PostViewModel
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
 @{
     ViewData["Title"] = "Create";
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
@@ -11,46 +12,42 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form action="/Admin/Post/Create" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Title" class="control-label"></label>
+                <label asp-for="Title" class="control-label">Title</label>
                 <input asp-for="Title" class="form-control" />
                 <span asp-validation-for="Title" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ShortDescription" class="control-label"></label>
+                <label asp-for="ShortDescription" class="control-label">ShortDescription</label>
                 <input asp-for="ShortDescription" class="form-control" />
                 <span asp-validation-for="ShortDescription" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="PostContent" class="control-label"></label>
+                <label asp-for="PostContent" class="control-label">PostContent</label>
                 <input asp-for="PostContent" class="form-control" />
                 <span asp-validation-for="PostContent" class="text-danger"></span>
-            </div>
+            </div> 
             <div class="form-group">
-                <label asp-for="UrlSlug" class="control-label"></label>
-                <input asp-for="UrlSlug" class="form-control" />
-                <span asp-validation-for="UrlSlug" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="PostedOn" class="control-label"></label>
+                <label asp-for="PostedOn" class="control-label">PostedOn</label>
                 <input asp-for="PostedOn" class="form-control" />
                 <span asp-validation-for="PostedOn" class="text-danger"></span>
+            </div> 
+            <div class="form-group">
+                <label asp-for="Published" class="control-label">PostedOn</label>
+                <input asp-for="Published"   />
+                <span asp-validation-for="Published" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Modified" class="control-label"></label>
-                <input asp-for="Modified" class="form-control" />
-                <span asp-validation-for="Modified" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CategoryId" class="control-label"></label>
-                <select asp-for="CategoryId" class ="form-control" asp-items="ViewBag.CategoryId"></select>
-            </div>
-            <div class="form-group">
-                <label asp-for="UsingIdentityUserId" class="control-label"></label>
-                <select asp-for="UsingIdentityUserId" class ="form-control" asp-items="ViewBag.UsingIdentityUserId"></select>
-            </div>
+                <label asp-for="CategoryId" class="control-label">Category</label>
+                <select asp-for="CategoryId">
+                    @foreach (CategoryViewModel item in ViewBag.CateList)
+                    {
+                        <option value="@item.Id">@item.Name</option>
+                    }
+                </select> 
+            </div> 
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>

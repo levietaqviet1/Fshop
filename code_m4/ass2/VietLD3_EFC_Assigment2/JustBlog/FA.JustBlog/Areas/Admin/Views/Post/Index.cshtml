@@ -1,5 +1,6 @@
 ﻿@using FA.JustBlog.ViewModel.ViewModel;
-
+@using System.Security.Claims
+@using FA.JustBlog.Core.Utill
 @model IList<PostViewModel>
 
 @{
@@ -80,9 +81,16 @@
                     @Html.DisplayFor(modelItem => item.TotalRate)
                 </td>
                 <td>
-                    <button>s</button>
-                    <a href="#">Edit</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    @if (User.Claims.Any(c => c.Type == ClaimTypes.Role && (c.Value == $"{RoleUnit.Role_BlogOwner}" || c.Value == $"{RoleUnit.Role_Contributor}")))
+                    {
+                        <a href="/Admin/Post/Edit?id=@item.Id">Edit</a>
+                    }
+                    @if (User.Claims.Any(c => c.Type == ClaimTypes.Role && (c.Value == $"{RoleUnit.Role_BlogOwner}")))
+                    {
+                        <br/>
+                        <a href="/Admin/Post/Delete?id=@item.Id">Delete</a>
+                    }
+                    
                 </td>
             </tr>
         }

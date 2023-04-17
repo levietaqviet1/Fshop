@@ -1,46 +1,20 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+﻿@using FA.JustBlog.Core.Models
+@using FA.JustBlog.ViewModel.ViewModel
+@model PostViewModel
+@if (Model.Comments.Count > 0)
+                        {
+                             <h3 class="mb-3">Comments</h3>
 
-<head id="ctl00_Head1" itemscope="" itemtype="http://schema.org/WebPage">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
-    <link rel="stylesheet" type="text/css"
-          href="share\comment\commentbt.css"> 
-</head>
-
-<body>
-    <div class="comment">
-        <div class="tab-content">
-            <div id="nt_comments" class="tab-pane fade in active">
-                <div class="comment-wrapper">
-                    <div id="comment_form"></div>
-                    <div class="comment-list">
-                        <div class="item clearfix" id="comment_28297030">
-                            <figure class="avatar">
-                                <img src="//st.nettruyenvt.com/data/sites/1/useravatars/954391.jpg?v=3399"
-                                     alt="Bạch Thuần" class="lazy"
-                                     data-original="//st.nettruyenvt.com/data/sites/1/useravatars/954391.jpg?v=3399">
-                            </figure>
-                            <div class="summary">
-                                <i class="fa fa-angle-left fa-arrow">
-                                </i>
-                                <div class="info">
-                                    <div class="comment-header">
-                                        <span class="authorname name-5">Bạch Thuần</span>
-                                        <span class="member level-5">
-                                            <span data-level="5">Cấp 5</span>
-                                            <span class="progress-bar" style="width:12%">
-                                            </span>
-                                        </span>
-                                    </div>
-                                    <div class="comment-content">Mangaad vhap 62 rồi nè</div>
+                        @foreach (Comment item in Model.Comments)
+                        {
+                            <div class="card mb-3">
+                                <div class="card-header">
+                                    Commented by @item.UsingIdentityUser.Firstname @item.UsingIdentityUser.LastName on @item.CommentTime
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">@item.CommentHeader</h5>
+                                    <p class="card-text">@item.CommentText</p>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-
-</html>
+                        }
+                        }

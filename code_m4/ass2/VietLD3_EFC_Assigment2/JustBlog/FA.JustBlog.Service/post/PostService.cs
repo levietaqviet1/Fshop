@@ -25,6 +25,7 @@ namespace FA.JustBlog.Service.post
             try
             {
                 var post = _mapper.Map<Post>(postViewModel);
+                post.Modified = DateTime.UtcNow;
                 _unitOfWork.PostRepository.Add(post);
                 return new ResponseResult<PostViewModel>
                 {
@@ -242,6 +243,7 @@ namespace FA.JustBlog.Service.post
                 }
 
                 post.Title = postViewModel.Title;
+                post.UrlSlug = postViewModel.UrlSlug;
                 post.ShortDescription = postViewModel.ShortDescription;
                 post.Published = postViewModel.Published;
                 post.Modified = DateTime.Now;

@@ -20,6 +20,7 @@ namespace FA.JustBlog.Core.Repositories.Generic
         public void Add(T entity)
         {
             dbSet.Add(entity);
+            _context.SaveChanges();
         }
 
         /// <summary>
@@ -84,6 +85,7 @@ namespace FA.JustBlog.Core.Repositories.Generic
         {
             dbSet.Attach(entity);
             _context.Entry(entity).State = EntityState.Modified;
+            _context.SaveChanges();
         }
     }
 }

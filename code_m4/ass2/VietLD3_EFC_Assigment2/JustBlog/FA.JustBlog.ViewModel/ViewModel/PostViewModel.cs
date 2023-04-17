@@ -5,10 +5,7 @@ namespace FA.JustBlog.ViewModel.ViewModel
 
     public class PostViewModel
     {
-        //public PostViewModel()
-        //{
-        //    PostTagMaps = new List<PostTagMapViewModel>();
-        //}
+
         public int Id { get; set; }
 
         public string Title { get; set; }
@@ -29,7 +26,7 @@ namespace FA.JustBlog.ViewModel.ViewModel
         public decimal Rate
         {
             get { return rate; }
-            set { rate = value == null ? TotalRate == null ? 0 : TotalRate / RateCount == null ? 0 : RateCount : value; }
+            set { rate = value == null ? 0 : value; }
         }
 
         public int CategoryId { get; set; }
