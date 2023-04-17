@@ -35,7 +35,7 @@ namespace FA.JustBlog.ViewModel.ViewModel
         public int CategoryId { get; set; }
         public CategoryViewModel CategoryViewModel { get; set; }
         public virtual IList<PostTagMap> PostTagMaps { get; set; }
-        // public virtual IList<CommentViewModel> CommentViewModels { get; set; }
+        public virtual IList<Comment> Comments { get; set; }
 
         public string UsingIdentityUserId { get; set; }
         public UsingIdentityUser UsingIdentityUser;

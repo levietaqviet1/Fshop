@@ -1,5 +1,90 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@using FA.JustBlog.ViewModel.ViewModel;
+
+@model IList<PostViewModel>
+
 @{
+    ViewData["Title"] = "All Posts";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
 }
+
+<h1>All Posts</h1> 
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Title
+            </th>
+            <th>
+                ShortDescription
+            </th> 
+            <th>
+                UrlSlug
+            </th>
+            <th>
+                Published
+            </th>
+            <th>
+                PostedOn
+            </th>
+            <th>
+                Category
+            </th>
+            <th>
+                ViewCount
+            </th>
+            <th>
+                RateCount
+            </th>
+            <th>
+                TotalRate
+            </th>
+            <th>Function</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <a href="/post/Details?post=@item.UrlSlug" target="_blank">@item.Title</a> 
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ShortDescription)
+                </td> 
+                <td>
+                    @Html.DisplayFor(modelItem => item.UrlSlug)
+                </td>
+                <td>
+                    @if (item.Published)
+                    {
+                        <p>Yes</p>
+                    }
+                    else
+                    {
+                        <p>No</p>
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PostedOn)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CategoryViewModel.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ViewCount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RateCount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TotalRate)
+                </td>
+                <td>
+                    <button>s</button>
+                    <a href="#">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

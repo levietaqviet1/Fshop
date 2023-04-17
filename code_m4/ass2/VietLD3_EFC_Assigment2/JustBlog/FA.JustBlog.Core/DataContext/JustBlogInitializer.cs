@@ -15,6 +15,13 @@ namespace FA.JustBlog.Core.DataContext
                 (
                     new IdentityRole
                     {
+                        Id = "db1782c7-bf14-41f7-bc1f-950128ecb3bd",
+                        Name = "User",
+                        NormalizedName = Uppercase("User"),
+                        ConcurrencyStamp = "b11bbed6-4919-4f52-a4b1-c45091a8fbf0"
+                    },
+                    new IdentityRole
+                    {
                         Id = "db5782c7-bf14-41f7-bc1f-950128ecb3bb",
                         Name = "Blog Owner",
                         NormalizedName = Uppercase("Blog Owner"),
@@ -68,6 +75,23 @@ namespace FA.JustBlog.Core.DataContext
                          AccessFailedCount = 0,
                          PhoneNumber = "045896589",
                      },
+                     new UsingIdentityUser
+                     {
+                         Id = "21811bcb-fae8-4c00-9c33-de997d4e8107",
+                         Firstname = "Viet",
+                         LastName = "User",
+                         UserName = "vietUser.com",
+                         NormalizedUserName = Uppercase("vietUser@gmail.com"),
+                         Email = "vietUser@gmail.com",
+                         NormalizedEmail = Uppercase("vietUser@gmail.com"),
+                         EmailConfirmed = true,
+                         PasswordHash = "AQAAAAEAACcQAAAAEGf8AICmlUDtMuw9p1TPGYB0/OH8X60Ud06sUakpWa+Tpu2IJAZvF6Ht7DxsYeWEjA==",
+                         PhoneNumberConfirmed = true,
+                         TwoFactorEnabled = false,
+                         LockoutEnabled = false,
+                         AccessFailedCount = 0,
+                         PhoneNumber = "0922556369",
+                     },
                       new UsingIdentityUser
                       {
                           Id = "b0446349-235d-4b0f-a8e9-87382a82923f",
@@ -91,13 +115,23 @@ namespace FA.JustBlog.Core.DataContext
                 (
                     new IdentityUserRole<string>
                     {
-                        RoleId = "db5782c7-bf14-41f7-bc1f-950128ecb3bb",
+                        RoleId = "e94a9bca-5a7a-4806-b8cd-97e9075ff13a",
                         UserId = "97571dcc-079e-4c3a-ba9b-bbde3d03a03d"
                     },
                     new IdentityUserRole<string>
                     {
-                        RoleId = "e94a9bca-5a7a-4806-b8cd-97e9075ff13a",
+                        RoleId = "db5782c7-bf14-41f7-bc1f-950128ecb3bb",
                         UserId = "21842bcb-fae8-4c00-9c33-de997d4e8103"
+                    },
+                    new IdentityUserRole<string>
+                    {
+                        RoleId = "db1782c7-bf14-41f7-bc1f-950128ecb3bd",
+                        UserId = "21811bcb-fae8-4c00-9c33-de997d4e8107"
+                    },
+                    new IdentityUserRole<string>
+                    {
+                        RoleId = "db1782c7-bf14-41f7-bc1f-950128ecb3bd",
+                        UserId = "b0446349-235d-4b0f-a8e9-87382a82923f"
                     }
                 );
 
@@ -297,6 +331,23 @@ namespace FA.JustBlog.Core.DataContext
                         ViewCount = 90,
                         RateCount = 300,
                         TotalRate = 450,
+                        Rate = 0
+                    },
+                    new Post
+                    {
+                        Id = 11,
+                        Title = "Querying in Entity Core",
+                        ShortDescription = "You can build and execute queries using Entity Framework to fetch the data from the underlying database. EF 6 supports different types of queries which in turn convert into SQL queries for the underlying database.",
+                        PostContent = "Language-Integrated Query (LINQ) is a powerful query language introduced in Visual Studio 2008. As the name suggests, LINQ-to-Entities queries operate on the entity set (DbSet type properties) to access the data from the underlying database. You can use the LINQ method syntax or query syntax when querying with EDM. Visit LINQ Tutorials to learn LINQ step-by-step.",
+                        UrlSlug = Utils.ConFigUrlSlug("Querying in Entity Core"),
+                        Published = false,
+                        PostedOn = DateTime.Parse("2023-02-15"),
+                        Modified = DateTime.Parse("2023-02-15"),
+                        CategoryId = 2,
+                        UsingIdentityUserId = "21842bcb-fae8-4c00-9c33-de997d4e8103",
+                        ViewCount = 100,
+                        RateCount = 300,
+                        TotalRate = 500,
                         Rate = 0
                     }
             );

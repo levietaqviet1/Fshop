@@ -31,6 +31,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\FA.JustBlog.Core\FA.JustBlog.Core.csproj" />
     <ProjectReference Include="..\FA.JustBlog.Service\FA.JustBlog.Service.csproj" />
     <ProjectReference Include="..\FA.JustBlog.ViewModel\FA.JustBlog.ViewModel.csproj" />

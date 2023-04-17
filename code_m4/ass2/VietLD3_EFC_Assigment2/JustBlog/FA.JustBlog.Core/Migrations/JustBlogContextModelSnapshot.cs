@@ -94,7 +94,7 @@ namespace FA.JustBlog.Core.Migrations
                     b.Property<DateTime>("CommentTime")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
-                        .HasDefaultValue(new DateTime(2023, 4, 12, 10, 12, 51, 745, DateTimeKind.Local).AddTicks(1199));
+                        .HasDefaultValue(new DateTime(2023, 4, 17, 16, 37, 13, 596, DateTimeKind.Local).AddTicks(3600));
 
                     b.Property<int>("PostId")
                         .HasColumnType("int");
@@ -428,6 +428,23 @@ namespace FA.JustBlog.Core.Migrations
                             UrlSlug = "explicit-loading-in-entity-framework",
                             UsingIdentityUserId = "21842bcb-fae8-4c00-9c33-de997d4e8103",
                             ViewCount = 90
+                        },
+                        new
+                        {
+                            Id = 11,
+                            CategoryId = 2,
+                            Modified = new DateTime(2023, 2, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            PostContent = "Language-Integrated Query (LINQ) is a powerful query language introduced in Visual Studio 2008. As the name suggests, LINQ-to-Entities queries operate on the entity set (DbSet type properties) to access the data from the underlying database. You can use the LINQ method syntax or query syntax when querying with EDM. Visit LINQ Tutorials to learn LINQ step-by-step.",
+                            PostedOn = new DateTime(2023, 2, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Published = false,
+                            Rate = 0.6m,
+                            RateCount = 300m,
+                            ShortDescription = "You can build and execute queries using Entity Framework to fetch the data from the underlying database. EF 6 supports different types of queries which in turn convert into SQL queries for the underlying database.",
+                            Title = "Querying in Entity Core",
+                            TotalRate = 500m,
+                            UrlSlug = "querying-in-entity-core",
+                            UsingIdentityUserId = "21842bcb-fae8-4c00-9c33-de997d4e8103",
+                            ViewCount = 100
                         });
                 });
 
@@ -644,7 +661,7 @@ namespace FA.JustBlog.Core.Migrations
                         {
                             Id = "97571dcc-079e-4c3a-ba9b-bbde3d03a03d",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "184cd4ad-15bd-4aec-b007-54e2bc700cee",
+                            ConcurrencyStamp = "7d6e8a26-1ac5-4a4a-a6c6-da1f8e23d6a0",
                             Email = "vietContributor@gmail.com",
                             EmailConfirmed = true,
                             Firstname = "Viet",
@@ -655,7 +672,7 @@ namespace FA.JustBlog.Core.Migrations
                             PasswordHash = "AQAAAAEAACcQAAAAEJ51SmQrANatorjKkODvG7wRz8i73uIAUIHAmXRldg8ikayfZiaDQvbSOuY+XFPiJQ==",
                             PhoneNumber = "0985695635",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "3ee6eb86-ebe1-4c16-8c80-3b0d7fe43482",
+                            SecurityStamp = "2fa1337f-32b3-4078-b650-1decf9470b37",
                             TwoFactorEnabled = false,
                             UserName = "vietContributor@gmail.com"
                         },
@@ -663,7 +680,7 @@ namespace FA.JustBlog.Core.Migrations
                         {
                             Id = "21842bcb-fae8-4c00-9c33-de997d4e8103",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "4ee97baa-7cc7-420a-85c5-fbf07102c3d6",
+                            ConcurrencyStamp = "90badfde-c2cf-44ae-9749-e6d75472f370",
                             Email = "vietBlogOwner@gmail.com",
                             EmailConfirmed = true,
                             Firstname = "Khi",
@@ -674,15 +691,34 @@ namespace FA.JustBlog.Core.Migrations
                             PasswordHash = "AQAAAAEAACcQAAAAEGf8AICmlUDtMuw9p1TPGYB0/OH8X60Ud06sUakpWa+Tpu2IJAZvF6Ht7DxsYeWEjA==",
                             PhoneNumber = "045896589",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "de650c85-58cd-48b5-8536-529db879f6b6",
+                            SecurityStamp = "cb1db7cb-33d7-42d1-8f1d-1c69ebe6f70c",
                             TwoFactorEnabled = false,
                             UserName = "vietBlogOwner@gmail.com"
                         },
                         new
                         {
+                            Id = "21811bcb-fae8-4c00-9c33-de997d4e8107",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "308ea6d0-3fbd-4a02-8242-f15caa4f8356",
+                            Email = "vietUser@gmail.com",
+                            EmailConfirmed = true,
+                            Firstname = "Viet",
+                            LastName = "User",
+                            LockoutEnabled = false,
+                            NormalizedEmail = "VIETUSER@GMAIL.COM",
+                            NormalizedUserName = "VIETUSER@GMAIL.COM",
+                            PasswordHash = "AQAAAAEAACcQAAAAEGf8AICmlUDtMuw9p1TPGYB0/OH8X60Ud06sUakpWa+Tpu2IJAZvF6Ht7DxsYeWEjA==",
+                            PhoneNumber = "0922556369",
+                            PhoneNumberConfirmed = true,
+                            SecurityStamp = "a4d834a9-8c02-4b18-9fc1-2158620b349a",
+                            TwoFactorEnabled = false,
+                            UserName = "vietUser.com"
+                        },
+                        new
+                        {
                             Id = "b0446349-235d-4b0f-a8e9-87382a82923f",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "989c7fe9-ff81-4c6a-bda2-4b6b0f06ff2e",
+                            ConcurrencyStamp = "2607a386-1e9c-4812-abda-5926e8629430",
                             Email = "user@gmail.com",
                             EmailConfirmed = true,
                             Firstname = "Toan",
@@ -693,7 +729,7 @@ namespace FA.JustBlog.Core.Migrations
                             PasswordHash = "AQAAAAEAACcQAAAAED7S01cmZYmeJEKd7/wVP+HGOCSHbR/Xl2NRWyWTXB6JbwfXREcO2D908cRKtFG2Ag==",
                             PhoneNumber = "0458796598",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "c57fd1ed-04b3-47ff-b082-cfe9ae3e9fa6",
+                            SecurityStamp = "f50735fd-3006-4b33-b158-f61aadd38582",
                             TwoFactorEnabled = false,
                             UserName = "user@gmail.com"
                         });
@@ -726,6 +762,13 @@ namespace FA.JustBlog.Core.Migrations
                     b.ToTable("AspNetRoles", (string)null);
 
                     b.HasData(
+                        new
+                        {
+                            Id = "db1782c7-bf14-41f7-bc1f-950128ecb3bd",
+                            ConcurrencyStamp = "b11bbed6-4919-4f52-a4b1-c45091a8fbf0",
+                            Name = "User",
+                            NormalizedName = "USER"
+                        },
                         new
                         {
                             Id = "db5782c7-bf14-41f7-bc1f-950128ecb3bb",
@@ -834,12 +877,22 @@ namespace FA.JustBlog.Core.Migrations
                         new
                         {
                             UserId = "97571dcc-079e-4c3a-ba9b-bbde3d03a03d",
-                            RoleId = "db5782c7-bf14-41f7-bc1f-950128ecb3bb"
+                            RoleId = "e94a9bca-5a7a-4806-b8cd-97e9075ff13a"
                         },
                         new
                         {
                             UserId = "21842bcb-fae8-4c00-9c33-de997d4e8103",
-                            RoleId = "e94a9bca-5a7a-4806-b8cd-97e9075ff13a"
+                            RoleId = "db5782c7-bf14-41f7-bc1f-950128ecb3bb"
+                        },
+                        new
+                        {
+                            UserId = "21811bcb-fae8-4c00-9c33-de997d4e8107",
+                            RoleId = "db1782c7-bf14-41f7-bc1f-950128ecb3bd"
+                        },
+                        new
+                        {
+                            UserId = "b0446349-235d-4b0f-a8e9-87382a82923f",
+                            RoleId = "db1782c7-bf14-41f7-bc1f-950128ecb3bd"
                         });
                 });
 

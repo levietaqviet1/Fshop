@@ -76,6 +76,10 @@ namespace FA.JustBlog.Service.post
                     {
                         post.PostTagMaps = _unitOfWork.PostTagMapRepository.GetByPost(post.Id);
                         post.Comments = _unitOfWork.CommentRepository.GetAll().Where(x => x.PostId == post.Id).ToList();
+                        foreach (Comment comment in post.Comments)
+                        {
+                            comment.UsingIdentityUser = _userManager.FindByIdAsync(comment.UsingIdentityUserId).Result;
+                        }
                         post.UsingIdentityUser = _userManager.FindByIdAsync(post.UsingIdentityUserId).Result;
                         post.Category = _unitOfWork.CategoryRepository.Find(post.CategoryId);
                     }
@@ -151,6 +155,10 @@ namespace FA.JustBlog.Service.post
                 {
                     post1.PostTagMaps = _unitOfWork.PostTagMapRepository.GetByPost(post1.Id);
                     post1.Comments = _unitOfWork.CommentRepository.GetAll().Where(x => x.PostId == post1.Id).ToList();
+                    foreach (Comment comment in post1.Comments)
+                    {
+                        comment.UsingIdentityUser = _userManager.FindByIdAsync(comment.UsingIdentityUserId).Result;
+                    }
                     post1.UsingIdentityUser = _userManager.FindByIdAsync(post1.UsingIdentityUserId).Result;
                     var postViewModel = _mapper.Map<PostViewModel>(post1);
                     response.Data = postViewModel;

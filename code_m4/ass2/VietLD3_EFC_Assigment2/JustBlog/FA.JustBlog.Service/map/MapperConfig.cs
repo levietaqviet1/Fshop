@@ -12,17 +12,16 @@ namespace FA.JustBlog.Service.map
 
             CreateMap<Comment, CommentViewModel>();
             CreateMap<Post, PostViewModel>()
-
-                .ForMember(dest => dest.CategoryViewModel, act => act.MapFrom(src => src.Category))
-                .ForMember(dest => dest.PostTagMapsViewModel, act => act.MapFrom(src => src.PostTagMaps))
-               // .IncludeMembers(x=> x.PostTagMaps, z=> z.);
+                .ForMember(dest => dest.CategoryViewModel, act => act.MapFrom(src => src.Category));
 
             CreateMap<PostTagMap, PostTagMapViewModel>();
+            CreateMap<Tag, TagViewModel>();
 
-            //CreateMap<CategoryViewModel, Category>().ReverseMap();
-            //CreateMap<PostViewModel, Post>().ReverseMap();
-            //CreateMap<PostTagMapViewModel, PostTagMap>().ReverseMap();
-            //CreateMap<CommentViewModel, Comment>().ReverseMap();
+            CreateMap<CategoryViewModel, Category>();
+            CreateMap<PostViewModel, Post>();
+            CreateMap<PostTagMapViewModel, PostTagMap>();
+            CreateMap<CommentViewModel, Comment>();
+            CreateMap<TagViewModel, Tag>();
         }
     }
 }
