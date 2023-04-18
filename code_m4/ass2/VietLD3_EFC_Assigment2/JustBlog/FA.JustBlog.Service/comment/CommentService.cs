@@ -22,27 +22,151 @@ namespace FA.JustBlog.Service.comment
         }
         public ResponseResult<CommentViewModel> Add(CommentViewModel commentViewModel)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var comment = _mapper.Map<Comment>(commentViewModel);
+                _unitOfWork.CommentRepository.Add(comment);
+                return new ResponseResult<CommentViewModel>
+                {
+                    StatusCode = 200,
+                    IsSuccessed = true,
+                };
+            }
+            catch (Exception ex)
+            {
+                return new ResponseResult<CommentViewModel>
+                {
+                    StatusCode = 500,
+                    Message = ex.Message,
+                };
+            }
         }
 
         public ResponseResult<CommentViewModel> Delete(int id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                _unitOfWork.CommentRepository.Delete(id);
+                return new ResponseResult<CommentViewModel>
+                {
+                    StatusCode = 200,
+                    IsSuccessed = true,
+                };
+            }
+            catch (Exception ex)
+            {
+                return new ResponseResult<CommentViewModel>
+                {
+                    StatusCode = 500,
+                    Message = ex.Message,
+                };
+            }
         }
 
         public ResponseResult<CommentViewModel> GetAll()
         {
-            throw new NotImplementedException();
+            ResponseResult<CommentViewModel> response = new ResponseResult<CommentViewModel>();
+            try
+            {
+                IList<Comment> listComment = _unitOfWork.CommentRepository.GetAll().ToArray();
+
+                if (listComment != null)
+                {
+                    foreach (Comment item in listComment)
+                    {
+                        item.UsingIdentityUser = _userManager.FindByIdAsync(item.UsingIdentityUserId).Result;
+                        item.Post = _unitOfWork.PostRepository.Find(item.PostId);
+                    }
+
+
+                    var commentViews = _mapper.Map<List<CommentViewModel>>(listComment);
+                    response.DataList = commentViews;
+                    response.IsSuccessed = true;
+                    response.StatusCode = 200;
+                }
+                else
+                {
+                    response.IsSuccessed = false;
+                    response.Message = "No Data";
+                    response.StatusCode = 404;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                response.Message = "Loi 500 Server: " + ex.Message;
+                response.StatusCode = 500;
+            }
+            return response;
         }
 
         public ResponseResult<CommentViewModel> GetById(int id)
         {
-            throw new NotImplementedException();
+            ResponseResult<CommentViewModel> response = new ResponseResult<CommentViewModel>();
+            try
+            {
+                Comment comment = _unitOfWork.CommentRepository.Find(id);
+
+                if (comment != null)
+                {
+                    comment.UsingIdentityUser = _userManager.FindByIdAsync(comment.UsingIdentityUserId).Result;
+
+
+
+                    var commentViews = _mapper.Map<CommentViewModel>(comment);
+                    response.Data = commentViews;
+                    response.IsSuccessed = true;
+                    response.StatusCode = 200;
+                }
+                else
+                {
+                    response.IsSuccessed = false;
+                    response.Message = "No Data";
+                    response.StatusCode = 404;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                response.Message = "Loi 500 Server: " + ex.Message;
+                response.StatusCode = 500;
+            }
+            return response;
         }
 
         public ResponseResult<CommentViewModel> Update(CommentViewModel commentViewModel)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Comment comment = _unitOfWork.CommentRepository.Find(commentViewModel.Id);
+
+                if (comment == null)
+                {
+                    return new ResponseResult<CommentViewModel>()
+                    {
+                        Message = "No Data",
+                        StatusCode = 404,
+                    };
+                }
+
+                comment.CommentHeader = commentViewModel.CommentHeader;
+                comment.CommentText = commentViewModel.CommentText;
+                comment.CommentTime = DateTime.UtcNow;
+                _unitOfWork.CommentRepository.Update(comment);
+                return new ResponseResult<CommentViewModel>()
+                {
+                    StatusCode = 200,
+                    IsSuccessed = true,
+                };
+            }
+            catch (Exception ex)
+            {
+                return new ResponseResult<CommentViewModel>
+                {
+                    StatusCode = 500,
+                    Message = ex.Message,
+                };
+            }
         }
     }
 }

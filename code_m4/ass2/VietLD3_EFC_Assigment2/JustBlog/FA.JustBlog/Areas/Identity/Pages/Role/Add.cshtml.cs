@@ -1,10 +1,13 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using FA.JustBlog.Core.Utill;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.ComponentModel.DataAnnotations;
 
 namespace FA.JustBlog.Areas.Identity.Pages.Role
 {
+    [Authorize]
     public class AddModel : PageModel
     {
         private readonly RoleManager<IdentityRole> _roleManager;
@@ -31,9 +34,22 @@ namespace FA.JustBlog.Areas.Identity.Pages.Role
         public bool IsUpdate { set; get; }
 
         // Không cho truy cập trang mặc định mà không có handler
-        public IActionResult OnGet() => NotFound("Không thấy");
+        [Authorize(Roles = $"{RoleUnit.Role_BlogOwner}")]
+        public async Task<IActionResult> OnGet(bool IsUpdate = true)
+        {
+            Input = new InputModel();
+            if (!IsUpdate)
+            {
+                return await OnPostStartNewRole();
+            }
+            else
+            {
+                return NotFound("Không thấy");
+            }
+        }
         public IActionResult OnPost() => NotFound("Không thấy");
-        public IActionResult OnPostStartNewRole()
+        [Authorize(Roles = $"{RoleUnit.Role_BlogOwner}")]
+        public async Task<IActionResult> OnPostStartNewRole()
         {
             StatusMessage = "Hãy nhập thông tin để tạo role mới";
             IsUpdate = false;
@@ -42,6 +58,7 @@ namespace FA.JustBlog.Areas.Identity.Pages.Role
             return Page();
         }
         // Truy vấn lấy thông tin Role cần cập nhật
+        [Authorize(Roles = $"{RoleUnit.Role_BlogOwner}")]
         public async Task<IActionResult> OnPostStartUpdate()
         {
             StatusMessage = null;

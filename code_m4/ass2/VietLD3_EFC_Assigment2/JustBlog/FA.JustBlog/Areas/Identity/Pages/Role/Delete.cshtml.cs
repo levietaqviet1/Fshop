@@ -1,10 +1,13 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using FA.JustBlog.Core.Utill;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.ComponentModel.DataAnnotations;
 
 namespace FA.JustBlog.Areas.Identity.Pages.Role
 {
+    [Authorize(Roles = $"{RoleUnit.Role_BlogOwner}")]
     public class DeleteModel : PageModel
     {
         private readonly RoleManager<IdentityRole> _roleManager;
@@ -40,23 +43,10 @@ namespace FA.JustBlog.Areas.Identity.Pages.Role
             }
 
             ModelState.Clear();
+            await _roleManager.DeleteAsync(role);
+            StatusMessage = "Đã xóa " + role.Name;
 
-            if (isConfirmed)
-            {
-                //Xóa
-                await _roleManager.DeleteAsync(role);
-                StatusMessage = "Đã xóa " + role.Name;
-
-                return RedirectToPage("Index");
-            }
-            else
-            {
-                Input.Name = role.Name;
-                isConfirmed = true;
-
-            }
-
-            return Page();
+            return Redirect("/Admin/Role");
         }
     }
 }

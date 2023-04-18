@@ -55,7 +55,7 @@
                         @using System.Security.Claims
 
                         <!-- ... -->
-                        @if (User.Claims.Any(c => c.Type == ClaimTypes.Role && (c.Value == $"{RoleUnit.Role_Contributor}" || c.Value == $"{RoleUnit.Role_BlogOwner}")))
+                        @if (User.Claims.Any(c => c.Type == ClaimTypes.Role && (c.Value == $"{RoleUnit.Role_User}" || c.Value == $"{RoleUnit.Role_Contributor}" || c.Value == $"{RoleUnit.Role_BlogOwner}")))
                         {
                             <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/Admin/Post/Index">Admin</a></li>
                         }

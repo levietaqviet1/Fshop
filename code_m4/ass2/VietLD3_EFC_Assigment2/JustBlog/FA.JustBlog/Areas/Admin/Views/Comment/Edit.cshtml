@@ -1,0 +1,62 @@
+﻿@using FA.JustBlog.ViewModel.ViewModel
+@model CommentViewModel
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>Comment</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form action="/Admin/Comment/Edit" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="CommentHeader" class="control-label"></label>
+                <input asp-for="CommentHeader" class="form-control" />
+                <span asp-validation-for="CommentHeader" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CommentText" class="control-label"></label>
+                <input asp-for="CommentText" class="form-control" />
+                <span asp-validation-for="CommentText" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CommentTime" class="control-label"></label>
+                <input asp-for="CommentTime" class="form-control" />
+                <span asp-validation-for="CommentTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PostId" class="control-label"></label>
+                <select asp-for="PostId">
+                    @foreach (PostViewModel item in ViewBag.PostList)
+                    {
+                        @if (item.Id == Model.PostId)
+                        {
+                            <option selected value="@item.Id">@item.PostContent</option>
+                        }else{
+                            <option value="@item.Id">@item.PostContent</option>
+                        } 
+                    }
+                </select>
+            </div>
+            <div hidden class="form-group">
+                <label asp-for="UsingIdentityUserId" class="control-label"></label>
+                <select asp-for="UsingIdentityUserId" class="form-control" asp-items="ViewBag.UsingIdentityUserId"></select>
+                <span asp-validation-for="UsingIdentityUserId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a href="/Admin/Comment/Index">Back to List</a>
+</div>
+

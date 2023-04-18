@@ -1,0 +1,67 @@
+﻿@model IEnumerable<FA.JustBlog.ViewModel.ViewModel.CommentViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h1>All Comment</h1>
+ 
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CommentHeader)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CommentText)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CommentTime)
+            </th>
+            <th>
+                Post
+            </th>
+            <th>
+                User
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                    <a href="/Admin/Comment/Details?id=@item.Id">@Html.DisplayFor(modelItem => item.CommentHeader)</a> 
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CommentText)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CommentTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Post.PostContent)
+            </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UsingIdentityUser.Email)
+                </td>
+            <td>
+                    @using System.Security.Claims
+                    @using FA.JustBlog.Core.Utill
+                    @if (User.Claims.Any(c => c.Type == ClaimTypes.Role && (c.Value == $"{RoleUnit.Role_BlogOwner}" || c.Value == $"{RoleUnit.Role_Contributor}")))
+                    {
+                        <a href="/Admin/Comment/Edit?id=@item.Id">Edit</a>
+                    }
+
+
+                    @if (User.Claims.Any(c => c.Type == ClaimTypes.Role && (c.Value == $"{RoleUnit.Role_BlogOwner}")))
+                    {
+                        <br />
+                        <a href="/Admin/Comment/Delete?id=@item.Id">Delete</a>
+                    }
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

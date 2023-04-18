@@ -1,6 +1,7 @@
 using FA.JustBlog.Core.DataContext;
 using FA.JustBlog.Core.Models;
 using FA.JustBlog.Service.category;
+using FA.JustBlog.Service.comment;
 using FA.JustBlog.Service.map;
 using FA.JustBlog.Service.post;
 using FA.JustBlog.Service.tag;
@@ -28,7 +29,8 @@ builder.Services.AddAutoMapper(typeof(MapperConfig));
 builder.Services.AddScoped<IPostService, PostService>();
 builder.Services.AddScoped<ITagService, TagService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
-
+builder.Services.AddScoped<ICommentService, CommentService>();
+builder.Services.AddScoped<ICommentService, CommentService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

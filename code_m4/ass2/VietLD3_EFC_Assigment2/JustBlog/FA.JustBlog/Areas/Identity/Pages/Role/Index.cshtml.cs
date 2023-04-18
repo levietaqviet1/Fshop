@@ -1,10 +1,13 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 
 namespace FA.JustBlog.Areas.Identity.Pages.Role
 {
+
+    [Authorize]
     public class IndexModel : PageModel
     {
         private readonly RoleManager<IdentityRole> _roleManager;

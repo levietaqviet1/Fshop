@@ -1,0 +1,65 @@
+﻿@page "/Admin/User/"
+@model FA.JustBlog.Areas.Identity.Pages.User.UserModel
+@using System.Security.Claims
+@using FA.JustBlog.Core.Utill
+@{
+    ViewData["Title"] = "List Account";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<h1>All User</h1>
+<table class="table">
+    <thead>
+    <tr>
+        <th>UserName</th>
+        <th>Full Name</th>
+        <th>Email</th>
+        <th>Phone Number</th>
+        <th>TwoFactorEnabled</th>
+        <th>Roles</th>
+         @if (User.Claims.Any(c => c.Type == ClaimTypes.Role && (c.Value == $"{RoleUnit.Role_BlogOwner}")))
+        {
+            <th>Actions</th>
+        }
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var user in @Model.users)
+    {
+        <tr>
+            <td>@user.UserName</td>
+            <td>@user.Firstname @user.LastName</td>
+            <td @if(@user.EmailConfirmed)
+            {
+                @:style="color:green"
+            }
+               >@user.Email</td>
+            <td @if (@user.PhoneNumberConfirmed)
+            {
+                @:style="color:green"
+            }>@user.PhoneNumber</td>
+            <td>@(user.TwoFactorEnabled == true ? "On" : "Off")</td> 
+            <td>@user.listroles</td>
+            @if (User.Claims.Any(c => c.Type == ClaimTypes.Role && (c.Value == $"{RoleUnit.Role_BlogOwner}")))
+            {
+                <td>
+                    <form method="POST" class="d-inline">
+                        <button name="Input.ID" value="@user.Id" class="btn btn-primary btn-sm"
+                        asp-page="./AddUserRole">
+                            Cập nhật
+                        </button> 
+                    </form>
+                        <form method="POST" class="d-inline">
+                            <input hidden name="IsDelete" value="true"/>
+                            <button name="Input.ID" value="@user.Id" class="btn btn-primary btn-sm"
+                            asp-page="./AddUserRole">
+                                Xóa
+                            </button>
+                        </form> 
+                </td>
+            }
+            
+        </tr>
+
+        }
+    </tbody>
+</table> 
