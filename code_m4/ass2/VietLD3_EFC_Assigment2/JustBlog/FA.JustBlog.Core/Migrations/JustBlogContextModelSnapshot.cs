@@ -94,7 +94,7 @@ namespace FA.JustBlog.Core.Migrations
                     b.Property<DateTime>("CommentTime")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
-                        .HasDefaultValue(new DateTime(2023, 4, 17, 17, 59, 57, 294, DateTimeKind.Local).AddTicks(1332));
+                        .HasDefaultValue(new DateTime(2023, 4, 20, 14, 26, 21, 205, DateTimeKind.Local).AddTicks(5122));
 
                     b.Property<int>("PostId")
                         .HasColumnType("int");
@@ -267,7 +267,7 @@ namespace FA.JustBlog.Core.Migrations
                             PostContent = "Entity Framework is an open-source ORM framework for .NET applications supported by Microsoft. It enables developers to work with data using objects of domain specific classes without focusing on the underlying database tables and columns where this data is stored. With the Entity Framework, developers can work at a higher level of abstraction when they deal with data.",
                             PostedOn = new DateTime(2023, 2, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Published = true,
-                            Rate = 0.4m,
+                            Rate = 0m,
                             RateCount = 10m,
                             ShortDescription = " to save or retrieve application data from the underlying database. We used to open a connection to the database, create a DataSet to fetch or submit the data to the database, convert data from the DataSet to .NET objects or vice-versa to apply business rules. This was a cumbersome and error prone process.",
                             Title = "What is Entity Framework?",
@@ -284,7 +284,7 @@ namespace FA.JustBlog.Core.Migrations
                             PostContent = "Let's understand the above EF workflow: To insert data, add a domain object to a context and call the SaveChanges() method. EF API will build an appropriate INSERT command and execute it to the database.  To read data, execute the LINQ-to-Entities query in your preferred language (C#/VB.NET). EF API will convert this query into SQL query for the underlying relational database and execute it.",
                             PostedOn = new DateTime(2023, 2, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Published = true,
-                            Rate = 0.8m,
+                            Rate = 0m,
                             RateCount = 200m,
                             ShortDescription = "First of all, you need to define your model. Defining the model includes defining your domain classes, context class derived from DbContext, and configurations (if any). EF will perform CRUD operations based on your model.",
                             Title = "Basic Workflow in Entity Framework",
@@ -301,7 +301,7 @@ namespace FA.JustBlog.Core.Migrations
                             PostContent = "EF 6 Database-First and Code-First Features Creating Entity Data Model from your existing database Querying data using LINQ Saving data Using existing stored procedures, views, and table-valued functions CRUD operations using stored procedures  Optimistic concurrency & transactions support Supports Spatial Data Types Connection resiliency  Asynchronous query and save  Code-based configuration  Database command logging  Database command interception  ",
                             PostedOn = new DateTime(2023, 3, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Published = true,
-                            Rate = 0.6666666666666666666666666667m,
+                            Rate = 0m,
                             RateCount = 200m,
                             ShortDescription = "Welcome to Entity Framework 6 database-first tutorials section. Here, you will learn how to use Entity Framework 6 with the existing database of your application. It starts from creating an Entity Data Model from your existing database and it will show you how to save and query data using Entity Framework 6.x.",
                             Title = "Entity Framework 6 Introduction",
@@ -318,7 +318,7 @@ namespace FA.JustBlog.Core.Migrations
                             PostContent = "Here, we are going to create an Entity Data Model (EDM) for an existing database in database-first approach and understand the basic building blocks.    Entity Framework uses EDM for all the database-related operations. Entity Data Model is a model that describes entities and the relationships between them. Let's create a simple EDM for the School database using Visual Studio (2012\\2015\\2017) and Entity Framework 6.",
                             PostedOn = new DateTime(2023, 3, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Published = false,
-                            Rate = 0.6666666666666666666666666667m,
+                            Rate = 0m,
                             RateCount = 300m,
                             ShortDescription = "Here, we are going to create an Entity Data Model (EDM) for an existing database in database-first approach and understand the basic building blocks.    Entity Framework uses EDM for all the database-related operations. Entity Data Model is a model that describes entities and the relationships between them. Let's create a simple EDM for the School database using Visual Studio (2012\\2015\\2017) and Entity Framework 6.",
                             Title = "Creating an Entity Data Model",
@@ -335,7 +335,7 @@ namespace FA.JustBlog.Core.Migrations
                             PostContent = "Add	Added entity type	Adds the given entity to the context with the Added state. When the changes are saved, the entities in the Added states are inserted into the database. After the changes are saved, the object state changes to Unchanged.\r\n\r\nExample:\r\ndbcontext.Students.Add(studentEntity)",
                             PostedOn = new DateTime(2023, 3, 11, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Published = false,
-                            Rate = 0.5555555555555555555555555556m,
+                            Rate = 0m,
                             RateCount = 250m,
                             ShortDescription = "The DbSet class represents an entity set that can be used for create, read, update, and delete operations.\r\n\r\nThe context class (derived from DbContext) must include the DbSet type properties for the entities which map to database tables and views.",
                             Title = "DbSet in Entity Framework 6",
@@ -352,7 +352,7 @@ namespace FA.JustBlog.Core.Migrations
                             PostContent = "In the Entity Framework, there are two persistence scenarios to save an entity data: connected and disconnected. In the connected scenario, the same instance of DbContext is used in retrieving and saving entities, whereas this is different in the disconnected scenario. In this chapter, you will learn about saving data in the connected scenario.",
                             PostedOn = new DateTime(2023, 3, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Published = false,
-                            Rate = 0.8m,
+                            Rate = 0m,
                             RateCount = 360m,
                             ShortDescription = "Saving entity data in the connected scenario is a fairly easy task because the context automatically tracks the changes that happened on the entity during its lifetime.\r\n\r\nHere, we will use the same EDM for CRUD operations which we created in the Create Entity Data Model chapter. An entity which contains data in its scalar property will be either inserted, updated or deleted, based on its EntityState.",
                             Title = "Saving Data in the Connected Scenario",
@@ -369,7 +369,7 @@ namespace FA.JustBlog.Core.Migrations
                             PostContent = "Language-Integrated Query (LINQ) is a powerful query language introduced in Visual Studio 2008. As the name suggests, LINQ-to-Entities queries operate on the entity set (DbSet type properties) to access the data from the underlying database. You can use the LINQ method syntax or query syntax when querying with EDM. Visit LINQ Tutorials to learn LINQ step-by-step.",
                             PostedOn = new DateTime(2023, 2, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Published = false,
-                            Rate = 0.6m,
+                            Rate = 0m,
                             RateCount = 300m,
                             ShortDescription = "You can build and execute queries using Entity Framework to fetch the data from the underlying database. EF 6 supports different types of queries which in turn convert into SQL queries for the underlying database.",
                             Title = "Querying in Entity Framework",
@@ -386,7 +386,7 @@ namespace FA.JustBlog.Core.Migrations
                             PostContent = "SELECT TOP (1) \r\n[Extent1].[StudentID] AS [StudentID], \r\n[Extent1].[StudentName] AS [StudentName], \r\n[Extent2].[StandardId] AS [StandardId], \r\n[Extent2].[StandardName] AS [StandardName], \r\n[Extent2].[Description] AS [Description]\r\nFROM  [dbo].[Student] AS [Extent1]\r\nLEFT OUTER JOIN [dbo].[Standard] AS [Extent2] ON [Extent1].[StandardId] = [Extent2].[StandardId]\r\nWHERE 'Bill' = [Extent1].[StudentName]",
                             PostedOn = new DateTime(2022, 3, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Published = false,
-                            Rate = 0.6666666666666666666666666667m,
+                            Rate = 0m,
                             RateCount = 3000m,
                             ShortDescription = "Eager loading is the process whereby a query for one type of entity also loads related entities as part of the query, so that we don't need to execute a separate query for related entities. Eager loading is achieved using the Include() method.",
                             Title = "Eager Loading in Entity Framework",
@@ -403,7 +403,7 @@ namespace FA.JustBlog.Core.Migrations
                             PostContent = "We can disable lazy loading for a particular entity or a context. To turn off lazy loading for a particular property, do not make it virtual. To turn off lazy loading for all entities in the context, set its configuration property to false.",
                             PostedOn = new DateTime(2023, 3, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Published = false,
-                            Rate = 0.6666666666666666666666666667m,
+                            Rate = 0m,
                             RateCount = 300m,
                             ShortDescription = "Lazy loading is delaying the loading of related data, until you specifically request for it. It is the opposite of eager loading. For example, the Student entity contains the StudentAddress entity. In the lazy loading, the context first loads the Student entity data from the database, then it will load the StudentAddress entity when we access the StudentAddress property as shown below.",
                             Title = "Lazy Loading in Entity Framework",
@@ -420,7 +420,7 @@ namespace FA.JustBlog.Core.Migrations
                             PostContent = "Here, we are going to create an Entity Data Model (EDM) for an existing database in database-first approach and understand the basic building blocks.    Entity Framework uses EDM for all the database-related operations. Entity Data Model is a model that describes entities and the relationships between them. Let's create a simple EDM for the School database using Visual Studio (2012\\2015\\2017) and Entity Framework 6.",
                             PostedOn = new DateTime(2023, 3, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Published = false,
-                            Rate = 0.6666666666666666666666666667m,
+                            Rate = 0m,
                             RateCount = 300m,
                             ShortDescription = "Here, we are going to create an Entity Data Model (EDM) for an existing database in database-first approach and understand the basic building blocks.    Entity Framework uses EDM for all the database-related operations. Entity Data Model is a model that describes entities and the relationships between them. Let's create a simple EDM for the School database using Visual Studio (2012\\2015\\2017) and Entity Framework 6.",
                             Title = "Explicit Loading in Entity Framework",
@@ -437,7 +437,7 @@ namespace FA.JustBlog.Core.Migrations
                             PostContent = "Language-Integrated Query (LINQ) is a powerful query language introduced in Visual Studio 2008. As the name suggests, LINQ-to-Entities queries operate on the entity set (DbSet type properties) to access the data from the underlying database. You can use the LINQ method syntax or query syntax when querying with EDM. Visit LINQ Tutorials to learn LINQ step-by-step.",
                             PostedOn = new DateTime(2023, 2, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Published = false,
-                            Rate = 0.6m,
+                            Rate = 0m,
                             RateCount = 300m,
                             ShortDescription = "You can build and execute queries using Entity Framework to fetch the data from the underlying database. EF 6 supports different types of queries which in turn convert into SQL queries for the underlying database.",
                             Title = "Querying in Entity Core",
@@ -661,7 +661,7 @@ namespace FA.JustBlog.Core.Migrations
                         {
                             Id = "97571dcc-079e-4c3a-ba9b-bbde3d03a03d",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "0d981146-7992-45f8-9907-f39ad547f0ef",
+                            ConcurrencyStamp = "57dd5e34-14f9-4840-a6d5-ac8e79ea9658",
                             Email = "vietContributor@gmail.com",
                             EmailConfirmed = true,
                             Firstname = "Viet",
@@ -672,7 +672,7 @@ namespace FA.JustBlog.Core.Migrations
                             PasswordHash = "AQAAAAEAACcQAAAAEJ51SmQrANatorjKkODvG7wRz8i73uIAUIHAmXRldg8ikayfZiaDQvbSOuY+XFPiJQ==",
                             PhoneNumber = "0985695635",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "d34fdddd-a23f-4b64-8ef6-319c1ee414a9",
+                            SecurityStamp = "7b954446-6fbd-4b51-9d80-8a84b4ee37d4",
                             TwoFactorEnabled = false,
                             UserName = "vietContributor@gmail.com"
                         },
@@ -680,7 +680,7 @@ namespace FA.JustBlog.Core.Migrations
                         {
                             Id = "21842bcb-fae8-4c00-9c33-de997d4e8103",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "93c5464c-0ad9-4488-a3fd-21a4b1afffce",
+                            ConcurrencyStamp = "349ee3ec-6bb1-48f5-a00d-4ca445071214",
                             Email = "vietBlogOwner@gmail.com",
                             EmailConfirmed = true,
                             Firstname = "Khi",
@@ -691,7 +691,7 @@ namespace FA.JustBlog.Core.Migrations
                             PasswordHash = "AQAAAAEAACcQAAAAEGf8AICmlUDtMuw9p1TPGYB0/OH8X60Ud06sUakpWa+Tpu2IJAZvF6Ht7DxsYeWEjA==",
                             PhoneNumber = "045896589",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "5eb943c5-da34-42f6-8eeb-da8cb2cae48f",
+                            SecurityStamp = "279461de-a662-4f20-aea4-34d32eec5b93",
                             TwoFactorEnabled = false,
                             UserName = "vietBlogOwner@gmail.com"
                         },
@@ -699,7 +699,7 @@ namespace FA.JustBlog.Core.Migrations
                         {
                             Id = "21811bcb-fae8-4c00-9c33-de997d4e8107",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "23ef7547-18e9-4d7c-9e95-0dee4e1f31ab",
+                            ConcurrencyStamp = "9676ce37-3ee3-4a81-80a5-ea5fa348b082",
                             Email = "vietUser@gmail.com",
                             EmailConfirmed = true,
                             Firstname = "Viet",
@@ -710,7 +710,7 @@ namespace FA.JustBlog.Core.Migrations
                             PasswordHash = "AQAAAAEAACcQAAAAEGf8AICmlUDtMuw9p1TPGYB0/OH8X60Ud06sUakpWa+Tpu2IJAZvF6Ht7DxsYeWEjA==",
                             PhoneNumber = "0922556369",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "9a6c7db0-aba6-4b5b-b7a0-b607db676a6b",
+                            SecurityStamp = "48b8a1f3-502f-4666-936d-adbcd6656941",
                             TwoFactorEnabled = false,
                             UserName = "vietUser.com"
                         },
@@ -718,7 +718,7 @@ namespace FA.JustBlog.Core.Migrations
                         {
                             Id = "b0446349-235d-4b0f-a8e9-87382a82923f",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "41e51727-0cde-4197-9808-5cd30105869c",
+                            ConcurrencyStamp = "dbc50a2d-879c-4641-830b-b386d30b56c3",
                             Email = "user@gmail.com",
                             EmailConfirmed = true,
                             Firstname = "Toan",
@@ -729,7 +729,7 @@ namespace FA.JustBlog.Core.Migrations
                             PasswordHash = "AQAAAAEAACcQAAAAED7S01cmZYmeJEKd7/wVP+HGOCSHbR/Xl2NRWyWTXB6JbwfXREcO2D908cRKtFG2Ag==",
                             PhoneNumber = "0458796598",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "923cafc5-fee3-426c-8a90-68f65476688e",
+                            SecurityStamp = "53227546-004c-4976-8eaa-70617d622920",
                             TwoFactorEnabled = false,
                             UserName = "user@gmail.com"
                         });

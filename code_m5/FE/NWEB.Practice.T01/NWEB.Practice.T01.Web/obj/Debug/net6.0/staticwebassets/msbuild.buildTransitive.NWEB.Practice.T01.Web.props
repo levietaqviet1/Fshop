@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\NWEB.Practice.T01.Web.props" />
+</Project>
