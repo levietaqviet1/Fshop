@@ -1,0 +1,126 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contributor Registration</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            color: #666;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            input[type="submit"]:hover {
+                background-color: #555;
+            }
+    </style>
+
+</head>
+<body>
+    <form action="#" method="post" onsubmit="return validateForm(event)">
+        <ul>
+            <li>I will post polite and respectful messages</li>
+            <li>I take full responsibility for my posts</li>
+            <li>I will obey the law</li>
+            <li>If I engage in any illegal or disruptive behavior, my posts will be deleted</li>
+        </ul>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+     
+        
+
+        <div class="g-recaptcha" data-sitekey="6Ldy8qYlAAAAAILhjltx5lo9-YDUKMPxjWu_PQHf"></div>
+
+        <input type="submit" value="Submit Application">
+    </form>
+
+    <script>
+        const submitBtn = document.querySelector('input[type="submit"]');
+        const confirmCheckbox = document.getElementById('confirm');
+
+        submitBtn.addEventListener('click', (e) => {
+            if (!confirmCheckbox.checked) {
+                e.preventDefault();
+            }
+        });
+
+        function validateForm(e) {
+            e.preventDefault();
+            // Prevent default form submission
+            event.preventDefault();
+
+            grecaptcha.execute('6Ldy8qYlAAAAAILhjltx5lo9-YDUKMPxjWu_PQHf', { action: 'submit' }).then(function (token) {
+                alert('p');
+            });
+
+
+
+            // Return false to prevent form from submitting
+            return false;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#" method="post" onsubmit="return validateForm(event)">
+        <ul>
+            <li><input type="checkbox" name="confirm" id="confirm"> I will post polite and respectful messages</li>
+            <li>I take full responsibility for my posts</li>
+            <li>I will obey the law</li>
+            <li>If I engage in any illegal or disruptive behavior, my posts will be deleted</li>
+        </ul>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+        <div class="g-recaptcha" data-sitekey="6Ldy8qYlAAAAAILhjltx5lo9-YDUKMPxjWu_PQHf"></div>
+
+        <input type="submit" value="Submit Application">
+    </form> 
+    <script>
+        const submitBtn = document.querySelector('input[type="submit"]');
+
+        function validateForm(e) {
+            e.preventDefault();
+            grecaptcha.ready(function () {
+                grecaptcha.execute('6Ldy8qYlAAAAAILhjltx5lo9-YDUKMPxjWu_PQHf', { action: 'homepage' }).then(function (token) {
+                    alert('a');
+                    console.log('a')
+                });
+            });
+
+        }
+    </script>
+
+
+    
+    <script>
+
+    </script>
+
+
+</body>
+
+</html>

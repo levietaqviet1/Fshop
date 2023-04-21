@@ -1,0 +1,98 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["TitleHeader"] = "Clean Blog";
+    ViewData["TitleHeaderBody"] = "A Blog Theme by Start VTeam";
+}
+@using FA.JustBlog.Core.Models
+@using FA.JustBlog.ViewModel.ViewModel
+@model IList<PostViewModel>
+
+<div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-7">
+            <h1 class="post-title">All posts!</h1>
+            @foreach (PostViewModel item in Model)
+            {
+                <!-- Post preview-->
+                <div class="post-preview">
+                    <a href="/post/Details?post=@item.Id">
+                        <h3 class="post-title">@item.Title</h3>
+                    </a>
+                    <p class="post-meta">
+                        <span style="opacity: 0.5;">Post by @item.UsingIdentityUser.Firstname Posted @item.PostedOn.ToString("dd/MM/yyyy hh:mm tt") with rate @item.Rate/1 by @item.ViewCount view(s)</span>
+                    </p>
+                    <h4 class="post-subtitle">@item.ShortDescription</h4>
+                </div>
+                @foreach (PostTagMap itemSub in item.PostTagMaps)
+                {
+
+                    <a class="border mt-1" href="@Url.Action("Index","Post", new { tag = itemSub.Tag.UrlSlug })" , style="background-color: #333; color: #fff">@itemSub.Tag.Name</a>
+                }
+                <!-- Divider-->
+                <hr class="my-4" />
+            }
+
+            <!-- Pager-->
+            <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div>
+        </div>
+
+        <div class="col-md-2 col-lg-3 col-xl-5">
+            <div style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                <header class="masthead" style="background-image: url('../../image/leftPostIndex.jpg')">
+                </header>
+                <div class="ps-4 pb-2">
+                    <h1>About Me!</h1>
+                    <p>Just me, myself and I, exploring the universe of unknowment. I have a heart of love and a interest.</p>
+                </div>
+            </div>
+            <div class="mt-5">
+                <h1>Most Viewed Post</h1>
+                <hr class="my-4" />
+                @foreach (var item in @ViewBag.MostViews)
+                {
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                        <a href="/post/Details?post=@item.Id">
+                            <h4 class="">@item.Title</h4>
+                        </a>
+                        <p class="post-meta">
+                            <span style="opacity: 0.5;">Post by @item.UsingIdentityUser.Firstname Posted @item.PostedOn.ToString("dd/MM/yyyy hh:mm tt") with rate @item.Rate/1 by @item.ViewCount view(s)</span>
+                        </p>
+                        
+                    </div>
+                }
+            </div>
+            <!-- Divider-->
+            <hr class="my-4" />
+            <div class="mt-5">
+                <h1>Lastest Posts</h1>
+                <hr class="my-4" />
+                @foreach (var item in @ViewBag.LastPosts)
+                {
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                        <a href="/post/Details?post=@item.Id">
+                            <h4 class="">@item.Title</h4>
+                        </a>
+                        <p class="post-meta">
+                            <span style="opacity: 0.5;">Post by @item.UsingIdentityUser.Firstname Posted @item.PostedOn.ToString("dd/MM/yyyy hh:mm tt") with rate @item.Rate/1  by @item.ViewCount view(s)</span>
+                        </p>
+                         
+                    </div> 
+                }
+            </div>
+            <div class="mt-5">
+                <h1>Popular Tag</h1>
+                <hr class="my-4" />
+                @foreach (TagViewModel item in @ViewBag.Tags)
+                {
+                    <br/>
+                    <a class="border mt-1" href="@Url.Action("Index","Post", new { tag = item.UrlSlug })" , style="background-color: #333; color: #fff">@item.Name</a>
+                }
+            </div>
+        </div>
+    </div>
+
+
+</div>

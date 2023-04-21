@@ -1,0 +1,54 @@
+﻿@using FA.JustBlog.Core.Models
+@using FA.JustBlog.ViewModel.ViewModel
+@model PostViewModel
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="mb-3">Comments</h3>
+            <form action="/Post/CreateComment" method="post">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="control-label my-3">Comment Header</label>
+                            <input type="text" name="comment.CommentHeader" class="form-control" placeholder="Comment header..." required />
+                            <input type="text" name="comment.PostId" value="@Model.Id" readonly hidden />
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-outline">
+                                <label class="control-label my-3">Comment Text</label>
+                            <textarea class="form-control" name="comment.CommentText" id="textAreaExample" rows="4"
+                                          style="background: #fff;" placeholder="Comment here...." required></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group mt-4 mb-2">
+                                <button type="submit" class="btn btn-primary">Post Comment </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            @if (Model.Comments.Count > 0)
+            {
+                <br />
+                <br />
+                <br />
+                @foreach (Comment item in Model.Comments)
+                {
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            Commented by @item.UsingIdentityUser.Firstname @item.UsingIdentityUser.LastName on @item.CommentTime
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">@item.CommentHeader</h5>
+                            <p class="card-text">@item.CommentText</p>
+                        </div>
+                    </div>
+                }
+            }
+            </div>
+        </div>
+    </div>
+

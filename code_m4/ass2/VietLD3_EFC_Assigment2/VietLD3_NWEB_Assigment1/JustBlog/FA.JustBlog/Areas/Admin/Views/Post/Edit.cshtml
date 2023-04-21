@@ -1,0 +1,69 @@
+﻿@using FA.JustBlog.ViewModel.ViewModel
+@model PostViewModel
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>Post</h4>
+<hr />
+<div class="row">
+
+    <form action="/Admin/Post/Edit" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="Id" />
+        <div class="form-group">
+            <label asp-for="Title" class="control-label"></label>
+            <input asp-for="Title" class="form-control" />
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="ShortDescription" class="control-label"></label>
+            <textarea asp-for="ShortDescription" id="shortDescriptionId" class="form-control" rows="200"></textarea>
+            <span asp-validation-for="ShortDescription" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="PostContent" class="control-label"></label>
+            <textarea asp-for="PostContent" id="postContentId" class="form-control" rows="200"></textarea>
+            <span asp-validation-for="PostContent" class="text-danger"></span>
+        </div>
+        @using System.Security.Claims
+        @using FA.JustBlog.Core.Utill
+        <!-- ... -->
+        @if (User.Claims.Any(c => c.Type == ClaimTypes.Role && (c.Value == $"{RoleUnit.Role_BlogOwner}")))
+        {
+            <div class="form-group">
+                <label asp-for="Published" class="control-label">Published</label>
+                <input asp-for="Published" class="form-check-input" id="published" />
+                <span asp-validation-for="Published" class="text-danger"></span>
+            </div>
+        }
+        <div class="form-group">
+            <label asp-for="PostedOn" class="control-label">PostedOn</label>
+            <input asp-for="PostedOn" class="form-control" />
+            <span asp-validation-for="PostedOn" class="text-danger"></span>
+        </div> 
+        <div class="form-group mb-3">
+            <label asp-for="CategoryId" class="control-label">Category</label>
+            <select class="form-select" id="category" asp-for="CategoryId">
+                @foreach (CategoryViewModel item in ViewBag.CateList)
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Save" class="btn btn-primary" />
+        </div>
+    </form>
+
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+<script>CKEDITOR.replace("postContentId");</script>
+<script>CKEDITOR.replace("shortDescriptionId");</script>
