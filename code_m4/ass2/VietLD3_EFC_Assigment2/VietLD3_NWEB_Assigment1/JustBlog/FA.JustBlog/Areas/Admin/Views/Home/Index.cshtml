@@ -4,123 +4,86 @@
 }
 
 @addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Contributor Registration</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-        }
-
-        .container {
-            width: 80%;
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 10px;
-            color: #333;
-        }
-
-        input[type="text"], input[type="email"], textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: none;
-            border-radius: 5px;
-            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-            font-size: 16px;
-            color: #666;
-        }
-
-        textarea {
-            height: 150px;
-        }
-
-        input[type="submit"] {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-            input[type="submit"]:hover {
-                background-color: #555;
-            }
-    </style>
 
 </head>
+
 <body>
-    <form action="#" method="post" onsubmit="return validateForm(event)">
-        <ul>
-            <li>I will post polite and respectful messages</li>
-            <li>I take full responsibility for my posts</li>
-            <li>I will obey the law</li>
-            <li>If I engage in any illegal or disruptive behavior, my posts will be deleted</li>
-        </ul>
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-     
-        
+    <script type="text/javascript">
+        var isCaptchaVerified = false;
+        var verifyCallback = function (response) {
+            isCaptchaVerified = true;
+            enableBtn();
+        };
+        var onloadCallback = function () {
+            grecaptcha.render('example3', {
+                'sitekey': '@Configuration["CaptchaSettings:CaptchaSiteKey"]',
+                'callback': verifyCallback,
+                'theme': 'light'
+            });
+        }
+    </script>
 
-        <div class="g-recaptcha" data-sitekey="6Ldy8qYlAAAAAILhjltx5lo9-YDUKMPxjWu_PQHf"></div>
+    <form action="/Admin/Home/Create" method="post" onsubmit="return validateForm(event)">
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item">I will post polite and respectful messages</li>
+                        <li class="list-group-item">I take full responsibility for my posts</li>
+                        <li class="list-group-item">I will obey the law</li>
+                        <li class="list-group-item">If I engage in any illegal or disruptive behavior, my posts will be deleted</li>
+                    </ul>
+                    <div id="example0"></div>
+                    <div class="mb-3">
+                        <input type="checkbox" id="conf" value="true" name="checkConfirm" class="form-check-input me-2">
+                        <label class="form-check-label" for="conf">I agree to the terms and conditions</label>
+                    </div>
+                   
+                    <div id="example3"></div>
 
-        <input type="submit" value="Submit Application">
+                    <button id="idSubmit" type="submit" class="btn btn-primary" disabled>Submit Application</button>
+                </div>
+            </div>
+        </div>
     </form>
 
+
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+    </script>
+
     <script>
-        const submitBtn = document.querySelector('input[type="submit"]');
-        const confirmCheckbox = document.getElementById('confirm');
+        const checkBox = document.getElementById("conf"); // lấy phần tử checkbox bằng id
 
-        submitBtn.addEventListener('click', (e) => {
-            if (!confirmCheckbox.checked) {
-                e.preventDefault();
+        function enableBtn() {
+            if (isCaptchaVerified) { 
+                document.getElementById('idSubmit').disabled = false;
             }
-        });
+        }
 
-        function validateForm(e) {
-            e.preventDefault();
-            // Prevent default form submission
-            event.preventDefault();
-
-            grecaptcha.execute('6Ldy8qYlAAAAAILhjltx5lo9-YDUKMPxjWu_PQHf', { action: 'submit' }).then(function (token) {
-                alert('p');
-            });
-
-
-
-            // Return false to prevent form from submitting
-            return false;
+        function validateForm(event) {
+            if (!isCaptchaVerified) {
+                event.preventDefault();
+                alert("Please complete the reCAPTCHA verification.");
+                return false;
+            }
+            if (!checkBox.checked) { // kiểm tra nếu checkbox đã được tích
+                document.getElementById('example0').innerHTML = '<span class="text-danger">You need to confirm</span>';
+                return false;
+            }  
+            return true;
         }
     </script>
 
 </body>
+
 </html>

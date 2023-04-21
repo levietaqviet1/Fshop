@@ -2472,7 +2472,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DELL\\.nuget\\packages\\": {}
+    "C:\\Users\\NCC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -2480,11 +2480,11 @@
       "projectUniqueName": "D:\\GIT\\Fshop\\code_m4\\ass2\\VietLD3_EFC_Assigment2\\VietLD3_NWEB_Assigment1\\JustBlog\\FA.JustBlog.ViewModel\\FA.JustBlog.ViewModel.csproj",
       "projectName": "FA.JustBlog.ViewModel",
       "projectPath": "D:\\GIT\\Fshop\\code_m4\\ass2\\VietLD3_EFC_Assigment2\\VietLD3_NWEB_Assigment1\\JustBlog\\FA.JustBlog.ViewModel\\FA.JustBlog.ViewModel.csproj",
-      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\NCC\\.nuget\\packages\\",
       "outputPath": "D:\\GIT\\Fshop\\code_m4\\ass2\\VietLD3_EFC_Assigment2\\VietLD3_NWEB_Assigment1\\JustBlog\\FA.JustBlog.ViewModel\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\NCC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

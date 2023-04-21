@@ -16,13 +16,13 @@
             {
                 <!-- Post preview-->
                 <div class="post-preview">
-                    <a href="/post/Details?post=@item.Id">
+                    <a href="/post/Details?post=@item.UrlSlug">
                         <h3 class="post-title">@item.Title</h3>
                     </a>
                     <p class="post-meta">
                         <span style="opacity: 0.5;">Post by @item.UsingIdentityUser.Firstname Posted @item.PostedOn.ToString("dd/MM/yyyy hh:mm tt") with rate @item.Rate/1 by @item.ViewCount view(s)</span>
                     </p>
-                    <h4 class="post-subtitle">@item.ShortDescription</h4>
+                    <h4 class="post-subtitle">@Html.Raw(@item.ShortDescription)</h4>
                 </div>
                 @foreach (PostTagMap itemSub in item.PostTagMaps)
                 {
@@ -53,7 +53,7 @@
                 {
                     <!-- Post preview-->
                     <div class="post-preview">
-                        <a href="/post/Details?post=@item.Id">
+                        <a href="/post/Details?post=@item.UrlSlug">
                             <h4 class="">@item.Title</h4>
                         </a>
                         <p class="post-meta">
@@ -72,7 +72,7 @@
                 {
                     <!-- Post preview-->
                     <div class="post-preview">
-                        <a href="/post/Details?post=@item.Id">
+                        <a href="/post/Details?post=@item.UrlSlug">
                             <h4 class="">@item.Title</h4>
                         </a>
                         <p class="post-meta">

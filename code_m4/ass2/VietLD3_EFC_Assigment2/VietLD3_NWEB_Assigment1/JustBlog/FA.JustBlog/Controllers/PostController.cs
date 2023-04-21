@@ -34,9 +34,9 @@ namespace FA.JustBlog.Controllers
         }
 
         // GET: PostController/Details/5
-        public ActionResult Details(int post)
+        public ActionResult Details(string? post)
         {
-            PostViewModel postViewModel = _postService.GetById(post).Data ?? new PostViewModel();
+            PostViewModel postViewModel = _postService.GetByUrl(post).Data ?? new PostViewModel();
 
             return View(postViewModel);
         }

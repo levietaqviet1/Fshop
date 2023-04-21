@@ -94,7 +94,7 @@ namespace FA.JustBlog.Core.Migrations
                     b.Property<DateTime>("CommentTime")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
-                        .HasDefaultValue(new DateTime(2023, 4, 21, 14, 59, 53, 696, DateTimeKind.Local).AddTicks(3787));
+                        .HasDefaultValue(new DateTime(2023, 4, 22, 3, 26, 56, 246, DateTimeKind.Local).AddTicks(934));
 
                     b.Property<int>("PostId")
                         .HasColumnType("int");
@@ -661,7 +661,7 @@ namespace FA.JustBlog.Core.Migrations
                         {
                             Id = "97571dcc-079e-4c3a-ba9b-bbde3d03a03d",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "b6acb348-68a6-4bfc-953b-8c31111e072b",
+                            ConcurrencyStamp = "4ac01d00-b972-4023-a9ce-656e0e2c30f7",
                             Email = "vietContributor@gmail.com",
                             EmailConfirmed = true,
                             Firstname = "Viet",
@@ -672,7 +672,7 @@ namespace FA.JustBlog.Core.Migrations
                             PasswordHash = "AQAAAAEAACcQAAAAEJ51SmQrANatorjKkODvG7wRz8i73uIAUIHAmXRldg8ikayfZiaDQvbSOuY+XFPiJQ==",
                             PhoneNumber = "0985695635",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "cc320977-995f-461b-8f0f-ab959d548b8d",
+                            SecurityStamp = "8904e5b5-a873-4c0b-be69-a67c4a5bf404",
                             TwoFactorEnabled = false,
                             UserName = "vietContributor@gmail.com"
                         },
@@ -680,7 +680,7 @@ namespace FA.JustBlog.Core.Migrations
                         {
                             Id = "21842bcb-fae8-4c00-9c33-de997d4e8103",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "8cc0c6b6-a879-4191-8a70-a704ea07a88e",
+                            ConcurrencyStamp = "9ac6b22c-0006-447e-b1e3-32466308af2d",
                             Email = "vietBlogOwner@gmail.com",
                             EmailConfirmed = true,
                             Firstname = "Khi",
@@ -691,7 +691,7 @@ namespace FA.JustBlog.Core.Migrations
                             PasswordHash = "AQAAAAEAACcQAAAAEGf8AICmlUDtMuw9p1TPGYB0/OH8X60Ud06sUakpWa+Tpu2IJAZvF6Ht7DxsYeWEjA==",
                             PhoneNumber = "045896589",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "c1a64e17-9a25-4f04-a0ca-1cdd9a83b740",
+                            SecurityStamp = "c2dbdcf2-7ce9-4981-8859-74d9c7e2677d",
                             TwoFactorEnabled = false,
                             UserName = "vietBlogOwner@gmail.com"
                         },
@@ -699,7 +699,7 @@ namespace FA.JustBlog.Core.Migrations
                         {
                             Id = "21811bcb-fae8-4c00-9c33-de997d4e8107",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "f356b707-8cf9-4d7a-8a1c-f8520f4bd2d9",
+                            ConcurrencyStamp = "4198e2a0-dd11-4c3b-a590-d9452dd08281",
                             Email = "vietUser@gmail.com",
                             EmailConfirmed = true,
                             Firstname = "Viet",
@@ -710,7 +710,7 @@ namespace FA.JustBlog.Core.Migrations
                             PasswordHash = "AQAAAAEAACcQAAAAEGf8AICmlUDtMuw9p1TPGYB0/OH8X60Ud06sUakpWa+Tpu2IJAZvF6Ht7DxsYeWEjA==",
                             PhoneNumber = "0922556369",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "989e17ef-25ad-4d8a-b8fd-d06683873ae7",
+                            SecurityStamp = "d9160696-d154-49a0-a267-e291f2b330c0",
                             TwoFactorEnabled = false,
                             UserName = "vietUser.com"
                         },
@@ -718,7 +718,7 @@ namespace FA.JustBlog.Core.Migrations
                         {
                             Id = "b0446349-235d-4b0f-a8e9-87382a82923f",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "f820953d-2368-46d5-ad31-f1e1f6d0e044",
+                            ConcurrencyStamp = "98b0cfb8-af06-48c5-8114-4b13fe59aeaa",
                             Email = "user@gmail.com",
                             EmailConfirmed = true,
                             Firstname = "Toan",
@@ -729,7 +729,7 @@ namespace FA.JustBlog.Core.Migrations
                             PasswordHash = "AQAAAAEAACcQAAAAED7S01cmZYmeJEKd7/wVP+HGOCSHbR/Xl2NRWyWTXB6JbwfXREcO2D908cRKtFG2Ag==",
                             PhoneNumber = "0458796598",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "e3242e73-d992-4057-a1eb-fa887eacabb1",
+                            SecurityStamp = "20f0bb84-def5-4046-ad12-249b44160b5f",
                             TwoFactorEnabled = false,
                             UserName = "user@gmail.com"
                         });

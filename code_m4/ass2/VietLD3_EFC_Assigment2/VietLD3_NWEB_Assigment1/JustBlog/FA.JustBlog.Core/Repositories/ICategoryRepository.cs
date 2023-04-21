@@ -5,6 +5,6 @@ namespace FA.JustBlog.Core.Repositories
 {
     public interface ICategoryRepository : IGenericRepository<Category>
     {
-
+        public Category GetTagByUrlSlug(string urlSlug);
     }
 }

@@ -9,82 +9,67 @@
 }
 
 <h1>All Posts</h1> 
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                Title
-            </th>
-            <th>
-                ShortDescription
-            </th> 
-            <th>
-                UrlSlug
-            </th>
-            <th>
-                Published
-            </th>
-            <th>
-                PostedOn
-            </th>
-            <th>
-                Category
-            </th>
-            <th>
-                ViewCount
-            </th>
-            <th>
-                RateCount
-            </th>
-            <th>
-                TotalRate
-            </th>
-            <th>Function</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
+<h1 class="my-3">All Posts</h1>
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
             <tr>
-                <td>
-                    <a href="/post/Details?post=@item.Id" target="_blank">@item.Title</a>
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ShortDescription)
-                </td> 
-                <td>
-                    @Html.DisplayFor(modelItem => item.UrlSlug)
-                </td>
-                <td>
-                    @if (item.Published)
-                    {
-                        <p>Yes</p>
-                    }
-                    else
-                    {
-                        <p>No</p>
-                    }
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.PostedOn)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.CategoryViewModel.Description)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ViewCount)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.RateCount)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.TotalRate)
-                </td>
-                <td>
-                    <a href="/Admin/Post/Edit?id=@item.Id">Edit</a>
-                    <a href="/Admin/Post/Delete?id=@item.Id">Delete</a> 
-                </td>
+                <th>Title</th>
+                <th>Short Description</th>
+                <th>Url Slug</th>
+                <th>Published</th>
+                <th>Posted On</th>
+                <th>Category</th>
+                <th>View Count</th>
+                <th>Rate Count</th>
+                <th>Total Rate</th>
+                <th>Action</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <a href="/post/Details?post=@item.UrlSlug" target="_blank">@item.Title</a>
+                    </td>
+                    <td>
+                        @Html.Raw(item.ShortDescription)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UrlSlug)
+                    </td>
+                    <td>
+                        @if (item.Published)
+                        {
+                            <span class="badge bg-success">Yes</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-danger">No</span>
+                        }
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PostedOn)
+                    </td>
+                    <td>
+                        @Html.Raw(@Html.DisplayFor(modelItem => item.CategoryViewModel.Description))
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ViewCount)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.RateCount)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TotalRate)
+                    </td>
+                    <td>
+                        <a href="/Admin/Post/Edit?urlSlug=@item.UrlSlug" class="btn btn-sm btn-primary">Edit</a>
+                        <a href="/Admin/Post/Delete?urlSlug=@item.UrlSlug" class="btn btn-sm btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

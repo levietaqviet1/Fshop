@@ -26,11 +26,21 @@ namespace FA.JustBlog.Service.tag
             {
                 var tag = _mapper.Map<Tag>(tagViewModel);
                 tag.UrlSlug = Utils.ConFigUrlSlug(tag.Name);
+
+                Tag dataCheck = null;
+                int randomNum = Utils.RandomInt(5, 20);
+                do
+                {
+                    dataCheck = _unitOfWork.TagRepository.GetTagByUrlSlug(tag.UrlSlug);
+                    tag.UrlSlug += "-" + Utils.RandomString(randomNum);
+                } while (dataCheck == null);
                 _unitOfWork.TagRepository.Add(tag);
-                return new ResponseResult<TagViewModel>
+                tagViewModel.UrlSlug = tag.UrlSlug;
+                return new ResponseResult<TagViewModel>()
                 {
                     StatusCode = 200,
                     IsSuccessed = true,
+                    Data = tagViewModel
                 };
             }
             catch (Exception ex)
@@ -160,11 +170,26 @@ namespace FA.JustBlog.Service.tag
             {
                 var tag = _mapper.Map<Tag>(tagViewModel);
                 tag.UrlSlug = Utils.ConFigUrlSlug(tag.Name);
+
+                var tagCheck = _unitOfWork.TagRepository.Find(tag.Id);
+                if (!tagCheck.Name.Equals(tag.Name))
+                {
+                    Tag dataCheck = null;
+                    int randomNum = Utils.RandomInt(5, 20);
+                    do
+                    {
+                        dataCheck = _unitOfWork.TagRepository.GetTagByUrlSlug(tag.UrlSlug);
+                        tag.UrlSlug += "-" + Utils.RandomString(randomNum);
+                    } while (dataCheck == null);
+                }
+
                 _unitOfWork.TagRepository.Update(tag);
+                tagViewModel.UrlSlug = tag.UrlSlug;
                 return new ResponseResult<TagViewModel>()
                 {
                     StatusCode = 200,
                     IsSuccessed = true,
+                    Data = tagViewModel
                 };
             }
             catch (Exception)

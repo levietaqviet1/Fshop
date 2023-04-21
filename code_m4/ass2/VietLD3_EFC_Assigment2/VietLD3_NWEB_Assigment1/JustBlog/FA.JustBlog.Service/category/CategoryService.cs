@@ -31,11 +31,22 @@ namespace FA.JustBlog.Service.category
             {
                 var categoryModels = _mapper.Map<Category>(categoryViewModel);
                 categoryModels.UrlSlug = Utils.ConFigUrlSlug(categoryViewModel.Name);
+
+                Category dataCheck = null;
+                int randomNum = Utils.RandomInt(5, 20);
+                do
+                {
+                    dataCheck = _unitOfWork.CategoryRepository.GetTagByUrlSlug(categoryModels.UrlSlug);
+                    categoryModels.UrlSlug += "-" + Utils.RandomString(randomNum);
+                } while (dataCheck == null);
+
                 _unitOfWork.CategoryRepository.Add(categoryModels);
-                return new ResponseResult<CategoryViewModel>
+                categoryViewModel.UrlSlug = categoryModels.UrlSlug;
+                return new ResponseResult<CategoryViewModel>()
                 {
                     StatusCode = 200,
                     IsSuccessed = true,
+                    Data = categoryViewModel
                 };
             }
             catch (Exception ex)
@@ -144,11 +155,25 @@ namespace FA.JustBlog.Service.category
                 category.Name = categoryViewModel.Name;
                 category.Description = categoryViewModel.Description;
                 category.UrlSlug = Utils.ConFigUrlSlug(category.Name);
+
+                if (!category.Name.Equals(categoryViewModel.Name))
+                {
+                    Category dataCheck = null;
+                    int randomNum = Utils.RandomInt(5, 20);
+                    do
+                    {
+                        dataCheck = _unitOfWork.CategoryRepository.GetTagByUrlSlug(category.UrlSlug);
+                        category.UrlSlug += "-" + Utils.RandomString(randomNum);
+                    } while (dataCheck == null);
+                }
+
                 _unitOfWork.CategoryRepository.Update(category);
+                categoryViewModel.UrlSlug = category.UrlSlug;
                 return new ResponseResult<CategoryViewModel>()
                 {
                     StatusCode = 200,
                     IsSuccessed = true,
+                    Data = categoryViewModel
                 };
             }
             catch (Exception ex)

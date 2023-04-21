@@ -1,12 +1,27 @@
 ﻿@page
 @model RegisterModel
+@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
 @{
     ViewData["Title"] = "Register";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <!-- Outer Row -->
 <div class="row justify-content-center">
-
+    <script type="text/javascript">
+        var isCaptchaVerified = false;
+        var verifyCallback = function (response) {
+            isCaptchaVerified = true;
+            enableBtn();
+        };
+        var onloadCallback = function () {
+            grecaptcha.render('example3', {
+                'sitekey': '@Configuration["CaptchaSettings:CaptchaSiteKey"]',
+                'callback': verifyCallback,
+                'theme': 'light'
+            });
+        }
+    </script>
     <div class="col-xl-10 col-lg-12 col-md-9">
         <div class="card o-hidden border-0 shadow-lg my-5">
             <div class="card-body p-0">
@@ -19,7 +34,7 @@
             background-repeat: no-repeat;"></div>
                         <div class="col-md-6">
 
-                            <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                            <form asp-route-returnUrl="@Model.ReturnUrl" method="post" onsubmit="return validateForm(event)">
                                 <h4 class="text-center">Điền thông tin để tạo tài khoản mới.</h4>
                                 <hr />
                                 <div asp-validation-summary="All" class="text-danger"></div>
@@ -54,7 +69,8 @@
                                     <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
                                 </div>
                                 <br />
-                                <button type="submit" class="btn btn-primary">Đăng ký</button>
+                                <div id="example3"></div>
+                                <button type="submit" id="idSubmit" class="btn btn-primary" disabled>Đăng ký</button>
                             </form>
                         </div>
                     </div>
@@ -83,6 +99,28 @@
     </div>
 
 </div>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+</script>
+
+<script>
+    const checkBox = document.getElementById("conf"); // lấy phần tử checkbox bằng id
+
+    function enableBtn() {
+        if (isCaptchaVerified) {
+            document.getElementById('idSubmit').disabled = false;
+        }
+    }
+
+    function validateForm(event) {
+        if (!isCaptchaVerified) {
+            event.preventDefault();
+            alert("Please complete the reCAPTCHA verification.");
+            return false;
+        }
+        
+        return true;
+    }
+</script>
 <script>
     const imageUrls = [
         'https://pdp.edu.vn/wp-content/uploads/2021/06/hinh-anh-anime-ac-quy-kinh-di-dang-so-nhat-820x513.png',

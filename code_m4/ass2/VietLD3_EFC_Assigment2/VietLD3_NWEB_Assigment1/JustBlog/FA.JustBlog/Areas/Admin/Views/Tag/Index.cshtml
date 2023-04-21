@@ -1,5 +1,7 @@
 ﻿@model IEnumerable<FA.JustBlog.ViewModel.ViewModel.TagViewModel>
 @addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@using System.Security.Claims
+@using FA.JustBlog.Core.Utill
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
@@ -19,7 +21,10 @@
             <th>
                 @Html.DisplayNameFor(model => model.Count)
             </th>
-            <th></th>
+             @if (User.Claims.Any(c => c.Type == ClaimTypes.Role && (c.Value == $"{RoleUnit.Role_BlogOwner}")))
+            {
+                <th>Function</th>
+            } 
         </tr>
     </thead>
     <tbody>
@@ -27,7 +32,6 @@
         <tr>
             <td>
                     <a href="/Admin/Tag/Details?id=@item.Id"> @Html.DisplayFor(modelItem => item.Name)</a>
-               
             </td> 
             <td>
                 @Html.DisplayFor(modelItem => item.Description)
@@ -35,21 +39,14 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Count)
             </td>
-            <td>
-                    @using System.Security.Claims
-                    @using FA.JustBlog.Core.Utill
-                    @if (User.Claims.Any(c => c.Type == ClaimTypes.Role && (c.Value == $"{RoleUnit.Role_BlogOwner}" || c.Value == $"{RoleUnit.Role_Contributor}")))
-                    {
+            @if (User.Claims.Any(c => c.Type == ClaimTypes.Role && (c.Value == $"{RoleUnit.Role_BlogOwner}")))
+                {
+                    <td>
                         <a href="/Admin/Tag/Edit?id=@item.Id">Edit</a>
-                    }
-
-
-                    @if (User.Claims.Any(c => c.Type == ClaimTypes.Role && (c.Value == $"{RoleUnit.Role_BlogOwner}")))
-                    {
-                        <br />
                         <a href="/Admin/Tag/Delete?id=@item.Id">Delete</a>
+                    </td>
                     }
-            </td>
+           
         </tr>
 }
     </tbody>

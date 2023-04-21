@@ -25,6 +25,7 @@ namespace FA.JustBlog.Areas.Admin.Controllers
             _usermanager = usermanager;
             _logger = logger;
             _categoryService = categoryService;
+
         }
 
         // GET: PostController
@@ -59,8 +60,8 @@ namespace FA.JustBlog.Areas.Admin.Controllers
                 postViewModel.UrlSlug = Utils.ConFigUrlSlug(postViewModel.Title);
                 var userId = HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier);
                 postViewModel.UsingIdentityUserId = userId;
-                _postService.Add(postViewModel);
-                return Redirect($"/post/Details?post={postViewModel.Id}");
+                postViewModel = _postService.Add(postViewModel).Data;
+                return Redirect($"/post/Details?post={postViewModel.UrlSlug}");
             }
             catch
             {
@@ -69,9 +70,9 @@ namespace FA.JustBlog.Areas.Admin.Controllers
         }
 
         // GET: PostController/Edit/5 
-        public ActionResult Edit(int id)
+        public ActionResult Edit(string urlSlug)
         {
-            var post = _postService.GetById(id).Data;
+            var post = _postService.GetByUrl(urlSlug).Data;
             ViewBag.CateList = _categoryService.GetAll().DataList;
             return View(post);
         }
@@ -83,7 +84,7 @@ namespace FA.JustBlog.Areas.Admin.Controllers
             try
             {
                 postViewModel.UrlSlug = Utils.ConFigUrlSlug(postViewModel.Title);
-                _postService.Update(postViewModel);
+                postViewModel = _postService.Update(postViewModel).Data;
 
             }
             catch
@@ -95,11 +96,11 @@ namespace FA.JustBlog.Areas.Admin.Controllers
         }
 
         // GET: PostController/Delete/5 
-        public ActionResult Delete(int id)
+        public ActionResult Delete(string urlSlug)
         {
             try
             {
-                _postService.Delete(id);
+                _postService.Delete(urlSlug);
             }
             catch (Exception)
             {

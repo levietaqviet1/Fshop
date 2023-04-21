@@ -5,6 +5,7 @@ using FA.JustBlog.Service.post;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace FA.JustBlog.Areas.Admin.Controllers
 {
@@ -13,16 +14,18 @@ namespace FA.JustBlog.Areas.Admin.Controllers
     public class HomeController : Controller
     {
         private readonly IPostService _postService;
-        private readonly UserManager<UsingIdentityUser> _usermanager;
+        private readonly UserManager<UsingIdentityUser> _userManager;
         private readonly ILogger<PostController> _logger;
         private readonly ICategoryService _categoryService;
+        private readonly SignInManager<UsingIdentityUser> _signInManager;
 
-        public HomeController(ICategoryService categoryService, IPostService postService, ILogger<PostController> logger, UserManager<UsingIdentityUser> usermanager)
+        public HomeController(SignInManager<UsingIdentityUser> signInManager, ICategoryService categoryService, IPostService postService, ILogger<PostController> logger, UserManager<UsingIdentityUser> usermanager)
         {
             _postService = postService;
-            _usermanager = usermanager;
+            _userManager = usermanager;
             _logger = logger;
             _categoryService = categoryService;
+            _signInManager = signInManager;
         }
 
         // GET: HomeController
@@ -32,73 +35,30 @@ namespace FA.JustBlog.Areas.Admin.Controllers
             return View();
         }
 
-        // GET: HomeController/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
-        // GET: HomeController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
 
         // POST: HomeController/Create
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        [Authorize(Roles = $"{RoleUnit.Role_User}")]
+        public async Task<IActionResult> Create(string? checkConfirm)
         {
-            try
+            if (checkConfirm == null)
             {
-                return RedirectToAction(nameof(Index));
+                return View("Index");
             }
-            catch
+            var userId = HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var user = await _userManager.FindByIdAsync(userId);
+            var roles = await _userManager.GetRolesAsync(user);
+
+            if (!roles.Contains(RoleUnit.Role_Contributor))
             {
-                return View();
-            }
+                await _userManager.AddToRoleAsync(user, RoleUnit.Role_Contributor);
+            };
+            await _userManager.RemoveFromRoleAsync(user, RoleUnit.Role_User);
+            await _signInManager.SignOutAsync();
+            await _signInManager.SignInAsync(user, isPersistent: false);
+            return Redirect("/Admin/Post/");
         }
 
-        // GET: HomeController/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
 
-        // POST: HomeController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: HomeController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: HomeController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
     }
 }

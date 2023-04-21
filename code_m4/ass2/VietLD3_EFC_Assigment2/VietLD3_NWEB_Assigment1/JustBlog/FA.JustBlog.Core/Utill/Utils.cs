@@ -63,5 +63,18 @@ namespace FA.JustBlog.Core.Utill
               .Select(s => s[random.Next(s.Length)]).ToArray());
         }
 
+        public static string RandomString(int length)
+        {
+            const string chars = "abcdefghijklmnopqrstuvwxyz";
+            var random = new Random();
+            return new string(Enumerable.Repeat(chars, length)
+                .Select(s => s[random.Next(s.Length)]).ToArray());
+        }
+        public static int RandomInt(int min, int max)
+        {
+            Random random = new Random();
+            return random.Next(min, max + 1);
+        }
+
     }
 }

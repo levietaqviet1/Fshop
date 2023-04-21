@@ -10,11 +10,11 @@
         "projectUniqueName": "D:\\GIT\\Fshop\\code_m4\\ass2\\VietLD3_EFC_Assigment2\\VietLD3_NWEB_Assigment1\\JustBlog\\FA.JustBlog.Core\\FA.JustBlog.Core.csproj",
         "projectName": "FA.JustBlog.Core",
         "projectPath": "D:\\GIT\\Fshop\\code_m4\\ass2\\VietLD3_EFC_Assigment2\\VietLD3_NWEB_Assigment1\\JustBlog\\FA.JustBlog.Core\\FA.JustBlog.Core.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\NCC\\.nuget\\packages\\",
         "outputPath": "D:\\GIT\\Fshop\\code_m4\\ass2\\VietLD3_EFC_Assigment2\\VietLD3_NWEB_Assigment1\\JustBlog\\FA.JustBlog.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\NCC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -93,11 +93,11 @@
         "projectUniqueName": "D:\\GIT\\Fshop\\code_m4\\ass2\\VietLD3_EFC_Assigment2\\VietLD3_NWEB_Assigment1\\JustBlog\\FA.JustBlog.Service\\FA.JustBlog.Service.csproj",
         "projectName": "FA.JustBlog.Service",
         "projectPath": "D:\\GIT\\Fshop\\code_m4\\ass2\\VietLD3_EFC_Assigment2\\VietLD3_NWEB_Assigment1\\JustBlog\\FA.JustBlog.Service\\FA.JustBlog.Service.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\NCC\\.nuget\\packages\\",
         "outputPath": "D:\\GIT\\Fshop\\code_m4\\ass2\\VietLD3_EFC_Assigment2\\VietLD3_NWEB_Assigment1\\JustBlog\\FA.JustBlog.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\NCC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -161,11 +161,11 @@
         "projectUniqueName": "D:\\GIT\\Fshop\\code_m4\\ass2\\VietLD3_EFC_Assigment2\\VietLD3_NWEB_Assigment1\\JustBlog\\FA.JustBlog.ViewModel\\FA.JustBlog.ViewModel.csproj",
         "projectName": "FA.JustBlog.ViewModel",
         "projectPath": "D:\\GIT\\Fshop\\code_m4\\ass2\\VietLD3_EFC_Assigment2\\VietLD3_NWEB_Assigment1\\JustBlog\\FA.JustBlog.ViewModel\\FA.JustBlog.ViewModel.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\NCC\\.nuget\\packages\\",
         "outputPath": "D:\\GIT\\Fshop\\code_m4\\ass2\\VietLD3_EFC_Assigment2\\VietLD3_NWEB_Assigment1\\JustBlog\\FA.JustBlog.ViewModel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\NCC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -220,11 +220,11 @@
         "projectUniqueName": "D:\\GIT\\Fshop\\code_m4\\ass2\\VietLD3_EFC_Assigment2\\VietLD3_NWEB_Assigment1\\JustBlog\\FA.JustBlog\\FA.JustBlog.csproj",
         "projectName": "FA.JustBlog",
         "projectPath": "D:\\GIT\\Fshop\\code_m4\\ass2\\VietLD3_EFC_Assigment2\\VietLD3_NWEB_Assigment1\\JustBlog\\FA.JustBlog\\FA.JustBlog.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\NCC\\.nuget\\packages\\",
         "outputPath": "D:\\GIT\\Fshop\\code_m4\\ass2\\VietLD3_EFC_Assigment2\\VietLD3_NWEB_Assigment1\\JustBlog\\FA.JustBlog\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\NCC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -260,6 +260,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNet.WebHelpers": {
+              "target": "Package",
+              "version": "[3.2.9, )"
+            },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.11, )"
@@ -287,6 +291,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.15, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",

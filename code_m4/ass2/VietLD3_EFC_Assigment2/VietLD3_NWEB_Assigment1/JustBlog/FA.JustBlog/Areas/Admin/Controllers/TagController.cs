@@ -41,6 +41,7 @@ namespace FA.JustBlog.Areas.Admin.Controllers
         }
 
         // GET: TagController/Create 
+        [Authorize(Roles = $"{RoleUnit.Role_BlogOwner}")]
         public ActionResult Create()
         {
             return View();
@@ -48,6 +49,7 @@ namespace FA.JustBlog.Areas.Admin.Controllers
 
         // POST: TagController/Create
         [HttpPost]
+        [Authorize(Roles = $"{RoleUnit.Role_BlogOwner}")]
         public ActionResult Create(TagViewModel tagViewModel)
         {
             try
@@ -61,6 +63,7 @@ namespace FA.JustBlog.Areas.Admin.Controllers
         }
 
         // GET: TagController/Edit/5 
+        [Authorize(Roles = $"{RoleUnit.Role_BlogOwner}")]
         public ActionResult Edit(int id)
         {
             var data = _tagService.GetById(id).Data;
@@ -69,6 +72,7 @@ namespace FA.JustBlog.Areas.Admin.Controllers
 
         // POST: TagController/Edit/5
         [HttpPost]
+        [Authorize(Roles = $"{RoleUnit.Role_BlogOwner}")]
         public ActionResult Edit(TagViewModel tagViewModel)
         {
             try

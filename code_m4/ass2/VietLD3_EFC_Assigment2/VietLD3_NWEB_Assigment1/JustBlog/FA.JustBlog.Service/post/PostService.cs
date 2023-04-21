@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using FA.JustBlog.Core.Models;
 using FA.JustBlog.Core.Repositories.UnitOfWork;
+using FA.JustBlog.Core.Utill;
 using FA.JustBlog.ViewModel;
 using FA.JustBlog.ViewModel.ViewModel;
 using Microsoft.AspNetCore.Identity;
@@ -20,17 +21,29 @@ namespace FA.JustBlog.Service.post
             _userManager = userManager;
 
         }
+
         public ResponseResult<PostViewModel> Add(PostViewModel postViewModel)
         {
             try
             {
                 var post = _mapper.Map<Post>(postViewModel);
                 post.Modified = DateTime.UtcNow;
+                Post postExit = null;
+                int randomNum = Utils.RandomInt(5, 20);
+                do
+                {
+                    postExit = _unitOfWork.PostRepository.GetPostsByUrlSlug(post.UrlSlug);
+                    post.UrlSlug += "-" + Utils.RandomString(randomNum);
+                } while (postExit == null);
+
+
                 _unitOfWork.PostRepository.Add(post);
+                postViewModel.UrlSlug = post.UrlSlug;
                 return new ResponseResult<PostViewModel>
                 {
                     StatusCode = 200,
                     IsSuccessed = true,
+                    Data = postViewModel
                 };
             }
             catch (Exception ex)
@@ -43,11 +56,11 @@ namespace FA.JustBlog.Service.post
             }
         }
 
-        public ResponseResult<PostViewModel> Delete(int id)
+        public ResponseResult<PostViewModel> Delete(string urlSlug)
         {
             try
             {
-                _unitOfWork.PostRepository.Delete(id);
+                _unitOfWork.PostRepository.Delete(_unitOfWork.PostRepository.GetPostsByUrlSlug(urlSlug));
                 return new ResponseResult<PostViewModel>
                 {
                     StatusCode = 200,
@@ -247,21 +260,34 @@ namespace FA.JustBlog.Service.post
                     };
                 }
 
+                if (!post.Title.Equals(postViewModel.Title))
+                {
+                    Post postExit = null;
+                    int randomNum = Utils.RandomInt(5, 20);
+                    do
+                    {
+                        postExit = _unitOfWork.PostRepository.GetPostsByUrlSlug(postViewModel.UrlSlug);
+                        postViewModel.UrlSlug += "-" + Utils.RandomString(randomNum);
+                    } while (postExit == null);
+                }
                 post.Title = postViewModel.Title;
                 post.UrlSlug = postViewModel.UrlSlug;
                 post.ShortDescription = postViewModel.ShortDescription;
                 post.Published = postViewModel.Published;
                 post.Modified = DateTime.Now;
+                post.PostContent = postViewModel.PostContent;
                 post.ViewCount = postViewModel.ViewCount;
                 post.RateCount = postViewModel.RateCount;
                 post.TotalRate = postViewModel.TotalRate;
                 post.CategoryId = postViewModel.CategoryId;
                 _unitOfWork.PostRepository.Update(post);
 
-                return new ResponseResult<PostViewModel>()
+                postViewModel.UrlSlug = post.UrlSlug;
+                return new ResponseResult<PostViewModel>
                 {
                     StatusCode = 200,
                     IsSuccessed = true,
+                    Data = postViewModel
                 };
             }
             catch (Exception ex)
