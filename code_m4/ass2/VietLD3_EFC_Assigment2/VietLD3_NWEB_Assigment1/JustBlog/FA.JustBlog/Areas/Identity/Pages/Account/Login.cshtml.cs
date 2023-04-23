@@ -95,11 +95,33 @@ namespace FA.JustBlog.Areas.Identity.Pages.Account
             ReturnUrl = returnUrl;
         }
 
-        public async Task<IActionResult> OnPostAsync(string returnUrl = null)
+        public async Task<IActionResult> OnPostAsync(string? provider, string? returnUrl = null)
         {
             returnUrl ??= Url.Content("~/");
+            if (provider != null)
+            {
+                //kiemtra login gg
+                ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
+                var listprovider = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
+                var provider_process = listprovider.Find((m) => m.Name == provider);
+                if (provider_process == null)
+                {
+                    return NotFound("Dịch vụ không chính xác: " + provider);
+                }
 
-            ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
+                // redirectUrl - là Url sẽ chuyển hướng đến - sau khi CallbackPath (/dang-nhap-tu-google) thi hành xong
+                // nó bằng identity/account/externallogin?handler=Callback
+                // tức là gọi OnGetCallbackAsync
+                var redirectUrl = Url.Page("./ExternalLogin", pageHandler: "Callback", values: new { returnUrl });
+
+                // Cấu hình
+                var properties = _signInManager.ConfigureExternalAuthenticationProperties(provider, redirectUrl);
+
+                // Chuyển hướng đến dịch vụ ngoài (Googe, Facebook)
+                return new ChallengeResult(provider, properties);
+            }
+
+
 
             if (ModelState.IsValid)
             {

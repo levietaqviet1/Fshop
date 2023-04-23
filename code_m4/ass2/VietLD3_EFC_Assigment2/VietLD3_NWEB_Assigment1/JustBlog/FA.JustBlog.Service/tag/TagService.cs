@@ -33,7 +33,7 @@ namespace FA.JustBlog.Service.tag
                 {
                     dataCheck = _unitOfWork.TagRepository.GetTagByUrlSlug(tag.UrlSlug);
                     tag.UrlSlug += "-" + Utils.RandomString(randomNum);
-                } while (dataCheck == null);
+                } while (dataCheck != null);
                 _unitOfWork.TagRepository.Add(tag);
                 tagViewModel.UrlSlug = tag.UrlSlug;
                 return new ResponseResult<TagViewModel>()
@@ -180,7 +180,7 @@ namespace FA.JustBlog.Service.tag
                     {
                         dataCheck = _unitOfWork.TagRepository.GetTagByUrlSlug(tag.UrlSlug);
                         tag.UrlSlug += "-" + Utils.RandomString(randomNum);
-                    } while (dataCheck == null);
+                    } while (dataCheck != null);
                 }
 
                 _unitOfWork.TagRepository.Update(tag);

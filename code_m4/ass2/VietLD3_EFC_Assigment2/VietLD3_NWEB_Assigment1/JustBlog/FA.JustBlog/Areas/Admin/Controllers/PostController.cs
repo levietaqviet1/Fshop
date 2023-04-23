@@ -42,7 +42,7 @@ namespace FA.JustBlog.Areas.Admin.Controllers
             return View(listPosts);
         }
 
-        [Authorize(Roles = $"{RoleUnit.Role_Contributor}, {RoleUnit.Role_BlogOwner}")]
+
         // GET: PostController/Create 
         public ActionResult Create()
         {
@@ -51,7 +51,7 @@ namespace FA.JustBlog.Areas.Admin.Controllers
             return View();
         }
 
-        // POST: PostController/Create
+        // POST: PostController/Create 
         [HttpPost]
         public ActionResult Create(PostViewModel postViewModel)
         {

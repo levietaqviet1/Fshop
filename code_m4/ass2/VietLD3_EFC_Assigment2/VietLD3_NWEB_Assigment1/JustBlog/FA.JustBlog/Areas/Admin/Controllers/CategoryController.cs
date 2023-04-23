@@ -43,7 +43,7 @@ namespace FA.JustBlog.Areas.Admin.Controllers
         }
 
         // GET: CategoryController/Create
-        [Authorize(Roles = $"{RoleUnit.Role_Contributor}, {RoleUnit.Role_BlogOwner}")]
+        [Authorize(Roles = $"{RoleUnit.Role_BlogOwner}")]
         public ActionResult Create()
         {
             return View();
@@ -51,7 +51,7 @@ namespace FA.JustBlog.Areas.Admin.Controllers
 
         // POST: CategoryController/Create
         [HttpPost]
-        [Authorize(Roles = $"{RoleUnit.Role_Contributor}, {RoleUnit.Role_BlogOwner}")]
+        [Authorize(Roles = $"{RoleUnit.Role_BlogOwner}")]
         public ActionResult Create(CategoryViewModel categoryViewModel)
         {
             try
@@ -65,7 +65,7 @@ namespace FA.JustBlog.Areas.Admin.Controllers
         }
 
         // GET: CategoryController/Edit/5
-        [Authorize(Roles = $"{RoleUnit.Role_Contributor}, {RoleUnit.Role_BlogOwner}")]
+        [Authorize(Roles = $"{RoleUnit.Role_BlogOwner}")]
         public ActionResult Edit(int id)
         {
             var data = _categoryService.GetById(id).Data;
@@ -74,7 +74,7 @@ namespace FA.JustBlog.Areas.Admin.Controllers
 
         // POST: CategoryController/Edit/5
         [HttpPost]
-        [Authorize(Roles = $"{RoleUnit.Role_Contributor}, {RoleUnit.Role_BlogOwner}")]
+        [Authorize(Roles = $"{RoleUnit.Role_BlogOwner}")]
         public ActionResult Edit(CategoryViewModel categoryViewModel)
         {
             try
@@ -101,19 +101,5 @@ namespace FA.JustBlog.Areas.Admin.Controllers
             return Redirect("/Admin/Category/Index");
         }
 
-        // POST: CategoryController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
     }
 }

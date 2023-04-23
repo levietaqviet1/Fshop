@@ -33,7 +33,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto py-4 py-lg-0">
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="@Url.Action("index","Home")">Home</a></li>
+                    @*<li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="@Url.Action("index","Home")">Home</a></li>*@
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" asp-action="Index" asp-controller="Post">Posts</a></li> 
                     @if (User.Identity?.IsAuthenticated ?? false)
                     {

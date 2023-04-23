@@ -38,7 +38,7 @@ namespace FA.JustBlog.Service.category
                 {
                     dataCheck = _unitOfWork.CategoryRepository.GetTagByUrlSlug(categoryModels.UrlSlug);
                     categoryModels.UrlSlug += "-" + Utils.RandomString(randomNum);
-                } while (dataCheck == null);
+                } while (dataCheck != null);
 
                 _unitOfWork.CategoryRepository.Add(categoryModels);
                 categoryViewModel.UrlSlug = categoryModels.UrlSlug;
@@ -164,7 +164,7 @@ namespace FA.JustBlog.Service.category
                     {
                         dataCheck = _unitOfWork.CategoryRepository.GetTagByUrlSlug(category.UrlSlug);
                         category.UrlSlug += "-" + Utils.RandomString(randomNum);
-                    } while (dataCheck == null);
+                    } while (dataCheck != null);
                 }
 
                 _unitOfWork.CategoryRepository.Update(category);

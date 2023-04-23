@@ -34,7 +34,7 @@ namespace FA.JustBlog.Service.post
                 {
                     postExit = _unitOfWork.PostRepository.GetPostsByUrlSlug(post.UrlSlug);
                     post.UrlSlug += "-" + Utils.RandomString(randomNum);
-                } while (postExit == null);
+                } while (postExit != null);
 
 
                 _unitOfWork.PostRepository.Add(post);
@@ -268,7 +268,7 @@ namespace FA.JustBlog.Service.post
                     {
                         postExit = _unitOfWork.PostRepository.GetPostsByUrlSlug(postViewModel.UrlSlug);
                         postViewModel.UrlSlug += "-" + Utils.RandomString(randomNum);
-                    } while (postExit == null);
+                    } while (postExit != null);
                 }
                 post.Title = postViewModel.Title;
                 post.UrlSlug = postViewModel.UrlSlug;
