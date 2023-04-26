@@ -1,0 +1,74 @@
+﻿@using FA.JustBlog.ViewModel.ViewModel;
+@using System.Security.Claims
+@using FA.JustBlog.Core.Utill
+@model IList<PostViewModel>
+
+@{
+    ViewData["Title"] = "All Posts";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="my-3">All Posts</h1>
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Short Description</th>
+               @* <th>Url Slug</th>*@
+                <th>Published</th>
+                <th>Posted On</th>
+                <th>Category</th>
+                <th>View Count</th>
+                <th>Rate Count</th>
+                <th>Total Rate</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <a href="/post/Details?post=@item.UrlSlug" target="_blank">@item.Title</a>
+                    </td>
+                    <td>
+                        @Html.Raw(item.ShortDescription)
+                    </td>
+                    @*<td>
+                        @Html.DisplayFor(modelItem => item.UrlSlug)
+                    </td>*@
+                    <td>
+                        @if (item.Published)
+                        {
+                            <span class="badge bg-success">Yes</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-danger">No</span>
+                        }
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PostedOn)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CategoryViewModel.Name) 
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ViewCount)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.RateCount)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TotalRate)
+                    </td>
+                    <td>
+                        <a href="/Admin/Post/Edit?urlSlug=@item.UrlSlug" class="btn btn-sm btn-primary">Edit</a>
+                        <a href="/Admin/Post/Delete?urlSlug=@item.UrlSlug" class="btn btn-sm btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

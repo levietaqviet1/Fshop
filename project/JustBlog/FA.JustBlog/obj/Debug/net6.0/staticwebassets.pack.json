@@ -1,0 +1,1941 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\FA.JustBlog.bundle.scp.css",
+      "PackagePath": "staticwebassets\\FA.JustBlog.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Share\\Comment\\CommentBt.css",
+      "PackagePath": "staticwebassets\\Share\\Comment\\CommentBt.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Share\\Comment\\style.css",
+      "PackagePath": "staticwebassets\\Share\\Comment\\style.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\LICENSE.md",
+      "PackagePath": "staticwebassets\\ThemesV2\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\README.md",
+      "PackagePath": "staticwebassets\\ThemesV2\\README.md"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\ckeditor.d.ts",
+      "PackagePath": "staticwebassets\\ThemesV2\\ckeditor.d.ts"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\ckeditor.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\ckeditor.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\ckeditor.js.map",
+      "PackagePath": "staticwebassets\\ThemesV2\\ckeditor.js.map"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\index.html",
+      "PackagePath": "staticwebassets\\ThemesV2\\index.html"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\sample\\css\\sample.css",
+      "PackagePath": "staticwebassets\\ThemesV2\\sample\\css\\sample.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\sample\\img\\bg.png",
+      "PackagePath": "staticwebassets\\ThemesV2\\sample\\img\\bg.png"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\sample\\img\\github.svg",
+      "PackagePath": "staticwebassets\\ThemesV2\\sample\\img\\github.svg"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\sample\\img\\logo.svg",
+      "PackagePath": "staticwebassets\\ThemesV2\\sample\\img\\logo.svg"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\sample\\img\\umbrellas.jpg",
+      "PackagePath": "staticwebassets\\ThemesV2\\sample\\img\\umbrellas.jpg"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\af.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\af.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\ar.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\ar.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\ast.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\ast.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\az.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\az.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\bg.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\bg.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\bn.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\bn.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\bs.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\bs.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\ca.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\ca.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\cs.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\cs.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\da.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\da.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\de-ch.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\de-ch.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\de.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\de.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\el.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\el.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\en-au.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\en-au.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\en-gb.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\en-gb.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\eo.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\eo.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\es-co.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\es-co.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\es.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\es.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\et.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\et.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\eu.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\eu.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\fa.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\fa.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\fi.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\fi.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\fr.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\fr.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\gl.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\gl.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\gu.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\gu.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\he.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\he.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\hi.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\hi.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\hr.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\hr.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\hu.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\hu.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\id.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\id.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\it.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\it.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\ja.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\ja.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\jv.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\jv.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\km.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\km.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\kn.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\kn.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\ko.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\ko.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\ku.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\ku.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\lt.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\lt.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\lv.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\lv.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\ms.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\ms.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\nb.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\nb.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\ne.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\ne.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\nl.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\nl.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\no.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\no.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\oc.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\oc.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\pl.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\pl.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\pt-br.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\pt-br.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\pt.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\pt.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\ro.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\ro.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\ru.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\ru.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\si.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\si.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\sk.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\sk.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\sl.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\sl.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\sq.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\sq.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\sr-latn.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\sr-latn.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\sr.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\sr.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\sv.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\sv.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\th.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\th.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\tk.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\tk.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\tr.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\tr.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\tt.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\tt.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\ug.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\ug.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\uk.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\uk.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\ur.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\ur.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\uz.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\uz.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\vi.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\vi.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\zh-cn.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\zh-cn.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\ThemesV2\\translations\\zh.js",
+      "PackagePath": "staticwebassets\\ThemesV2\\translations\\zh.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\CHANGES.md",
+      "PackagePath": "staticwebassets\\Themes\\CHANGES.md"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\LICENSE.md",
+      "PackagePath": "staticwebassets\\Themes\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\README.md",
+      "PackagePath": "staticwebassets\\Themes\\README.md"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\SECURITY.md",
+      "PackagePath": "staticwebassets\\Themes\\SECURITY.md"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\bender-runner.config.json",
+      "PackagePath": "staticwebassets\\Themes\\bender-runner.config.json"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\build-config.js",
+      "PackagePath": "staticwebassets\\Themes\\build-config.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\ckeditor.js",
+      "PackagePath": "staticwebassets\\Themes\\ckeditor.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\config.js",
+      "PackagePath": "staticwebassets\\Themes\\config.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\contents.css",
+      "PackagePath": "staticwebassets\\Themes\\contents.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\af.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\af.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\ar.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\ar.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\az.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\az.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\bg.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\bg.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\bn.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\bn.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\bs.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\bs.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\ca.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\ca.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\cs.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\cs.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\cy.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\cy.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\da.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\da.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\de-ch.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\de-ch.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\de.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\de.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\el.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\el.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\en-au.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\en-au.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\en-ca.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\en-ca.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\en-gb.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\en-gb.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\en.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\en.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\eo.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\eo.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\es-mx.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\es-mx.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\es.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\es.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\et.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\et.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\eu.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\eu.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\fa.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\fa.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\fi.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\fi.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\fo.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\fo.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\fr-ca.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\fr-ca.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\fr.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\fr.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\gl.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\gl.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\gu.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\gu.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\he.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\he.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\hi.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\hi.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\hr.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\hr.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\hu.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\hu.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\id.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\id.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\is.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\is.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\it.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\it.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\ja.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\ja.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\ka.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\ka.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\km.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\km.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\ko.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\ko.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\ku.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\ku.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\lt.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\lt.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\lv.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\lv.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\mk.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\mk.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\mn.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\mn.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\ms.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\ms.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\nb.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\nb.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\nl.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\nl.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\no.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\no.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\oc.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\oc.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\pl.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\pl.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\pt-br.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\pt-br.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\pt.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\pt.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\ro.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\ro.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\ru.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\ru.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\si.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\si.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\sk.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\sk.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\sl.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\sl.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\sq.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\sq.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\sr-latn.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\sr-latn.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\sr.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\sr.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\sv.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\sv.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\th.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\th.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\tr.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\tr.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\tt.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\tt.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\ug.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\ug.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\uk.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\uk.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\vi.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\vi.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\zh-cn.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\zh-cn.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\lang\\zh.js",
+      "PackagePath": "staticwebassets\\Themes\\lang\\zh.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\a11yhelp.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\a11yhelp.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\_translationstatus.txt",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\_translationstatus.txt"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\af.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\af.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\ar.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\ar.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\az.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\az.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\bg.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\bg.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\ca.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\ca.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\cs.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\cs.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\cy.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\cy.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\da.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\da.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\de-ch.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\de-ch.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\de.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\de.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\el.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\el.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\en-au.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\en-au.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\en-gb.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\en-gb.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\en.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\en.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\eo.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\eo.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\es-mx.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\es-mx.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\es.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\es.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\et.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\et.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\eu.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\eu.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\fa.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\fa.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\fi.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\fi.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\fo.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\fo.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\fr-ca.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\fr-ca.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\fr.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\fr.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\gl.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\gl.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\gu.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\gu.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\he.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\he.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\hi.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\hi.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\hr.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\hr.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\hu.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\hu.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\id.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\id.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\it.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\it.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\ja.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\ja.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\km.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\km.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\ko.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\ko.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\ku.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\ku.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\lt.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\lt.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\lv.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\lv.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\mk.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\mk.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\mn.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\mn.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\nb.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\nb.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\nl.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\nl.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\no.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\no.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\oc.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\oc.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\pl.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\pl.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\pt-br.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\pt-br.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\pt.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\pt.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\ro.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\ro.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\ru.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\ru.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\si.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\si.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\sk.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\sk.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\sl.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\sl.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\sq.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\sq.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\sr-latn.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\sr-latn.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\sr.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\sr.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\sv.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\sv.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\th.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\th.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\tr.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\tr.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\tt.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\tt.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\ug.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\ug.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\uk.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\uk.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\vi.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\vi.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\zh-cn.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\zh-cn.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\zh.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\a11yhelp\\dialogs\\lang\\zh.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\about\\dialogs\\about.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\about\\dialogs\\about.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\about\\dialogs\\hidpi\\logo_ckeditor.png",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\about\\dialogs\\hidpi\\logo_ckeditor.png"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\about\\dialogs\\logo_ckeditor.png",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\about\\dialogs\\logo_ckeditor.png"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\clipboard\\dialogs\\paste.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\clipboard\\dialogs\\paste.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\dialog\\dialogDefinition.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\dialog\\dialogDefinition.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\dialog\\styles\\dialog.css",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\dialog\\styles\\dialog.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\icons.png",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\icons.png"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\icons_hidpi.png",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\icons_hidpi.png"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\image\\dialogs\\image.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\image\\dialogs\\image.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\image\\images\\noimage.png",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\image\\images\\noimage.png"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\link\\dialogs\\anchor.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\link\\dialogs\\anchor.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\link\\dialogs\\link.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\link\\dialogs\\link.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\link\\images\\anchor.png",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\link\\images\\anchor.png"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\link\\images\\hidpi\\anchor.png",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\link\\images\\hidpi\\anchor.png"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\magicline\\images\\hidpi\\icon-rtl.png",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\magicline\\images\\hidpi\\icon-rtl.png"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\magicline\\images\\hidpi\\icon.png",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\magicline\\images\\hidpi\\icon.png"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\magicline\\images\\icon-rtl.png",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\magicline\\images\\icon-rtl.png"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\magicline\\images\\icon.png",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\magicline\\images\\icon.png"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\pastefromgdocs\\filter\\default.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\pastefromgdocs\\filter\\default.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\pastefromlibreoffice\\filter\\default.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\pastefromlibreoffice\\filter\\default.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\pastefromword\\filter\\default.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\pastefromword\\filter\\default.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\pastetools\\filter\\common.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\pastetools\\filter\\common.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\pastetools\\filter\\image.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\pastetools\\filter\\image.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\scayt\\CHANGELOG.md",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\scayt\\CHANGELOG.md"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\scayt\\LICENSE.md",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\scayt\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\scayt\\README.md",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\scayt\\README.md"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\scayt\\dialogs\\dialog.css",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\scayt\\dialogs\\dialog.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\scayt\\dialogs\\options.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\scayt\\dialogs\\options.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\scayt\\dialogs\\toolbar.css",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\scayt\\dialogs\\toolbar.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\scayt\\skins\\moono-lisa\\scayt.css",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\scayt\\skins\\moono-lisa\\scayt.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\_translationstatus.txt",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\_translationstatus.txt"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\af.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\af.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\ar.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\ar.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\az.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\az.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\bg.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\bg.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\ca.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\ca.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\cs.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\cs.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\cy.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\cy.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\da.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\da.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\de-ch.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\de-ch.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\de.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\de.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\el.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\el.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\en-au.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\en-au.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\en-ca.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\en-ca.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\en-gb.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\en-gb.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\en.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\en.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\eo.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\eo.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\es-mx.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\es-mx.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\es.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\es.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\et.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\et.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\eu.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\eu.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\fa.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\fa.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\fi.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\fi.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\fr-ca.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\fr-ca.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\fr.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\fr.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\gl.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\gl.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\he.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\he.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\hr.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\hr.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\hu.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\hu.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\id.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\id.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\it.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\it.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\ja.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\ja.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\km.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\km.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\ko.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\ko.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\ku.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\ku.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\lt.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\lt.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\lv.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\lv.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\nb.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\nb.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\nl.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\nl.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\no.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\no.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\oc.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\oc.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\pl.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\pl.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\pt-br.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\pt-br.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\pt.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\pt.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\ro.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\ro.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\ru.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\ru.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\si.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\si.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\sk.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\sk.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\sl.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\sl.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\sq.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\sq.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\sr-latn.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\sr-latn.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\sr.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\sr.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\sv.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\sv.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\th.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\th.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\tr.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\tr.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\tt.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\tt.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\ug.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\ug.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\uk.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\uk.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\vi.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\vi.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\zh-cn.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\zh-cn.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\lang\\zh.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\lang\\zh.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\specialchar\\dialogs\\specialchar.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\specialchar\\dialogs\\specialchar.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\table\\dialogs\\table.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\table\\dialogs\\table.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\tableselection\\styles\\tableselection.css",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\tableselection\\styles\\tableselection.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\tabletools\\dialogs\\tableCell.js",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\tabletools\\dialogs\\tableCell.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\plugins\\widget\\images\\handle.png",
+      "PackagePath": "staticwebassets\\Themes\\plugins\\widget\\images\\handle.png"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\css\\samples.css",
+      "PackagePath": "staticwebassets\\Themes\\samples\\css\\samples.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\img\\github-top.png",
+      "PackagePath": "staticwebassets\\Themes\\samples\\img\\github-top.png"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\img\\header-bg.png",
+      "PackagePath": "staticwebassets\\Themes\\samples\\img\\header-bg.png"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\img\\header-separator.png",
+      "PackagePath": "staticwebassets\\Themes\\samples\\img\\header-separator.png"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\img\\logo.png",
+      "PackagePath": "staticwebassets\\Themes\\samples\\img\\logo.png"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\img\\logo.svg",
+      "PackagePath": "staticwebassets\\Themes\\samples\\img\\logo.svg"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\img\\navigation-tip.png",
+      "PackagePath": "staticwebassets\\Themes\\samples\\img\\navigation-tip.png"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\index.html",
+      "PackagePath": "staticwebassets\\Themes\\samples\\index.html"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\js\\sample.js",
+      "PackagePath": "staticwebassets\\Themes\\samples\\js\\sample.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\js\\sf.js",
+      "PackagePath": "staticwebassets\\Themes\\samples\\js\\sf.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\old\\ajax.html",
+      "PackagePath": "staticwebassets\\Themes\\samples\\old\\ajax.html"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\old\\api.html",
+      "PackagePath": "staticwebassets\\Themes\\samples\\old\\api.html"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\old\\appendto.html",
+      "PackagePath": "staticwebassets\\Themes\\samples\\old\\appendto.html"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\old\\assets\\inlineall\\logo.png",
+      "PackagePath": "staticwebassets\\Themes\\samples\\old\\assets\\inlineall\\logo.png"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\old\\assets\\outputxhtml\\outputxhtml.css",
+      "PackagePath": "staticwebassets\\Themes\\samples\\old\\assets\\outputxhtml\\outputxhtml.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\old\\assets\\posteddata.php",
+      "PackagePath": "staticwebassets\\Themes\\samples\\old\\assets\\posteddata.php"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\old\\assets\\sample.jpg",
+      "PackagePath": "staticwebassets\\Themes\\samples\\old\\assets\\sample.jpg"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\old\\assets\\uilanguages\\languages.js",
+      "PackagePath": "staticwebassets\\Themes\\samples\\old\\assets\\uilanguages\\languages.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\old\\datafiltering.html",
+      "PackagePath": "staticwebassets\\Themes\\samples\\old\\datafiltering.html"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\old\\dialog\\assets\\my_dialog.js",
+      "PackagePath": "staticwebassets\\Themes\\samples\\old\\dialog\\assets\\my_dialog.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\old\\dialog\\dialog.html",
+      "PackagePath": "staticwebassets\\Themes\\samples\\old\\dialog\\dialog.html"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\old\\divreplace.html",
+      "PackagePath": "staticwebassets\\Themes\\samples\\old\\divreplace.html"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\old\\enterkey\\enterkey.html",
+      "PackagePath": "staticwebassets\\Themes\\samples\\old\\enterkey\\enterkey.html"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\old\\htmlwriter\\outputhtml.html",
+      "PackagePath": "staticwebassets\\Themes\\samples\\old\\htmlwriter\\outputhtml.html"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\old\\index.html",
+      "PackagePath": "staticwebassets\\Themes\\samples\\old\\index.html"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\old\\inlineall.html",
+      "PackagePath": "staticwebassets\\Themes\\samples\\old\\inlineall.html"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\old\\inlinebycode.html",
+      "PackagePath": "staticwebassets\\Themes\\samples\\old\\inlinebycode.html"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\old\\inlinetextarea.html",
+      "PackagePath": "staticwebassets\\Themes\\samples\\old\\inlinetextarea.html"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\old\\jquery.html",
+      "PackagePath": "staticwebassets\\Themes\\samples\\old\\jquery.html"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\old\\magicline\\magicline.html",
+      "PackagePath": "staticwebassets\\Themes\\samples\\old\\magicline\\magicline.html"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\old\\readonly.html",
+      "PackagePath": "staticwebassets\\Themes\\samples\\old\\readonly.html"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\old\\replacebyclass.html",
+      "PackagePath": "staticwebassets\\Themes\\samples\\old\\replacebyclass.html"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\old\\replacebycode.html",
+      "PackagePath": "staticwebassets\\Themes\\samples\\old\\replacebycode.html"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\old\\sample.css",
+      "PackagePath": "staticwebassets\\Themes\\samples\\old\\sample.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\old\\sample.js",
+      "PackagePath": "staticwebassets\\Themes\\samples\\old\\sample.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\old\\sample_posteddata.php",
+      "PackagePath": "staticwebassets\\Themes\\samples\\old\\sample_posteddata.php"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\old\\tabindex.html",
+      "PackagePath": "staticwebassets\\Themes\\samples\\old\\tabindex.html"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\old\\toolbar\\toolbar.html",
+      "PackagePath": "staticwebassets\\Themes\\samples\\old\\toolbar\\toolbar.html"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\old\\uicolor.html",
+      "PackagePath": "staticwebassets\\Themes\\samples\\old\\uicolor.html"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\old\\uilanguages.html",
+      "PackagePath": "staticwebassets\\Themes\\samples\\old\\uilanguages.html"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\old\\wysiwygarea\\fullpage.html",
+      "PackagePath": "staticwebassets\\Themes\\samples\\old\\wysiwygarea\\fullpage.html"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\old\\xhtmlstyle.html",
+      "PackagePath": "staticwebassets\\Themes\\samples\\old\\xhtmlstyle.html"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\toolbarconfigurator\\css\\fontello.css",
+      "PackagePath": "staticwebassets\\Themes\\samples\\toolbarconfigurator\\css\\fontello.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\toolbarconfigurator\\font\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\Themes\\samples\\toolbarconfigurator\\font\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\toolbarconfigurator\\font\\config.json",
+      "PackagePath": "staticwebassets\\Themes\\samples\\toolbarconfigurator\\font\\config.json"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\toolbarconfigurator\\font\\fontello.eot",
+      "PackagePath": "staticwebassets\\Themes\\samples\\toolbarconfigurator\\font\\fontello.eot"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\toolbarconfigurator\\font\\fontello.svg",
+      "PackagePath": "staticwebassets\\Themes\\samples\\toolbarconfigurator\\font\\fontello.svg"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\toolbarconfigurator\\font\\fontello.ttf",
+      "PackagePath": "staticwebassets\\Themes\\samples\\toolbarconfigurator\\font\\fontello.ttf"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\toolbarconfigurator\\font\\fontello.woff",
+      "PackagePath": "staticwebassets\\Themes\\samples\\toolbarconfigurator\\font\\fontello.woff"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\toolbarconfigurator\\index.html",
+      "PackagePath": "staticwebassets\\Themes\\samples\\toolbarconfigurator\\index.html"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\toolbarconfigurator\\js\\abstracttoolbarmodifier.js",
+      "PackagePath": "staticwebassets\\Themes\\samples\\toolbarconfigurator\\js\\abstracttoolbarmodifier.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\toolbarconfigurator\\js\\fulltoolbareditor.js",
+      "PackagePath": "staticwebassets\\Themes\\samples\\toolbarconfigurator\\js\\fulltoolbareditor.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\toolbarconfigurator\\js\\toolbarmodifier.js",
+      "PackagePath": "staticwebassets\\Themes\\samples\\toolbarconfigurator\\js\\toolbarmodifier.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\toolbarconfigurator\\js\\toolbartextmodifier.js",
+      "PackagePath": "staticwebassets\\Themes\\samples\\toolbarconfigurator\\js\\toolbartextmodifier.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\toolbarconfigurator\\lib\\codemirror\\LICENSE",
+      "PackagePath": "staticwebassets\\Themes\\samples\\toolbarconfigurator\\lib\\codemirror"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\toolbarconfigurator\\lib\\codemirror\\codemirror.css",
+      "PackagePath": "staticwebassets\\Themes\\samples\\toolbarconfigurator\\lib\\codemirror\\codemirror.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\toolbarconfigurator\\lib\\codemirror\\codemirror.js",
+      "PackagePath": "staticwebassets\\Themes\\samples\\toolbarconfigurator\\lib\\codemirror\\codemirror.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\toolbarconfigurator\\lib\\codemirror\\javascript.js",
+      "PackagePath": "staticwebassets\\Themes\\samples\\toolbarconfigurator\\lib\\codemirror\\javascript.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\toolbarconfigurator\\lib\\codemirror\\neo.css",
+      "PackagePath": "staticwebassets\\Themes\\samples\\toolbarconfigurator\\lib\\codemirror\\neo.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\toolbarconfigurator\\lib\\codemirror\\show-hint.css",
+      "PackagePath": "staticwebassets\\Themes\\samples\\toolbarconfigurator\\lib\\codemirror\\show-hint.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\samples\\toolbarconfigurator\\lib\\codemirror\\show-hint.js",
+      "PackagePath": "staticwebassets\\Themes\\samples\\toolbarconfigurator\\lib\\codemirror\\show-hint.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\skins\\moono-lisa\\dialog.css",
+      "PackagePath": "staticwebassets\\Themes\\skins\\moono-lisa\\dialog.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\skins\\moono-lisa\\dialog_ie.css",
+      "PackagePath": "staticwebassets\\Themes\\skins\\moono-lisa\\dialog_ie.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\skins\\moono-lisa\\dialog_ie8.css",
+      "PackagePath": "staticwebassets\\Themes\\skins\\moono-lisa\\dialog_ie8.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\skins\\moono-lisa\\dialog_iequirks.css",
+      "PackagePath": "staticwebassets\\Themes\\skins\\moono-lisa\\dialog_iequirks.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\skins\\moono-lisa\\editor.css",
+      "PackagePath": "staticwebassets\\Themes\\skins\\moono-lisa\\editor.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\skins\\moono-lisa\\editor_gecko.css",
+      "PackagePath": "staticwebassets\\Themes\\skins\\moono-lisa\\editor_gecko.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\skins\\moono-lisa\\editor_ie.css",
+      "PackagePath": "staticwebassets\\Themes\\skins\\moono-lisa\\editor_ie.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\skins\\moono-lisa\\editor_ie8.css",
+      "PackagePath": "staticwebassets\\Themes\\skins\\moono-lisa\\editor_ie8.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\skins\\moono-lisa\\editor_iequirks.css",
+      "PackagePath": "staticwebassets\\Themes\\skins\\moono-lisa\\editor_iequirks.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\skins\\moono-lisa\\icons.png",
+      "PackagePath": "staticwebassets\\Themes\\skins\\moono-lisa\\icons.png"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\skins\\moono-lisa\\icons_hidpi.png",
+      "PackagePath": "staticwebassets\\Themes\\skins\\moono-lisa\\icons_hidpi.png"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\skins\\moono-lisa\\images\\arrow.png",
+      "PackagePath": "staticwebassets\\Themes\\skins\\moono-lisa\\images\\arrow.png"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\skins\\moono-lisa\\images\\close.png",
+      "PackagePath": "staticwebassets\\Themes\\skins\\moono-lisa\\images\\close.png"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\skins\\moono-lisa\\images\\hidpi\\close.png",
+      "PackagePath": "staticwebassets\\Themes\\skins\\moono-lisa\\images\\hidpi\\close.png"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\skins\\moono-lisa\\images\\hidpi\\lock-open.png",
+      "PackagePath": "staticwebassets\\Themes\\skins\\moono-lisa\\images\\hidpi\\lock-open.png"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\skins\\moono-lisa\\images\\hidpi\\lock.png",
+      "PackagePath": "staticwebassets\\Themes\\skins\\moono-lisa\\images\\hidpi\\lock.png"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\skins\\moono-lisa\\images\\hidpi\\refresh.png",
+      "PackagePath": "staticwebassets\\Themes\\skins\\moono-lisa\\images\\hidpi\\refresh.png"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\skins\\moono-lisa\\images\\lock-open.png",
+      "PackagePath": "staticwebassets\\Themes\\skins\\moono-lisa\\images\\lock-open.png"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\skins\\moono-lisa\\images\\lock.png",
+      "PackagePath": "staticwebassets\\Themes\\skins\\moono-lisa\\images\\lock.png"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\skins\\moono-lisa\\images\\refresh.png",
+      "PackagePath": "staticwebassets\\Themes\\skins\\moono-lisa\\images\\refresh.png"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\skins\\moono-lisa\\images\\spinner.gif",
+      "PackagePath": "staticwebassets\\Themes\\skins\\moono-lisa\\images\\spinner.gif"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\skins\\moono-lisa\\readme.md",
+      "PackagePath": "staticwebassets\\Themes\\skins\\moono-lisa\\readme.md"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\styles.js",
+      "PackagePath": "staticwebassets\\Themes\\styles.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\Themes\\vendor\\promise.js",
+      "PackagePath": "staticwebassets\\Themes\\vendor\\promise.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\assets\\favicon.ico",
+      "PackagePath": "staticwebassets\\assets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\assets\\img\\about-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\about-bg.jpg"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\assets\\img\\contact-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\contact-bg.jpg"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\assets\\img\\home-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\home-bg.jpg"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\assets\\img\\post-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\post-bg.jpg"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\assets\\img\\post-sample-image.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\post-sample-image.jpg"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\css\\style.min.css",
+      "PackagePath": "staticwebassets\\css\\style.min.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\image\\blog_login.jpg",
+      "PackagePath": "staticwebassets\\image\\blog_login.jpg"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\image\\leftPostIndex.jpg",
+      "PackagePath": "staticwebassets\\image\\leftPostIndex.jpg"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\image\\pngtree-cute-bear-png-image_6581260.png",
+      "PackagePath": "staticwebassets\\image\\pngtree-cute-bear-png-image_6581260.png"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\js\\scripts.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\GIT\\Fshop\\project\\JustBlog\\FA.JustBlog\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.FA.JustBlog.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.FA.JustBlog.props",
+      "PackagePath": "build\\FA.JustBlog.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.FA.JustBlog.props",
+      "PackagePath": "buildMultiTargeting\\FA.JustBlog.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.FA.JustBlog.props",
+      "PackagePath": "buildTransitive\\FA.JustBlog.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
