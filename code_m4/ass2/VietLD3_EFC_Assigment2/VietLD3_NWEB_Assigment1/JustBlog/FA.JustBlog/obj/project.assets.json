@@ -82,6 +82,22 @@
       "MessagePackAnalyzer/2.1.152": {
         "type": "package"
       },
+      "Microsoft.AspNetCore.Authentication.Facebook/6.0.16": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Microsoft.AspNetCore.Authentication.Facebook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Authentication.Facebook.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.AspNetCore.Authentication.Google/6.0.15": {
         "type": "package",
         "compile": {
@@ -3975,6 +3991,21 @@
         "messagepackanalyzer.nuspec",
         "tools/install.ps1",
         "tools/uninstall.ps1"
+      ]
+    },
+    "Microsoft.AspNetCore.Authentication.Facebook/6.0.16": {
+      "sha512": "hNKadnleiCdt8Wv09CjH73hZvKzZ1yjSB72vYrKQ2L/LsJC+SB8Qlx6K3o5cnOqoBTRpIE1Dn4PqbJBY8bxKKQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.facebook/6.0.16",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net6.0/Microsoft.AspNetCore.Authentication.Facebook.dll",
+        "lib/net6.0/Microsoft.AspNetCore.Authentication.Facebook.xml",
+        "microsoft.aspnetcore.authentication.facebook.6.0.16.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.facebook.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Authentication.Google/6.0.15": {
@@ -10802,6 +10833,7 @@
       "FA.JustBlog.Core >= 1.0.0",
       "FA.JustBlog.Service >= 1.0.0",
       "FA.JustBlog.ViewModel >= 1.0.0",
+      "Microsoft.AspNetCore.Authentication.Facebook >= 6.0.16",
       "Microsoft.AspNetCore.Authentication.Google >= 6.0.15",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 6.0.11",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.15",
@@ -10814,7 +10846,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\NCC\\.nuget\\packages\\": {}
+    "C:\\Users\\DELL\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -10822,11 +10854,11 @@
       "projectUniqueName": "D:\\GIT\\Fshop\\code_m4\\ass2\\VietLD3_EFC_Assigment2\\VietLD3_NWEB_Assigment1\\JustBlog\\FA.JustBlog\\FA.JustBlog.csproj",
       "projectName": "FA.JustBlog",
       "projectPath": "D:\\GIT\\Fshop\\code_m4\\ass2\\VietLD3_EFC_Assigment2\\VietLD3_NWEB_Assigment1\\JustBlog\\FA.JustBlog\\FA.JustBlog.csproj",
-      "packagesPath": "C:\\Users\\NCC\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
       "outputPath": "D:\\GIT\\Fshop\\code_m4\\ass2\\VietLD3_EFC_Assigment2\\VietLD3_NWEB_Assigment1\\JustBlog\\FA.JustBlog\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\NCC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10862,6 +10894,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Authentication.Facebook": {
+            "target": "Package",
+            "version": "[6.0.16, )"
+          },
           "Microsoft.AspNetCore.Authentication.Google": {
             "target": "Package",
             "version": "[6.0.15, )"

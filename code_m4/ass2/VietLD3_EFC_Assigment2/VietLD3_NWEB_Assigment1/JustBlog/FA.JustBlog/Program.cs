@@ -1,4 +1,4 @@
-﻿using FA.JustBlog.Core.DataContext;
+using FA.JustBlog.Core.DataContext;
 using FA.JustBlog.Core.Models;
 using FA.JustBlog.Service.category;
 using FA.JustBlog.Service.comment;
@@ -18,7 +18,7 @@ builder.Services.AddDbContext<JustBlogContext>(options =>
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 // RequireConfirmedAccount ko can Confirmed
-builder.Services.AddDefaultIdentity<UsingIdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
+builder.Services.AddDefaultIdentity<UsingIdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddRoles<IdentityRole>().AddEntityFrameworkStores<JustBlogContext>();
 
 builder.Services.AddControllersWithViews();
@@ -46,7 +46,17 @@ builder.Services.AddAuthentication()
          googleOptions.ClientSecret = googleAuthNSection["ClientSecret"];
          // Cấu hình Url callback lại từ Google (không thiết lập thì mặc định là /signin-google)
          googleOptions.CallbackPath = "/signin";
+     })
+     .AddFacebook(facebookOptions =>
+     {
+         // Đọc cấu hình
+         IConfigurationSection facebookAuthNSection = builder.Configuration.GetSection("Authentication:Facebook");
+         facebookOptions.AppId = facebookAuthNSection["AppId"];
+         facebookOptions.AppSecret = facebookAuthNSection["AppSecret"];
+         // Thiết lập đường dẫn Facebook chuyển hướng đến
+         facebookOptions.CallbackPath = "/dang-nhap-tu-facebook";
      });
+
 
 var app = builder.Build();
 

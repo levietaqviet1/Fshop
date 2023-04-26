@@ -57,7 +57,7 @@ namespace FA.JustBlog.Core.DataContext
 
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("server=w05.onedata.vn;database=vietwebc_blog;uid=vietwebc_sa;pwd=M576o5b~c;MultipleActiveResultSets=True");
+                optionsBuilder.UseSqlServer("server=.;database=vietwebc_blog;uid=sa;pwd=123;MultipleActiveResultSets=True");
             }
 
             //if (!optionsBuilder.IsConfigured)

@@ -28,7 +28,15 @@ namespace FA.JustBlog.Controllers
         {
             IList<PostViewModel> listPost = _postService.GetAll(tag, category).DataList;
             ViewBag.MostViews = _postService.GetMostView(tag, category).DataList;
-            ViewBag.LastPosts = listPost.Take(5).ToList();
+            if (listPost.Count < 5)
+            {
+                ViewBag.LastPosts = listPost;
+            }
+            else
+            {
+                ViewBag.LastPosts = listPost.Take(5).ToList();
+            }
+
             ViewBag.Tags = _tagService.GetAll().DataList;
             return View(listPost);
         }

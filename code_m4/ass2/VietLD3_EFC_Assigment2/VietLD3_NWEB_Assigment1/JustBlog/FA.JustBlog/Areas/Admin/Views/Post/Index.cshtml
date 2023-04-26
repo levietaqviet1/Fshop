@@ -16,7 +16,7 @@
             <tr>
                 <th>Title</th>
                 <th>Short Description</th>
-                <th>Url Slug</th>
+               @* <th>Url Slug</th>*@
                 <th>Published</th>
                 <th>Posted On</th>
                 <th>Category</th>
@@ -36,9 +36,9 @@
                     <td>
                         @Html.Raw(item.ShortDescription)
                     </td>
-                    <td>
+                    @*<td>
                         @Html.DisplayFor(modelItem => item.UrlSlug)
-                    </td>
+                    </td>*@
                     <td>
                         @if (item.Published)
                         {
@@ -53,7 +53,7 @@
                         @Html.DisplayFor(modelItem => item.PostedOn)
                     </td>
                     <td>
-                        @Html.Raw(@Html.DisplayFor(modelItem => item.CategoryViewModel.Description))
+                        @Html.DisplayFor(modelItem => item.CategoryViewModel.Name) 
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.ViewCount)

@@ -92,6 +92,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGFnXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/GIT/Fshop/code_m4/ass2/VietLD3_EFC_Assigment2/VietLD3_NWEB_Assigment1/JustBlog/FA.JustBlog/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GIT/Fshop/code_m4/ass2/VietLD3_EFC_Assigment2/VietLD3_NWEB_Assigment1/JustBlog/FA.JustBlog/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GIT/Fshop/code_m4/ass2/VietLD3_EFC_Assigment2/VietLD3_NWEB_Assigment1/JustBlog/FA.JustBlog/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/GIT/Fshop/code_m4/ass2/VietLD3_EFC_Assigment2/VietLD3_NWEB_Assigment1/JustBlog/FA.JustBlog/Areas/Identity/Pages/Account/ExternalLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxFeHRlcm5hbExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -104,8 +116,52 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/GIT/Fshop/code_m4/ass2/VietLD3_EFC_Assigment2/VietLD3_NWEB_Assigment1/JustBlog/FA.JustBlog/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GIT/Fshop/code_m4/ass2/VietLD3_EFC_Assigment2/VietLD3_NWEB_Assigment1/JustBlog/FA.JustBlog/Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRGlzYWJsZTJmYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GIT/Fshop/code_m4/ass2/VietLD3_EFC_Assigment2/VietLD3_NWEB_Assigment1/JustBlog/FA.JustBlog/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW5hYmxlQXV0aGVudGljYXRvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GIT/Fshop/code_m4/ass2/VietLD3_EFC_Assigment2/VietLD3_NWEB_Assigment1/JustBlog/FA.JustBlog/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRXh0ZXJuYWxMb2dpbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GIT/Fshop/code_m4/ass2/VietLD3_EFC_Assigment2/VietLD3_NWEB_Assigment1/JustBlog/FA.JustBlog/Areas/Identity/Pages/Account/Manage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GIT/Fshop/code_m4/ass2/VietLD3_EFC_Assigment2/VietLD3_NWEB_Assigment1/JustBlog/FA.JustBlog/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcU2V0UGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GIT/Fshop/code_m4/ass2/VietLD3_EFC_Assigment2/VietLD3_NWEB_Assigment1/JustBlog/FA.JustBlog/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcVHdvRmFjdG9yQXV0aGVudGljYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GIT/Fshop/code_m4/ass2/VietLD3_EFC_Assigment2/VietLD3_NWEB_Assigment1/JustBlog/FA.JustBlog/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GIT/Fshop/code_m4/ass2/VietLD3_EFC_Assigment2/VietLD3_NWEB_Assigment1/JustBlog/FA.JustBlog/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GIT/Fshop/code_m4/ass2/VietLD3_EFC_Assigment2/VietLD3_NWEB_Assigment1/JustBlog/FA.JustBlog/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/GIT/Fshop/code_m4/ass2/VietLD3_EFC_Assigment2/VietLD3_NWEB_Assigment1/JustBlog/FA.JustBlog/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GIT/Fshop/code_m4/ass2/VietLD3_EFC_Assigment2/VietLD3_NWEB_Assigment1/JustBlog/FA.JustBlog/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3RlckNvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/GIT/Fshop/code_m4/ass2/VietLD3_EFC_Assigment2/VietLD3_NWEB_Assigment1/JustBlog/FA.JustBlog/Areas/Identity/Pages/Account/_ViewImports.cshtml]
@@ -134,6 +190,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/GIT/Fshop/code_m4/ass2/VietLD3_EFC_Assigment2/VietLD3_NWEB_Assigment1/JustBlog/FA.JustBlog/Areas/Identity/Pages/User/User.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcVXNlclxVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GIT/Fshop/code_m4/ass2/VietLD3_EFC_Assigment2/VietLD3_NWEB_Assigment1/JustBlog/FA.JustBlog/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/GIT/Fshop/code_m4/ass2/VietLD3_EFC_Assigment2/VietLD3_NWEB_Assigment1/JustBlog/FA.JustBlog/Areas/Identity/Pages/_ViewImports.cshtml]
